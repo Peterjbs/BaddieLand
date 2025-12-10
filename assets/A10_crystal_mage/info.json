@@ -1,0 +1,25 @@
+{
+  "name": "Crystal Mage",
+  "global_id": 10,
+  "tribe": "Preserved Ancients",
+  "species": "giants",
+  "age": 30,
+  "roles": {
+    "primary": "sniper",
+    "secondary": "looter"
+  },
+  "weapon_item": "Weapon_A10",
+  "growth_curve": "slow",
+  "brand_vibe": "A sniper from the Preserved Ancients with giants heritage",
+  "mat_list": [
+    "saah_small",
+    "saah_big",
+    "fire"
+  ],
+  "move_list": [
+    "move_A10_1",
+    "move_A10_2",
+    "move_A10_3",
+    "move_A10_4"
+  ]
+}

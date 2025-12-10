@@ -1,0 +1,25 @@
+{
+  "name": "Brutal Beast",
+  "global_id": 76,
+  "tribe": "BBB",
+  "species": "high_fae",
+  "age": 46,
+  "roles": {
+    "primary": "fat_trimmer",
+    "secondary": "healer"
+  },
+  "weapon_item": "Weapon_B01",
+  "growth_curve": "slow",
+  "brand_vibe": "A fat_trimmer from the BBB with high_fae heritage",
+  "mat_list": [
+    "undead",
+    "construct",
+    "magic"
+  ],
+  "move_list": [
+    "move_B01_1",
+    "move_B01_2",
+    "move_B01_3",
+    "move_B01_4"
+  ]
+}

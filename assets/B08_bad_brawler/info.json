@@ -1,0 +1,26 @@
+{
+  "name": "Bad Brawler",
+  "global_id": 83,
+  "tribe": "BBB",
+  "species": "harpy_angel",
+  "age": 53,
+  "roles": {
+    "primary": "looter",
+    "secondary": "tank"
+  },
+  "weapon_item": "Weapon_B08",
+  "growth_curve": "key_levels",
+  "brand_vibe": "A looter from the BBB with harpy_angel heritage",
+  "mat_list": [
+    "no_legs",
+    "non_corporeal",
+    "saah_small",
+    "saah_big"
+  ],
+  "move_list": [
+    "move_B08_1",
+    "move_B08_2",
+    "move_B08_3",
+    "move_B08_4"
+  ]
+}

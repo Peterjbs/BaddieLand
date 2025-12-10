@@ -1,0 +1,24 @@
+{
+  "name": "Shadow Ranger",
+  "global_id": 24,
+  "tribe": "Human Defenders",
+  "species": "small_fae",
+  "age": 44,
+  "roles": {
+    "primary": "tank",
+    "secondary": "bruiser"
+  },
+  "weapon_item": "Weapon_A24",
+  "growth_curve": "steady",
+  "brand_vibe": "A tank from the Human Defenders with small_fae heritage",
+  "mat_list": [
+    "ice",
+    "living"
+  ],
+  "move_list": [
+    "move_A24_1",
+    "move_A24_2",
+    "move_A24_3",
+    "move_A24_4"
+  ]
+}

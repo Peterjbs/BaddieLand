@@ -1,0 +1,26 @@
+{
+  "name": "Frost Ranger",
+  "global_id": 29,
+  "tribe": "Construct Guild",
+  "species": "merfolk",
+  "age": 49,
+  "roles": {
+    "primary": "healer",
+    "secondary": "ally"
+  },
+  "weapon_item": "Weapon_A29",
+  "growth_curve": "key_levels",
+  "brand_vibe": "A healer from the Construct Guild with merfolk heritage",
+  "mat_list": [
+    "feral",
+    "sentient",
+    "mindless",
+    "flying"
+  ],
+  "move_list": [
+    "move_A29_1",
+    "move_A29_2",
+    "move_A29_3",
+    "move_A29_4"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Brutal Bandit",
+  "global_id": 92,
+  "tribe": "BBB",
+  "species": "small_fae",
+  "age": 62,
+  "roles": {
+    "primary": "controller",
+    "secondary": "survivor"
+  },
+  "weapon_item": "Weapon_B17",
+  "growth_curve": "quick_learner",
+  "brand_vibe": "A controller from the BBB with small_fae heritage",
+  "mat_list": [
+    "plant",
+    "metallic",
+    "wooden",
+    "holy"
+  ],
+  "move_list": [
+    "move_B17_1",
+    "move_B17_2",
+    "move_B17_3",
+    "move_B17_4"
+  ]
+}

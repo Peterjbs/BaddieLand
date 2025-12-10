@@ -1,0 +1,26 @@
+{
+  "name": "Brawling Brawler",
+  "global_id": 89,
+  "tribe": "BBB",
+  "species": "elementals",
+  "age": 59,
+  "roles": {
+    "primary": "healer",
+    "secondary": "ally"
+  },
+  "weapon_item": "Weapon_B14",
+  "growth_curve": "key_levels",
+  "brand_vibe": "A healer from the BBB with elementals heritage",
+  "mat_list": [
+    "air",
+    "earth",
+    "electric",
+    "plant"
+  ],
+  "move_list": [
+    "move_B14_1",
+    "move_B14_2",
+    "move_B14_3",
+    "move_B14_4"
+  ]
+}

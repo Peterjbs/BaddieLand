@@ -1,0 +1,25 @@
+{
+  "name": "Bold Brawler",
+  "global_id": 85,
+  "tribe": "BBB",
+  "species": "vampire_dhampir",
+  "age": 55,
+  "roles": {
+    "primary": "bruiser",
+    "secondary": "big_hitter"
+  },
+  "weapon_item": "Weapon_B10",
+  "growth_curve": "strong_starter",
+  "brand_vibe": "A bruiser from the BBB with vampire_dhampir heritage",
+  "mat_list": [
+    "saah_small",
+    "saah_big",
+    "fire"
+  ],
+  "move_list": [
+    "move_B10_1",
+    "move_B10_2",
+    "move_B10_3",
+    "move_B10_4"
+  ]
+}

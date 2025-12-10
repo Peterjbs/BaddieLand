@@ -1,0 +1,26 @@
+{
+  "name": "Thunder Assassin",
+  "global_id": 59,
+  "tribe": "Sky Riders",
+  "species": "high_fae",
+  "age": 29,
+  "roles": {
+    "primary": "looter",
+    "secondary": "tank"
+  },
+  "weapon_item": "Weapon_A59",
+  "growth_curve": "key_levels",
+  "brand_vibe": "A looter from the Sky Riders with high_fae heritage",
+  "mat_list": [
+    "non_corporeal",
+    "saah_small",
+    "saah_big",
+    "fire"
+  ],
+  "move_list": [
+    "move_A59_1",
+    "move_A59_2",
+    "move_A59_3",
+    "move_A59_4"
+  ]
+}

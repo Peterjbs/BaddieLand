@@ -1,0 +1,25 @@
+{
+  "name": "Shadow Knight",
+  "global_id": 16,
+  "tribe": "Beast Clan",
+  "species": "poltergeist",
+  "age": 36,
+  "roles": {
+    "primary": "fat_trimmer",
+    "secondary": "healer"
+  },
+  "weapon_item": "Weapon_A16",
+  "growth_curve": "slow",
+  "brand_vibe": "A fat_trimmer from the Beast Clan with poltergeist heritage",
+  "mat_list": [
+    "electric",
+    "plant",
+    "metallic"
+  ],
+  "move_list": [
+    "move_A16_1",
+    "move_A16_2",
+    "move_A16_3",
+    "move_A16_4"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Burning Brawler",
+  "global_id": 90,
+  "tribe": "BBB",
+  "species": "animal_hybrids",
+  "age": 60,
+  "roles": {
+    "primary": "ally",
+    "secondary": "debuffer"
+  },
+  "weapon_item": "Weapon_B15",
+  "growth_curve": "steady",
+  "brand_vibe": "A ally from the BBB with animal_hybrids heritage",
+  "mat_list": [
+    "earth",
+    "electric"
+  ],
+  "move_list": [
+    "move_B15_1",
+    "move_B15_2",
+    "move_B15_3",
+    "move_B15_4"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Dark Ranger",
+  "global_id": 31,
+  "tribe": "Giant Kingdom",
+  "species": "preserved",
+  "age": 51,
+  "roles": {
+    "primary": "debuffer",
+    "secondary": "controller"
+  },
+  "weapon_item": "Weapon_A31",
+  "growth_curve": "strong_starter",
+  "brand_vibe": "A debuffer from the Giant Kingdom with preserved heritage",
+  "mat_list": [
+    "mindless",
+    "flying",
+    "no_legs"
+  ],
+  "move_list": [
+    "move_A31_1",
+    "move_A31_2",
+    "move_A31_3",
+    "move_A31_4"
+  ]
+}

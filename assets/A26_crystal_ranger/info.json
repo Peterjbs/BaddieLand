@@ -1,0 +1,26 @@
+{
+  "name": "Crystal Ranger",
+  "global_id": 26,
+  "tribe": "Fae Court",
+  "species": "hags_witches",
+  "age": 46,
+  "roles": {
+    "primary": "big_hitter",
+    "secondary": "assassin"
+  },
+  "weapon_item": "Weapon_A26",
+  "growth_curve": "quick_learner",
+  "brand_vibe": "A big_hitter from the Fae Court with hags_witches heritage",
+  "mat_list": [
+    "undead",
+    "construct",
+    "magic",
+    "feral"
+  ],
+  "move_list": [
+    "move_A26_1",
+    "move_A26_2",
+    "move_A26_3",
+    "move_A26_4"
+  ]
+}

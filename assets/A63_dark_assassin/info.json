@@ -1,0 +1,24 @@
+{
+  "name": "Dark Assassin",
+  "global_id": 63,
+  "tribe": "Elemental Collective",
+  "species": "merfolk",
+  "age": 33,
+  "roles": {
+    "primary": "assassin",
+    "secondary": "fat_trimmer"
+  },
+  "weapon_item": "Weapon_A63",
+  "growth_curve": "late_bloomer",
+  "brand_vibe": "A assassin from the Elemental Collective with merfolk heritage",
+  "mat_list": [
+    "water",
+    "air"
+  ],
+  "move_list": [
+    "move_A63_1",
+    "move_A63_2",
+    "move_A63_3",
+    "move_A63_4"
+  ]
+}

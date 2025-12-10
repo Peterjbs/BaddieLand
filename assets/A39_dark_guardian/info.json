@@ -1,0 +1,24 @@
+{
+  "name": "Dark Guardian",
+  "global_id": 39,
+  "tribe": "Elemental Collective",
+  "species": "animal_hybrids",
+  "age": 59,
+  "roles": {
+    "primary": "assassin",
+    "secondary": "fat_trimmer"
+  },
+  "weapon_item": "Weapon_A39",
+  "growth_curve": "late_bloomer",
+  "brand_vibe": "A assassin from the Elemental Collective with animal_hybrids heritage",
+  "mat_list": [
+    "air",
+    "earth"
+  ],
+  "move_list": [
+    "move_A39_1",
+    "move_A39_2",
+    "move_A39_3",
+    "move_A39_4"
+  ]
+}

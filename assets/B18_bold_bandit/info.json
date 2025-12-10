@@ -1,0 +1,24 @@
+{
+  "name": "Bold Bandit",
+  "global_id": 93,
+  "tribe": "BBB",
+  "species": "high_fae",
+  "age": 63,
+  "roles": {
+    "primary": "survivor",
+    "secondary": "sniper"
+  },
+  "weapon_item": "Weapon_B18",
+  "growth_curve": "late_bloomer",
+  "brand_vibe": "A survivor from the BBB with high_fae heritage",
+  "mat_list": [
+    "metallic",
+    "wooden"
+  ],
+  "move_list": [
+    "move_B18_1",
+    "move_B18_2",
+    "move_B18_3",
+    "move_B18_4"
+  ]
+}

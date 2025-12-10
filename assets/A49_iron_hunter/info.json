@@ -1,0 +1,25 @@
+{
+  "name": "Iron Hunter",
+  "global_id": 49,
+  "tribe": "Undead Legion",
+  "species": "harpy_angel",
+  "age": 69,
+  "roles": {
+    "primary": "bruiser",
+    "secondary": "big_hitter"
+  },
+  "weapon_item": "Weapon_A49",
+  "growth_curve": "strong_starter",
+  "brand_vibe": "A bruiser from the Undead Legion with harpy_angel heritage",
+  "mat_list": [
+    "ice",
+    "living",
+    "undead"
+  ],
+  "move_list": [
+    "move_A49_1",
+    "move_A49_2",
+    "move_A49_3",
+    "move_A49_4"
+  ]
+}

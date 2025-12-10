@@ -1,0 +1,25 @@
+{
+  "name": "Brawling Bandit",
+  "global_id": 97,
+  "tribe": "BBB",
+  "species": "merfolk",
+  "age": 67,
+  "roles": {
+    "primary": "bruiser",
+    "secondary": "big_hitter"
+  },
+  "weapon_item": "Weapon_B22",
+  "growth_curve": "strong_starter",
+  "brand_vibe": "A bruiser from the BBB with merfolk heritage",
+  "mat_list": [
+    "shadow",
+    "blood",
+    "ice"
+  ],
+  "move_list": [
+    "move_B22_1",
+    "move_B22_2",
+    "move_B22_3",
+    "move_B22_4"
+  ]
+}

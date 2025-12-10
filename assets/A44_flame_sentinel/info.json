@@ -1,0 +1,26 @@
+{
+  "name": "Flame Sentinel",
+  "global_id": 44,
+  "tribe": "Aquatic Alliance",
+  "species": "giants",
+  "age": 64,
+  "roles": {
+    "primary": "controller",
+    "secondary": "survivor"
+  },
+  "weapon_item": "Weapon_A44",
+  "growth_curve": "quick_learner",
+  "brand_vibe": "A controller from the Aquatic Alliance with giants heritage",
+  "mat_list": [
+    "wooden",
+    "holy",
+    "dark",
+    "shadow"
+  ],
+  "move_list": [
+    "move_A44_1",
+    "move_A44_2",
+    "move_A44_3",
+    "move_A44_4"
+  ]
+}

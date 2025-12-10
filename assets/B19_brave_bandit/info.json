@@ -1,0 +1,25 @@
+{
+  "name": "Brave Bandit",
+  "global_id": 94,
+  "tribe": "BBB",
+  "species": "hags_witches",
+  "age": 64,
+  "roles": {
+    "primary": "sniper",
+    "secondary": "looter"
+  },
+  "weapon_item": "Weapon_B19",
+  "growth_curve": "slow",
+  "brand_vibe": "A sniper from the BBB with hags_witches heritage",
+  "mat_list": [
+    "wooden",
+    "holy",
+    "dark"
+  ],
+  "move_list": [
+    "move_B19_1",
+    "move_B19_2",
+    "move_B19_3",
+    "move_B19_4"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Bouncing Bandit",
+  "global_id": 96,
+  "tribe": "BBB",
+  "species": "dwarf",
+  "age": 66,
+  "roles": {
+    "primary": "tank",
+    "secondary": "bruiser"
+  },
+  "weapon_item": "Weapon_B21",
+  "growth_curve": "steady",
+  "brand_vibe": "A tank from the BBB with dwarf heritage",
+  "mat_list": [
+    "dark",
+    "shadow"
+  ],
+  "move_list": [
+    "move_B21_1",
+    "move_B21_2",
+    "move_B21_3",
+    "move_B21_4"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Frost Hunter",
+  "global_id": 53,
+  "tribe": "Construct Guild",
+  "species": "reanimated",
+  "age": 23,
+  "roles": {
+    "primary": "healer",
+    "secondary": "ally"
+  },
+  "weapon_item": "Weapon_A53",
+  "growth_curve": "key_levels",
+  "brand_vibe": "A healer from the Construct Guild with reanimated heritage",
+  "mat_list": [
+    "magic",
+    "feral",
+    "sentient",
+    "mindless"
+  ],
+  "move_list": [
+    "move_A53_1",
+    "move_A53_2",
+    "move_A53_3",
+    "move_A53_4"
+  ]
+}

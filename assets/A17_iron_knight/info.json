@@ -1,0 +1,26 @@
+{
+  "name": "Iron Knight",
+  "global_id": 17,
+  "tribe": "Construct Guild",
+  "species": "vampire_dhampir",
+  "age": 37,
+  "roles": {
+    "primary": "healer",
+    "secondary": "ally"
+  },
+  "weapon_item": "Weapon_A17",
+  "growth_curve": "key_levels",
+  "brand_vibe": "A healer from the Construct Guild with vampire_dhampir heritage",
+  "mat_list": [
+    "plant",
+    "metallic",
+    "wooden",
+    "holy"
+  ],
+  "move_list": [
+    "move_A17_1",
+    "move_A17_2",
+    "move_A17_3",
+    "move_A17_4"
+  ]
+}

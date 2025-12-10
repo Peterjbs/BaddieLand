@@ -1,0 +1,26 @@
+{
+  "name": "Crystal Hunter",
+  "global_id": 50,
+  "tribe": "Fae Court",
+  "species": "poltergeist",
+  "age": 20,
+  "roles": {
+    "primary": "big_hitter",
+    "secondary": "assassin"
+  },
+  "weapon_item": "Weapon_A50",
+  "growth_curve": "quick_learner",
+  "brand_vibe": "A big_hitter from the Fae Court with poltergeist heritage",
+  "mat_list": [
+    "living",
+    "undead",
+    "construct",
+    "magic"
+  ],
+  "move_list": [
+    "move_A50_1",
+    "move_A50_2",
+    "move_A50_3",
+    "move_A50_4"
+  ]
+}

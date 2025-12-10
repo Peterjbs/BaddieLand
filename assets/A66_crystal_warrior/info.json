@@ -1,0 +1,24 @@
+{
+  "name": "Crystal Warrior",
+  "global_id": 66,
+  "tribe": "Spirit Realm",
+  "species": "harpy_angel",
+  "age": 36,
+  "roles": {
+    "primary": "ally",
+    "secondary": "debuffer"
+  },
+  "weapon_item": "Weapon_A66",
+  "growth_curve": "steady",
+  "brand_vibe": "A ally from the Spirit Realm with harpy_angel heritage",
+  "mat_list": [
+    "electric",
+    "plant"
+  ],
+  "move_list": [
+    "move_A66_1",
+    "move_A66_2",
+    "move_A66_3",
+    "move_A66_4"
+  ]
+}

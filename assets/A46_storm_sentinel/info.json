@@ -1,0 +1,25 @@
+{
+  "name": "Storm Sentinel",
+  "global_id": 46,
+  "tribe": "Preserved Ancients",
+  "species": "merfolk",
+  "age": 66,
+  "roles": {
+    "primary": "sniper",
+    "secondary": "looter"
+  },
+  "weapon_item": "Weapon_A46",
+  "growth_curve": "slow",
+  "brand_vibe": "A sniper from the Preserved Ancients with merfolk heritage",
+  "mat_list": [
+    "dark",
+    "shadow",
+    "blood"
+  ],
+  "move_list": [
+    "move_A46_1",
+    "move_A46_2",
+    "move_A46_3",
+    "move_A46_4"
+  ]
+}

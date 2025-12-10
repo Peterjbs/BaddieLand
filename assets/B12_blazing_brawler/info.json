@@ -1,0 +1,24 @@
+{
+  "name": "Blazing Brawler",
+  "global_id": 87,
+  "tribe": "BBB",
+  "species": "reanimated",
+  "age": 57,
+  "roles": {
+    "primary": "assassin",
+    "secondary": "fat_trimmer"
+  },
+  "weapon_item": "Weapon_B12",
+  "growth_curve": "late_bloomer",
+  "brand_vibe": "A assassin from the BBB with reanimated heritage",
+  "mat_list": [
+    "fire",
+    "water"
+  ],
+  "move_list": [
+    "move_B12_1",
+    "move_B12_2",
+    "move_B12_3",
+    "move_B12_4"
+  ]
+}

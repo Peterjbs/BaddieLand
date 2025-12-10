@@ -1,0 +1,24 @@
+{
+  "name": "Brutal Brawler",
+  "global_id": 84,
+  "tribe": "BBB",
+  "species": "poltergeist",
+  "age": 54,
+  "roles": {
+    "primary": "tank",
+    "secondary": "bruiser"
+  },
+  "weapon_item": "Weapon_B09",
+  "growth_curve": "steady",
+  "brand_vibe": "A tank from the BBB with poltergeist heritage",
+  "mat_list": [
+    "non_corporeal",
+    "saah_small"
+  ],
+  "move_list": [
+    "move_B09_1",
+    "move_B09_2",
+    "move_B09_3",
+    "move_B09_4"
+  ]
+}

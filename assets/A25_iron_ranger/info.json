@@ -1,0 +1,25 @@
+{
+  "name": "Iron Ranger",
+  "global_id": 25,
+  "tribe": "Undead Legion",
+  "species": "high_fae",
+  "age": 45,
+  "roles": {
+    "primary": "bruiser",
+    "secondary": "big_hitter"
+  },
+  "weapon_item": "Weapon_A25",
+  "growth_curve": "strong_starter",
+  "brand_vibe": "A bruiser from the Undead Legion with high_fae heritage",
+  "mat_list": [
+    "living",
+    "undead",
+    "construct"
+  ],
+  "move_list": [
+    "move_A25_1",
+    "move_A25_2",
+    "move_A25_3",
+    "move_A25_4"
+  ]
+}

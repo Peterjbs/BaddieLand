@@ -1,0 +1,25 @@
+{
+  "name": "Flame Warrior",
+  "global_id": 4,
+  "tribe": "Beast Clan",
+  "species": "elementals",
+  "age": 24,
+  "roles": {
+    "primary": "fat_trimmer",
+    "secondary": "healer"
+  },
+  "weapon_item": "Weapon_A04",
+  "growth_curve": "slow",
+  "brand_vibe": "A fat_trimmer from the Beast Clan with elementals heritage",
+  "mat_list": [
+    "feral",
+    "sentient",
+    "mindless"
+  ],
+  "move_list": [
+    "move_A04_1",
+    "move_A04_2",
+    "move_A04_3",
+    "move_A04_4"
+  ]
+}

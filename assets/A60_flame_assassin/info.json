@@ -1,0 +1,24 @@
+{
+  "name": "Flame Assassin",
+  "global_id": 60,
+  "tribe": "Human Defenders",
+  "species": "hags_witches",
+  "age": 30,
+  "roles": {
+    "primary": "tank",
+    "secondary": "bruiser"
+  },
+  "weapon_item": "Weapon_A60",
+  "growth_curve": "steady",
+  "brand_vibe": "A tank from the Human Defenders with hags_witches heritage",
+  "mat_list": [
+    "saah_small",
+    "saah_big"
+  ],
+  "move_list": [
+    "move_A60_1",
+    "move_A60_2",
+    "move_A60_3",
+    "move_A60_4"
+  ]
+}

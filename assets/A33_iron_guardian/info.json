@@ -1,0 +1,24 @@
+{
+  "name": "Iron Guardian",
+  "global_id": 33,
+  "tribe": "Dark Coven",
+  "species": "poltergeist",
+  "age": 53,
+  "roles": {
+    "primary": "survivor",
+    "secondary": "sniper"
+  },
+  "weapon_item": "Weapon_A33",
+  "growth_curve": "late_bloomer",
+  "brand_vibe": "A survivor from the Dark Coven with poltergeist heritage",
+  "mat_list": [
+    "no_legs",
+    "non_corporeal"
+  ],
+  "move_list": [
+    "move_A33_1",
+    "move_A33_2",
+    "move_A33_3",
+    "move_A33_4"
+  ]
+}

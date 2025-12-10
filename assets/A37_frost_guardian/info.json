@@ -1,0 +1,25 @@
+{
+  "name": "Frost Guardian",
+  "global_id": 37,
+  "tribe": "Undead Legion",
+  "species": "spirits",
+  "age": 57,
+  "roles": {
+    "primary": "bruiser",
+    "secondary": "big_hitter"
+  },
+  "weapon_item": "Weapon_A37",
+  "growth_curve": "strong_starter",
+  "brand_vibe": "A bruiser from the Undead Legion with spirits heritage",
+  "mat_list": [
+    "fire",
+    "water",
+    "air"
+  ],
+  "move_list": [
+    "move_A37_1",
+    "move_A37_2",
+    "move_A37_3",
+    "move_A37_4"
+  ]
+}

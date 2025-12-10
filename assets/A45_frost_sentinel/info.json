@@ -1,0 +1,24 @@
+{
+  "name": "Frost Sentinel",
+  "global_id": 45,
+  "tribe": "Dark Coven",
+  "species": "dwarf",
+  "age": 65,
+  "roles": {
+    "primary": "survivor",
+    "secondary": "sniper"
+  },
+  "weapon_item": "Weapon_A45",
+  "growth_curve": "late_bloomer",
+  "brand_vibe": "A survivor from the Dark Coven with dwarf heritage",
+  "mat_list": [
+    "holy",
+    "dark"
+  ],
+  "move_list": [
+    "move_A45_1",
+    "move_A45_2",
+    "move_A45_3",
+    "move_A45_4"
+  ]
+}

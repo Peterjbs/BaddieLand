@@ -1,0 +1,25 @@
+{
+  "name": "Frost Mage",
+  "global_id": 13,
+  "tribe": "Undead Legion",
+  "species": "reptilian",
+  "age": 33,
+  "roles": {
+    "primary": "bruiser",
+    "secondary": "big_hitter"
+  },
+  "weapon_item": "Weapon_A13",
+  "growth_curve": "strong_starter",
+  "brand_vibe": "A bruiser from the Undead Legion with reptilian heritage",
+  "mat_list": [
+    "water",
+    "air",
+    "earth"
+  ],
+  "move_list": [
+    "move_A13_1",
+    "move_A13_2",
+    "move_A13_3",
+    "move_A13_4"
+  ]
+}

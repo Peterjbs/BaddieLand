@@ -1,0 +1,25 @@
+{
+  "name": "Crystal Guardian",
+  "global_id": 34,
+  "tribe": "Preserved Ancients",
+  "species": "vampire_dhampir",
+  "age": 54,
+  "roles": {
+    "primary": "sniper",
+    "secondary": "looter"
+  },
+  "weapon_item": "Weapon_A34",
+  "growth_curve": "slow",
+  "brand_vibe": "A sniper from the Preserved Ancients with vampire_dhampir heritage",
+  "mat_list": [
+    "non_corporeal",
+    "saah_small",
+    "saah_big"
+  ],
+  "move_list": [
+    "move_A34_1",
+    "move_A34_2",
+    "move_A34_3",
+    "move_A34_4"
+  ]
+}

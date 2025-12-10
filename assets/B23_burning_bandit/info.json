@@ -1,0 +1,26 @@
+{
+  "name": "Burning Bandit",
+  "global_id": 98,
+  "tribe": "BBB",
+  "species": "reptilian",
+  "age": 68,
+  "roles": {
+    "primary": "big_hitter",
+    "secondary": "assassin"
+  },
+  "weapon_item": "Weapon_B23",
+  "growth_curve": "quick_learner",
+  "brand_vibe": "A big_hitter from the BBB with reptilian heritage",
+  "mat_list": [
+    "blood",
+    "ice",
+    "living",
+    "undead"
+  ],
+  "move_list": [
+    "move_B23_1",
+    "move_B23_2",
+    "move_B23_3",
+    "move_B23_4"
+  ]
+}

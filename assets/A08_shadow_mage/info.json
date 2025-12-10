@@ -1,0 +1,26 @@
+{
+  "name": "Shadow Mage",
+  "global_id": 8,
+  "tribe": "Aquatic Alliance",
+  "species": "high_fae",
+  "age": 28,
+  "roles": {
+    "primary": "controller",
+    "secondary": "survivor"
+  },
+  "weapon_item": "Weapon_A08",
+  "growth_curve": "quick_learner",
+  "brand_vibe": "A controller from the Aquatic Alliance with high_fae heritage",
+  "mat_list": [
+    "no_legs",
+    "non_corporeal",
+    "saah_small",
+    "saah_big"
+  ],
+  "move_list": [
+    "move_A08_1",
+    "move_A08_2",
+    "move_A08_3",
+    "move_A08_4"
+  ]
+}

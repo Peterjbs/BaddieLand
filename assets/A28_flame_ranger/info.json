@@ -1,0 +1,25 @@
+{
+  "name": "Flame Ranger",
+  "global_id": 28,
+  "tribe": "Beast Clan",
+  "species": "dwarf",
+  "age": 48,
+  "roles": {
+    "primary": "fat_trimmer",
+    "secondary": "healer"
+  },
+  "weapon_item": "Weapon_A28",
+  "growth_curve": "slow",
+  "brand_vibe": "A fat_trimmer from the Beast Clan with dwarf heritage",
+  "mat_list": [
+    "magic",
+    "feral",
+    "sentient"
+  ],
+  "move_list": [
+    "move_A28_1",
+    "move_A28_2",
+    "move_A28_3",
+    "move_A28_4"
+  ]
+}

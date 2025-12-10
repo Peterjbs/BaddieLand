@@ -1,0 +1,26 @@
+{
+  "name": "Dark Knight",
+  "global_id": 23,
+  "tribe": "Sky Riders",
+  "species": "constructs",
+  "age": 43,
+  "roles": {
+    "primary": "looter",
+    "secondary": "tank"
+  },
+  "weapon_item": "Weapon_A23",
+  "growth_curve": "key_levels",
+  "brand_vibe": "A looter from the Sky Riders with constructs heritage",
+  "mat_list": [
+    "blood",
+    "ice",
+    "living",
+    "undead"
+  ],
+  "move_list": [
+    "move_A23_1",
+    "move_A23_2",
+    "move_A23_3",
+    "move_A23_4"
+  ]
+}

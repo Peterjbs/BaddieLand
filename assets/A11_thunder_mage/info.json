@@ -1,0 +1,26 @@
+{
+  "name": "Thunder Mage",
+  "global_id": 11,
+  "tribe": "Sky Riders",
+  "species": "dwarf",
+  "age": 31,
+  "roles": {
+    "primary": "looter",
+    "secondary": "tank"
+  },
+  "weapon_item": "Weapon_A11",
+  "growth_curve": "key_levels",
+  "brand_vibe": "A looter from the Sky Riders with dwarf heritage",
+  "mat_list": [
+    "saah_big",
+    "fire",
+    "water",
+    "air"
+  ],
+  "move_list": [
+    "move_A11_1",
+    "move_A11_2",
+    "move_A11_3",
+    "move_A11_4"
+  ]
+}

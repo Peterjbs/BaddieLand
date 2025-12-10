@@ -1,0 +1,24 @@
+{
+  "name": "Iron Assassin",
+  "global_id": 57,
+  "tribe": "Dark Coven",
+  "species": "constructs",
+  "age": 27,
+  "roles": {
+    "primary": "survivor",
+    "secondary": "sniper"
+  },
+  "weapon_item": "Weapon_A57",
+  "growth_curve": "late_bloomer",
+  "brand_vibe": "A survivor from the Dark Coven with constructs heritage",
+  "mat_list": [
+    "flying",
+    "no_legs"
+  ],
+  "move_list": [
+    "move_A57_1",
+    "move_A57_2",
+    "move_A57_3",
+    "move_A57_4"
+  ]
+}

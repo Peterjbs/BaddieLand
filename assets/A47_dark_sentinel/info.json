@@ -1,0 +1,26 @@
+{
+  "name": "Dark Sentinel",
+  "global_id": 47,
+  "tribe": "Sky Riders",
+  "species": "reptilian",
+  "age": 67,
+  "roles": {
+    "primary": "looter",
+    "secondary": "tank"
+  },
+  "weapon_item": "Weapon_A47",
+  "growth_curve": "key_levels",
+  "brand_vibe": "A looter from the Sky Riders with reptilian heritage",
+  "mat_list": [
+    "shadow",
+    "blood",
+    "ice",
+    "living"
+  ],
+  "move_list": [
+    "move_A47_1",
+    "move_A47_2",
+    "move_A47_3",
+    "move_A47_4"
+  ]
+}

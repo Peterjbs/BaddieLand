@@ -1,0 +1,25 @@
+{
+  "name": "Blazing Beast",
+  "global_id": 79,
+  "tribe": "BBB",
+  "species": "dwarf",
+  "age": 49,
+  "roles": {
+    "primary": "debuffer",
+    "secondary": "controller"
+  },
+  "weapon_item": "Weapon_B04",
+  "growth_curve": "strong_starter",
+  "brand_vibe": "A debuffer from the BBB with dwarf heritage",
+  "mat_list": [
+    "feral",
+    "sentient",
+    "mindless"
+  ],
+  "move_list": [
+    "move_B04_1",
+    "move_B04_2",
+    "move_B04_3",
+    "move_B04_4"
+  ]
+}

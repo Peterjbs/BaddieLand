@@ -1,0 +1,26 @@
+{
+  "name": "Crystal Warrior",
+  "global_id": 2,
+  "tribe": "Fae Court",
+  "species": "reanimated",
+  "age": 22,
+  "roles": {
+    "primary": "big_hitter",
+    "secondary": "assassin"
+  },
+  "weapon_item": "Weapon_A02",
+  "growth_curve": "quick_learner",
+  "brand_vibe": "A big_hitter from the Fae Court with reanimated heritage",
+  "mat_list": [
+    "construct",
+    "magic",
+    "feral",
+    "sentient"
+  ],
+  "move_list": [
+    "move_A02_1",
+    "move_A02_2",
+    "move_A02_3",
+    "move_A02_4"
+  ]
+}

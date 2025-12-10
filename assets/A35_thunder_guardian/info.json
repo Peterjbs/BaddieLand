@@ -1,0 +1,26 @@
+{
+  "name": "Thunder Guardian",
+  "global_id": 35,
+  "tribe": "Sky Riders",
+  "species": "skeleton",
+  "age": 55,
+  "roles": {
+    "primary": "looter",
+    "secondary": "tank"
+  },
+  "weapon_item": "Weapon_A35",
+  "growth_curve": "key_levels",
+  "brand_vibe": "A looter from the Sky Riders with skeleton heritage",
+  "mat_list": [
+    "saah_small",
+    "saah_big",
+    "fire",
+    "water"
+  ],
+  "move_list": [
+    "move_A35_1",
+    "move_A35_2",
+    "move_A35_3",
+    "move_A35_4"
+  ]
+}

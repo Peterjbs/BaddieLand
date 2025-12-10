@@ -1,0 +1,25 @@
+{
+  "name": "Shadow Sentinel",
+  "global_id": 40,
+  "tribe": "Beast Clan",
+  "species": "constructs",
+  "age": 60,
+  "roles": {
+    "primary": "fat_trimmer",
+    "secondary": "healer"
+  },
+  "weapon_item": "Weapon_A40",
+  "growth_curve": "slow",
+  "brand_vibe": "A fat_trimmer from the Beast Clan with constructs heritage",
+  "mat_list": [
+    "earth",
+    "electric",
+    "plant"
+  ],
+  "move_list": [
+    "move_A40_1",
+    "move_A40_2",
+    "move_A40_3",
+    "move_A40_4"
+  ]
+}

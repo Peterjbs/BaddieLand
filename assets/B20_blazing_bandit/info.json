@@ -1,0 +1,26 @@
+{
+  "name": "Blazing Bandit",
+  "global_id": 95,
+  "tribe": "BBB",
+  "species": "giants",
+  "age": 65,
+  "roles": {
+    "primary": "looter",
+    "secondary": "tank"
+  },
+  "weapon_item": "Weapon_B20",
+  "growth_curve": "key_levels",
+  "brand_vibe": "A looter from the BBB with giants heritage",
+  "mat_list": [
+    "holy",
+    "dark",
+    "shadow",
+    "blood"
+  ],
+  "move_list": [
+    "move_B20_1",
+    "move_B20_2",
+    "move_B20_3",
+    "move_B20_4"
+  ]
+}

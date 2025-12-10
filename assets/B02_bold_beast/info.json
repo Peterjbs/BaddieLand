@@ -1,0 +1,26 @@
+{
+  "name": "Bold Beast",
+  "global_id": 77,
+  "tribe": "BBB",
+  "species": "hags_witches",
+  "age": 47,
+  "roles": {
+    "primary": "healer",
+    "secondary": "ally"
+  },
+  "weapon_item": "Weapon_B02",
+  "growth_curve": "key_levels",
+  "brand_vibe": "A healer from the BBB with hags_witches heritage",
+  "mat_list": [
+    "construct",
+    "magic",
+    "feral",
+    "sentient"
+  ],
+  "move_list": [
+    "move_B02_1",
+    "move_B02_2",
+    "move_B02_3",
+    "move_B02_4"
+  ]
+}

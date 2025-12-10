@@ -1,0 +1,26 @@
+{
+  "name": "Flame Knight",
+  "global_id": 20,
+  "tribe": "Aquatic Alliance",
+  "species": "spirits",
+  "age": 40,
+  "roles": {
+    "primary": "controller",
+    "secondary": "survivor"
+  },
+  "weapon_item": "Weapon_A20",
+  "growth_curve": "quick_learner",
+  "brand_vibe": "A controller from the Aquatic Alliance with spirits heritage",
+  "mat_list": [
+    "holy",
+    "dark",
+    "shadow",
+    "blood"
+  ],
+  "move_list": [
+    "move_A20_1",
+    "move_A20_2",
+    "move_A20_3",
+    "move_A20_4"
+  ]
+}

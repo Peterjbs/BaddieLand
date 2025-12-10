@@ -1,0 +1,24 @@
+{
+  "name": "Flame Guardian",
+  "global_id": 36,
+  "tribe": "Human Defenders",
+  "species": "reanimated",
+  "age": 56,
+  "roles": {
+    "primary": "tank",
+    "secondary": "bruiser"
+  },
+  "weapon_item": "Weapon_A36",
+  "growth_curve": "steady",
+  "brand_vibe": "A tank from the Human Defenders with reanimated heritage",
+  "mat_list": [
+    "saah_big",
+    "fire"
+  ],
+  "move_list": [
+    "move_A36_1",
+    "move_A36_2",
+    "move_A36_3",
+    "move_A36_4"
+  ]
+}

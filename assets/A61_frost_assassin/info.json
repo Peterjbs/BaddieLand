@@ -1,0 +1,25 @@
+{
+  "name": "Frost Assassin",
+  "global_id": 61,
+  "tribe": "Undead Legion",
+  "species": "giants",
+  "age": 31,
+  "roles": {
+    "primary": "bruiser",
+    "secondary": "big_hitter"
+  },
+  "weapon_item": "Weapon_A61",
+  "growth_curve": "strong_starter",
+  "brand_vibe": "A bruiser from the Undead Legion with giants heritage",
+  "mat_list": [
+    "saah_big",
+    "fire",
+    "water"
+  ],
+  "move_list": [
+    "move_A61_1",
+    "move_A61_2",
+    "move_A61_3",
+    "move_A61_4"
+  ]
+}
