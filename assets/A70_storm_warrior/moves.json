@@ -1,1 +1,86 @@
-[]
+[
+  {
+    "id": "move_A70_1",
+    "name": "Precise Shot",
+    "description": "High accuracy ranged attack",
+    "type": "ranged_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "damage = (RGA * 1.5) + (ACC * 0.6) - (target.RGD * 0.8)",
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.5
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.4
+      }
+    ]
+  },
+  {
+    "id": "move_A70_2",
+    "name": "Headshot",
+    "description": "Critical ranged strike",
+    "type": "ranged_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "damage = (RGA * 1.5) + (ACC * 0.6) - (target.RGD * 0.8)",
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.5
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.4
+      }
+    ]
+  },
+  {
+    "id": "move_A70_3",
+    "name": "Piercing Arrow",
+    "description": "Arrow that penetrates defenses",
+    "type": "ranged_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "damage = (RGA * 1.5) + (ACC * 0.6) - (target.RGD * 0.8)",
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.5
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.4
+      }
+    ]
+  },
+  {
+    "id": "move_A70_4",
+    "name": "Aimed Shot",
+    "description": "Carefully aimed powerful shot",
+    "type": "ranged_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "damage = (RGA * 1.5) + (ACC * 0.6) - (target.RGD * 0.8)",
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.5
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.4
+      }
+    ]
+  }
+]

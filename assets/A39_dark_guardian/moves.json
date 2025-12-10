@@ -1,1 +1,76 @@
-[]
+[
+  {
+    "id": "move_A39_1",
+    "name": "Backstab",
+    "description": "Critical strike from behind",
+    "type": "melee_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "damage = (MLA * 1.5) + (ACC * 0.5) - (target.MLD * 0.8)",
+    "target_mats": [
+      {
+        "tag": "flying",
+        "multiplier": 0.8
+      },
+      {
+        "tag": "earth",
+        "multiplier": 1.3
+      }
+    ]
+  },
+  {
+    "id": "move_A39_2",
+    "name": "Poison Blade",
+    "description": "Melee attack that applies poison",
+    "type": "mixed",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "damage = (MLA * 1.2) + (MAA * 1.2) - (target.MLD * 0.5) - (target.MAD * 0.5)",
+    "target_mats": [
+      {
+        "tag": "flying",
+        "multiplier": 0.8
+      },
+      {
+        "tag": "earth",
+        "multiplier": 1.3
+      }
+    ]
+  },
+  {
+    "id": "move_A39_3",
+    "name": "Shadow Strike",
+    "description": "Quick strike from the shadows",
+    "type": "melee_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "damage = (MLA * 1.5) + (ACC * 0.5) - (target.MLD * 0.8)",
+    "target_mats": [
+      {
+        "tag": "flying",
+        "multiplier": 0.8
+      },
+      {
+        "tag": "earth",
+        "multiplier": 1.3
+      }
+    ]
+  },
+  {
+    "id": "move_A39_4",
+    "name": "Vanish",
+    "description": "Become invisible temporarily",
+    "type": "buff",
+    "target": {
+      "type": "self"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "buff_value = (INT * 1.5) + (CRG * 0.5)"
+  }
+]

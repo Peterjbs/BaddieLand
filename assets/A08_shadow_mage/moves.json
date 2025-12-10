@@ -1,1 +1,46 @@
-[]
+[
+  {
+    "id": "move_A08_1",
+    "name": "Stun Strike",
+    "description": "Attack that stuns target",
+    "type": "status_application",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "success_rate = (ACC + INT) / 2 - (target.EVA * 0.5)"
+  },
+  {
+    "id": "move_A08_2",
+    "name": "Root",
+    "description": "Immobilize enemy",
+    "type": "status_application",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "success_rate = (ACC + INT) / 2 - (target.EVA * 0.5)"
+  },
+  {
+    "id": "move_A08_3",
+    "name": "Trap",
+    "description": "Place a hazard on the battlefield",
+    "type": "trap_hazard",
+    "target": {
+      "type": "environment"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "trap_damage = (MAA * 1.2) + (INT * 0.8)"
+  },
+  {
+    "id": "move_A08_4",
+    "name": "Freeze",
+    "description": "Freeze target in place",
+    "type": "status_application",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "success_rate = (ACC + INT) / 2 - (target.EVA * 0.5)"
+  }
+]

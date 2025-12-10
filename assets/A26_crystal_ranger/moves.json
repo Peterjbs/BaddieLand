@@ -1,1 +1,102 @@
-[]
+[
+  {
+    "id": "move_A26_1",
+    "name": "Devastating Blow",
+    "description": "Massive burst damage attack",
+    "type": "melee_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "damage = (MLA * 1.5) + (ACC * 0.5) - (target.MLD * 0.8)",
+    "target_mats": [
+      {
+        "tag": "electric",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "fire",
+        "multiplier": 1.2
+      },
+      {
+        "tag": "air",
+        "multiplier": 0.7
+      }
+    ]
+  },
+  {
+    "id": "move_A26_2",
+    "name": "Power Strike",
+    "description": "High damage single strike",
+    "type": "melee_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "damage = (MLA * 1.5) + (ACC * 0.5) - (target.MLD * 0.8)",
+    "target_mats": [
+      {
+        "tag": "electric",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "fire",
+        "multiplier": 1.2
+      },
+      {
+        "tag": "air",
+        "multiplier": 0.7
+      }
+    ]
+  },
+  {
+    "id": "move_A26_3",
+    "name": "Charge",
+    "description": "Rushing attack with massive impact",
+    "type": "melee_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "damage = (MLA * 1.5) + (ACC * 0.5) - (target.MLD * 0.8)",
+    "target_mats": [
+      {
+        "tag": "electric",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "fire",
+        "multiplier": 1.2
+      },
+      {
+        "tag": "air",
+        "multiplier": 0.7
+      }
+    ]
+  },
+  {
+    "id": "move_A26_4",
+    "name": "Execute",
+    "description": "Finishing move dealing extreme damage",
+    "type": "melee_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "damage = (MLA * 1.5) + (ACC * 0.5) - (target.MLD * 0.8)",
+    "target_mats": [
+      {
+        "tag": "electric",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "fire",
+        "multiplier": 1.2
+      },
+      {
+        "tag": "air",
+        "multiplier": 0.7
+      }
+    ]
+  }
+]

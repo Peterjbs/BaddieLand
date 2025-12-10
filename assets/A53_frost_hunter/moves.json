@@ -1,1 +1,46 @@
-[]
+[
+  {
+    "id": "move_A53_1",
+    "name": "Heal",
+    "description": "Restore HP to an ally",
+    "type": "heal",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "healing = (MAA * 0.8) + (INT * 1.2) + (HP * 0.1)"
+  },
+  {
+    "id": "move_A53_2",
+    "name": "Mass Heal",
+    "description": "Restore HP to multiple allies",
+    "type": "heal",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "healing = (MAA * 0.8) + (INT * 1.2) + (HP * 0.1)"
+  },
+  {
+    "id": "move_A53_3",
+    "name": "Cleanse",
+    "description": "Remove negative status effects",
+    "type": "status_application",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "success_rate = (ACC + INT) / 2 - (target.EVA * 0.5)"
+  },
+  {
+    "id": "move_A53_4",
+    "name": "Blessing",
+    "description": "Grant protective buffs to allies",
+    "type": "buff",
+    "target": {
+      "type": "self"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "buff_value = (INT * 1.5) + (CRG * 0.5)"
+  }
+]
