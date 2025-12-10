@@ -1,0 +1,36 @@
+{
+  "name": "Rosie McFlynn",
+  "id": "G03",
+  "age": 27,
+  "species": "human",
+  "subspecies": "traveller",
+  "roles": {
+    "primary": "healer",
+    "secondary": "ally"
+  },
+  "growthCurve": "steady",
+  "weaponItem": "Blessed Rosary",
+  "matTags": [
+    "living",
+    "sentient",
+    "holy"
+  ],
+  "gang": "GGG",
+  "overview": "Rosie McFlynn tends to the wounded with prayers and poultices, the spiritual heart of the GGG.",
+  "visual_description": "Wears a worn tweed cap and taffeta vest. Carries a blessed rosary. Rosary beads hang from their belt.",
+  "vibe": "God-fearing and hard-working, with a temper when roused.",
+  "move_list": [
+    "G03_Rosie_01",
+    "G03_Rosie_02",
+    "G03_Rosie_03",
+    "G03_Rosie_04",
+    "G03_Rosie_05",
+    "G03_Rosie_06",
+    "G03_Rosie_07",
+    "G03_Rosie_08",
+    "G03_Rosie_09",
+    "G03_Rosie_10",
+    "G03_Rosie_11",
+    "G03_Rosie_12"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Colleen Ward",
+  "id": "G09",
+  "age": 24,
+  "species": "human",
+  "subspecies": "traveller",
+  "roles": {
+    "primary": "fat_trimmer",
+    "secondary": "debuffer"
+  },
+  "growthCurve": "steady",
+  "weaponItem": "Taffeta Whip",
+  "matTags": [
+    "living",
+    "sentient"
+  ],
+  "gang": "GGG",
+  "overview": "Colleen Ward cuts through enemy ranks like a scythe through wheat, a GGG reaper.",
+  "visual_description": "Wears a worn tweed cap and taffeta vest. Carries a taffeta whip. Weathered hands show years of hard labor.",
+  "vibe": "God-fearing and hard-working, with a temper when roused.",
+  "move_list": [
+    "G09_Colleen_01",
+    "G09_Colleen_02",
+    "G09_Colleen_03",
+    "G09_Colleen_04",
+    "G09_Colleen_05",
+    "G09_Colleen_06",
+    "G09_Colleen_07",
+    "G09_Colleen_08",
+    "G09_Colleen_09",
+    "G09_Colleen_10",
+    "G09_Colleen_11",
+    "G09_Colleen_12"
+  ]
+}

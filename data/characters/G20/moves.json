@@ -1,0 +1,218 @@
+[
+  {
+    "id": "G20_Siobhan_01",
+    "name": "Scavenge",
+    "description": "Finds useful items",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 1,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "buff_value = (INT * 1.00) + (CRG * 0.5)"
+  },
+  {
+    "id": "G20_Siobhan_02",
+    "name": "Quick Hands",
+    "description": "Speeds up actions",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 2,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "buff_value = (INT * 1.10) + (CRG * 0.5)"
+  },
+  {
+    "id": "G20_Siobhan_03",
+    "name": "Pilfer",
+    "description": "Steals from enemy",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 3,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 1.00) + (MAA * 0.4)"
+  },
+  {
+    "id": "G20_Siobhan_04",
+    "name": "Lucky Find",
+    "description": "Discovers treasure",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 4,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "buff_value = (INT * 1.30) + (CRG * 0.5)"
+  },
+  {
+    "id": "G20_Siobhan_05",
+    "name": "Opportunist",
+    "description": "Exploits openings",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 5,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "buff_value = (INT * 1.40) + (CRG * 0.5)"
+  },
+  {
+    "id": "G20_Siobhan_06",
+    "name": "Sleight of Hand",
+    "description": "Performs tricks",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 6,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "buff_value = (INT * 1.50) + (CRG * 0.5)"
+  },
+  {
+    "id": "G20_Siobhan_07",
+    "name": "Distract",
+    "description": "Diverts enemy attention",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 7,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 1.40) + (MAA * 0.4)"
+  },
+  {
+    "id": "G20_Siobhan_08",
+    "name": "Treasure Hunter",
+    "description": "Improves loot quality",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 8,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "buff_value = (INT * 1.70) + (CRG * 0.5)"
+  },
+  {
+    "id": "G20_Siobhan_09",
+    "name": "Rob",
+    "description": "Takes enemy resources",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 9,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 1.60) + (MAA * 0.4)"
+  },
+  {
+    "id": "G20_Siobhan_10",
+    "name": "Fortune's Favor",
+    "description": "Boosts luck",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 10,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "buff_value = (INT * 1.90) + (CRG * 0.5)"
+  },
+  {
+    "id": "G20_Siobhan_11",
+    "name": "Master Thief",
+    "description": "Steals while attacking",
+    "type": "mixed",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 11,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "damage = (MLA * 3.30) + (MAA * 0.8) - (target.MLD * 0.5); buff_value = (INT * 1.0)"
+  },
+  {
+    "id": "G20_Siobhan_12",
+    "name": "Grand Heist",
+    "description": "Ultimate looting maneuver",
+    "type": "mixed",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 12,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "damage = (MLA * 3.50) + (MAA * 0.8) - (target.MLD * 0.5); buff_value = (INT * 1.0)"
+  }
+]

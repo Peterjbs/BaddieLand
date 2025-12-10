@@ -1,0 +1,36 @@
+{
+  "name": "Scrapper Declan",
+  "id": "G14",
+  "age": 28,
+  "species": "human",
+  "subspecies": "traveller",
+  "roles": {
+    "primary": "bruiser",
+    "secondary": "survivor"
+  },
+  "growthCurve": "quick_learner",
+  "weaponItem": "Scrap Chain",
+  "matTags": [
+    "living",
+    "sentient",
+    "metallic"
+  ],
+  "gang": "GGG",
+  "overview": "Scrapper Declan is a relentless brawler from the GGG, known for bare-knuckle prowess and unwavering grit.",
+  "visual_description": "Wears a flat cap and tweed jacket. Carries a scrap chain. Weathered hands show years of hard labor.",
+  "vibe": "Rough around the edges but loyal to the bone. Salt of the earth.",
+  "move_list": [
+    "G14_Declan_01",
+    "G14_Declan_02",
+    "G14_Declan_03",
+    "G14_Declan_04",
+    "G14_Declan_05",
+    "G14_Declan_06",
+    "G14_Declan_07",
+    "G14_Declan_08",
+    "G14_Declan_09",
+    "G14_Declan_10",
+    "G14_Declan_11",
+    "G14_Declan_12"
+  ]
+}

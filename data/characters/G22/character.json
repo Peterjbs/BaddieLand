@@ -1,0 +1,35 @@
+{
+  "name": "Wild Ciara",
+  "id": "G22",
+  "age": 23,
+  "species": "human",
+  "subspecies": "traveller",
+  "roles": {
+    "primary": "fat_trimmer",
+    "secondary": "assassin"
+  },
+  "growthCurve": "late_bloomer",
+  "weaponItem": "Tweed Garrote",
+  "matTags": [
+    "living",
+    "sentient"
+  ],
+  "gang": "GGG",
+  "overview": "Wild Ciara cuts through enemy ranks like a scythe through wheat, a GGG reaper.",
+  "visual_description": "Wears a tattered cap and wool coat. Carries a tweed garrote. Weathered hands show years of hard labor.",
+  "vibe": "Quick with a proverb and quicker with their fists when needed.",
+  "move_list": [
+    "G22_Ciara_01",
+    "G22_Ciara_02",
+    "G22_Ciara_03",
+    "G22_Ciara_04",
+    "G22_Ciara_05",
+    "G22_Ciara_06",
+    "G22_Ciara_07",
+    "G22_Ciara_08",
+    "G22_Ciara_09",
+    "G22_Ciara_10",
+    "G22_Ciara_11",
+    "G22_Ciara_12"
+  ]
+}

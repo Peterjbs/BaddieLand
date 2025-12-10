@@ -1,0 +1,36 @@
+{
+  "name": "Fierce Bridget",
+  "id": "G05",
+  "age": 31,
+  "species": "human",
+  "subspecies": "traveller",
+  "roles": {
+    "primary": "assassin",
+    "secondary": "survivor"
+  },
+  "growthCurve": "quick_learner",
+  "weaponItem": "Sharpened Shears",
+  "matTags": [
+    "living",
+    "sentient",
+    "metallic"
+  ],
+  "gang": "GGG",
+  "overview": "Fierce Bridget strikes like a shadow at twilight, precise and deadly in service to the GGG.",
+  "visual_description": "Wears a flat cap and tweed jacket. Carries a sharpened shears. Weathered hands show years of hard labor.",
+  "vibe": "Carries the weight of family honor and tribal pride.",
+  "move_list": [
+    "G05_Bridget_01",
+    "G05_Bridget_02",
+    "G05_Bridget_03",
+    "G05_Bridget_04",
+    "G05_Bridget_05",
+    "G05_Bridget_06",
+    "G05_Bridget_07",
+    "G05_Bridget_08",
+    "G05_Bridget_09",
+    "G05_Bridget_10",
+    "G05_Bridget_11",
+    "G05_Bridget_12"
+  ]
+}

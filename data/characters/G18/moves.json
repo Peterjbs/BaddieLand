@@ -1,0 +1,326 @@
+[
+  {
+    "id": "G18_Dermot_01",
+    "name": "Encourage",
+    "description": "Boosts ally morale and stats",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 1,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "buff_value = (INT * 1.00) + (CRG * 0.5)"
+  },
+  {
+    "id": "G18_Dermot_02",
+    "name": "Rally",
+    "description": "Inspires nearby allies",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 2,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "buff_value = (INT * 1.10) + (CRG * 0.5)"
+  },
+  {
+    "id": "G18_Dermot_03",
+    "name": "Share Strength",
+    "description": "Transfers power to ally",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 3,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "buff_value = (INT * 1.20) + (CRG * 0.5)"
+  },
+  {
+    "id": "G18_Dermot_04",
+    "name": "Coordinated Strike",
+    "description": "Improves team coordination",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 4,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "buff_value = (INT * 1.30) + (CRG * 0.5)"
+  },
+  {
+    "id": "G18_Dermot_05",
+    "name": "Motivate",
+    "description": "Increases ally effectiveness",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 5,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "buff_value = (INT * 1.40) + (CRG * 0.5)"
+  },
+  {
+    "id": "G18_Dermot_06",
+    "name": "Unite",
+    "description": "Links allies for shared power",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 6,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "buff_value = (INT * 1.50) + (CRG * 0.5)"
+  },
+  {
+    "id": "G18_Dermot_07",
+    "name": "Inspire",
+    "description": "Raises all ally attributes",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 7,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "buff_value = (INT * 1.60) + (CRG * 0.5)"
+  },
+  {
+    "id": "G18_Dermot_08",
+    "name": "Guardian Angel",
+    "description": "Protects chosen ally",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 8,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "buff_value = (INT * 1.70) + (CRG * 0.5)"
+  },
+  {
+    "id": "G18_Dermot_09",
+    "name": "Team Boost",
+    "description": "Enhances entire team",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 9,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "buff_value = (INT * 1.80) + (CRG * 0.5)"
+  },
+  {
+    "id": "G18_Dermot_10",
+    "name": "Brotherhood",
+    "description": "Creates powerful ally bonds",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 10,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "buff_value = (INT * 1.90) + (CRG * 0.5)"
+  },
+  {
+    "id": "G18_Dermot_11",
+    "name": "Champion's Call",
+    "description": "Maximizes ally potential",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 11,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "buff_value = (INT * 2.00) + (CRG * 0.5)"
+  },
+  {
+    "id": "G18_Dermot_12",
+    "name": "Unity of Purpose",
+    "description": "Ultimate team empowerment",
+    "type": "mixed",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 12,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "damage = (MLA * 3.50) + (MAA * 0.8) - (target.MLD * 0.5); buff_value = (INT * 1.0)"
+  }
+]

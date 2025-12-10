@@ -1,0 +1,266 @@
+[
+  {
+    "id": "G21_Cormac_01",
+    "name": "Entangle",
+    "description": "Restricts enemy movement",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 1,
+    "target_mats": [
+      {
+        "tag": "plant",
+        "multiplier": 1.4
+      },
+      {
+        "tag": "wooden",
+        "multiplier": 1.3
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 0.80) + (MAA * 0.4)"
+  },
+  {
+    "id": "G21_Cormac_02",
+    "name": "Slow",
+    "description": "Reduces enemy speed",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 2,
+    "target_mats": [
+      {
+        "tag": "plant",
+        "multiplier": 1.4
+      },
+      {
+        "tag": "wooden",
+        "multiplier": 1.3
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 0.90) + (MAA * 0.4)"
+  },
+  {
+    "id": "G21_Cormac_03",
+    "name": "Confusion",
+    "description": "Disorients the target",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 3,
+    "target_mats": [
+      {
+        "tag": "plant",
+        "multiplier": 1.4
+      },
+      {
+        "tag": "wooden",
+        "multiplier": 1.3
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 1.00) + (MAA * 0.4)"
+  },
+  {
+    "id": "G21_Cormac_04",
+    "name": "Root",
+    "description": "Immobilizes enemy",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 4,
+    "target_mats": [
+      {
+        "tag": "plant",
+        "multiplier": 1.4
+      },
+      {
+        "tag": "wooden",
+        "multiplier": 1.3
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 1.10) + (MAA * 0.4)"
+  },
+  {
+    "id": "G21_Cormac_05",
+    "name": "Disorient",
+    "description": "Scrambles enemy senses",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 5,
+    "target_mats": [
+      {
+        "tag": "plant",
+        "multiplier": 1.4
+      },
+      {
+        "tag": "wooden",
+        "multiplier": 1.3
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 1.20) + (MAA * 0.4)"
+  },
+  {
+    "id": "G21_Cormac_06",
+    "name": "Stagger",
+    "description": "Disrupts enemy rhythm",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 6,
+    "target_mats": [
+      {
+        "tag": "plant",
+        "multiplier": 1.4
+      },
+      {
+        "tag": "wooden",
+        "multiplier": 1.3
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 1.30) + (MAA * 0.4)"
+  },
+  {
+    "id": "G21_Cormac_07",
+    "name": "Paralyze",
+    "description": "Temporarily freezes target",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 7,
+    "target_mats": [
+      {
+        "tag": "plant",
+        "multiplier": 1.4
+      },
+      {
+        "tag": "wooden",
+        "multiplier": 1.3
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 1.40) + (MAA * 0.4)"
+  },
+  {
+    "id": "G21_Cormac_08",
+    "name": "Mind Control",
+    "description": "Briefly controls enemy actions",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 8,
+    "target_mats": [
+      {
+        "tag": "plant",
+        "multiplier": 1.4
+      },
+      {
+        "tag": "wooden",
+        "multiplier": 1.3
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 1.50) + (MAA * 0.4)"
+  },
+  {
+    "id": "G21_Cormac_09",
+    "name": "Mass Slow",
+    "description": "Slows multiple enemies",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 9,
+    "target_mats": [
+      {
+        "tag": "plant",
+        "multiplier": 1.4
+      },
+      {
+        "tag": "wooden",
+        "multiplier": 1.3
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 1.60) + (MAA * 0.4)"
+  },
+  {
+    "id": "G21_Cormac_10",
+    "name": "Lockdown",
+    "description": "Completely stops enemy",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 10,
+    "target_mats": [
+      {
+        "tag": "plant",
+        "multiplier": 1.4
+      },
+      {
+        "tag": "wooden",
+        "multiplier": 1.3
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 1.70) + (MAA * 0.4)"
+  },
+  {
+    "id": "G21_Cormac_11",
+    "name": "Chaos Field",
+    "description": "Area of confusion",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 11,
+    "target_mats": [
+      {
+        "tag": "plant",
+        "multiplier": 1.4
+      },
+      {
+        "tag": "wooden",
+        "multiplier": 1.3
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 1.80) + (MAA * 0.4)"
+  },
+  {
+    "id": "G21_Cormac_12",
+    "name": "Total Domination",
+    "description": "Ultimate control over battlefield",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 12,
+    "target_mats": [
+      {
+        "tag": "plant",
+        "multiplier": 1.4
+      },
+      {
+        "tag": "wooden",
+        "multiplier": 1.3
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 1.90) + (MAA * 0.4)"
+  }
+]

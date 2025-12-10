@@ -1,0 +1,37 @@
+{
+  "name": "Saint Mary",
+  "id": "G13",
+  "age": 45,
+  "species": "human",
+  "subspecies": "traveller",
+  "roles": {
+    "primary": "healer",
+    "secondary": "ally"
+  },
+  "growthCurve": "steady",
+  "weaponItem": "Holy Water",
+  "matTags": [
+    "living",
+    "sentient",
+    "holy",
+    "water"
+  ],
+  "gang": "GGG",
+  "overview": "Saint Mary tends to the wounded with prayers and poultices, the spiritual heart of the GGG.",
+  "visual_description": "Wears a tattered cap and wool coat. Carries a holy water. Rosary beads hang from their belt.",
+  "vibe": "Smells of peat smoke and determination.",
+  "move_list": [
+    "G13_Mary_01",
+    "G13_Mary_02",
+    "G13_Mary_03",
+    "G13_Mary_04",
+    "G13_Mary_05",
+    "G13_Mary_06",
+    "G13_Mary_07",
+    "G13_Mary_08",
+    "G13_Mary_09",
+    "G13_Mary_10",
+    "G13_Mary_11",
+    "G13_Mary_12"
+  ]
+}

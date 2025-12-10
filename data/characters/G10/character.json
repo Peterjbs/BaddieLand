@@ -1,0 +1,37 @@
+{
+  "name": "Iron Mick",
+  "id": "G10",
+  "age": 38,
+  "species": "human",
+  "subspecies": "traveller",
+  "roles": {
+    "primary": "tank",
+    "secondary": "bruiser"
+  },
+  "growthCurve": "strong_starter",
+  "weaponItem": "Anvil Hammer",
+  "matTags": [
+    "living",
+    "sentient",
+    "metallic",
+    "fire"
+  ],
+  "gang": "GGG",
+  "overview": "Iron Mick stands as an immovable pillar of the GGG, absorbing punishment like peat absorbs rain.",
+  "visual_description": "Wears a tattered cap and wool coat. Carries a anvil hammer. Weathered hands show years of hard labor.",
+  "vibe": "Quick with a proverb and quicker with their fists when needed.",
+  "move_list": [
+    "G10_Mick_01",
+    "G10_Mick_02",
+    "G10_Mick_03",
+    "G10_Mick_04",
+    "G10_Mick_05",
+    "G10_Mick_06",
+    "G10_Mick_07",
+    "G10_Mick_08",
+    "G10_Mick_09",
+    "G10_Mick_10",
+    "G10_Mick_11",
+    "G10_Mick_12"
+  ]
+}

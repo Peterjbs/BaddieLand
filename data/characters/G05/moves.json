@@ -1,0 +1,218 @@
+[
+  {
+    "id": "G05_Bridget_01",
+    "name": "Quick Slash",
+    "description": "A fast precise cut",
+    "type": "melee_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 1,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "damage = (MLA * 1.00) + (ACC * 0.5) - (target.MLD * 0.7)"
+  },
+  {
+    "id": "G05_Bridget_02",
+    "name": "Shadow Step",
+    "description": "Moves into advantageous position",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 2,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "buff_value = (INT * 1.10) + (CRG * 0.5)"
+  },
+  {
+    "id": "G05_Bridget_03",
+    "name": "Vital Strike",
+    "description": "Targets weak points for critical damage",
+    "type": "melee_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 3,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "damage = (MLA * 1.30) + (ACC * 0.5) - (target.MLD * 0.7)"
+  },
+  {
+    "id": "G05_Bridget_04",
+    "name": "Smoke Bomb",
+    "description": "Obscures vision and confuses enemies",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 4,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 1.10) + (MAA * 0.4)"
+  },
+  {
+    "id": "G05_Bridget_05",
+    "name": "Backstab",
+    "description": "Strikes from behind for massive damage",
+    "type": "melee_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 5,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "damage = (MLA * 1.60) + (ACC * 0.5) - (target.MLD * 0.7)"
+  },
+  {
+    "id": "G05_Bridget_06",
+    "name": "Evasive Maneuver",
+    "description": "Increases dodge chance",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 6,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "buff_value = (INT * 1.50) + (CRG * 0.5)"
+  },
+  {
+    "id": "G05_Bridget_07",
+    "name": "Poison Blade",
+    "description": "Applies toxin to weapon",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 7,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 1.40) + (MAA * 0.4)"
+  },
+  {
+    "id": "G05_Bridget_08",
+    "name": "Silent Kill",
+    "description": "A swift, deadly strike",
+    "type": "melee_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 8,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "damage = (MLA * 2.05) + (ACC * 0.5) - (target.MLD * 0.7)"
+  },
+  {
+    "id": "G05_Bridget_09",
+    "name": "Vanish",
+    "description": "Becomes nearly invisible",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 9,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "buff_value = (INT * 1.80) + (CRG * 0.5)"
+  },
+  {
+    "id": "G05_Bridget_10",
+    "name": "Execution",
+    "description": "Finishes weakened targets",
+    "type": "melee_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 10,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "damage = (MLA * 2.35) + (ACC * 0.5) - (target.MLD * 0.7)"
+  },
+  {
+    "id": "G05_Bridget_11",
+    "name": "Death Mark",
+    "description": "Marks target for increased damage",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 11,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 1.80) + (MAA * 0.4)"
+  },
+  {
+    "id": "G05_Bridget_12",
+    "name": "Perfect Assassination",
+    "description": "Ultimate killing blow",
+    "type": "melee_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 12,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "damage = (MLA * 2.65) + (ACC * 0.5) - (target.MLD * 0.7)"
+  }
+]

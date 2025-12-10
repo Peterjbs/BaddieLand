@@ -1,0 +1,38 @@
+{
+  "name": "Boss O'Brien",
+  "id": "G25",
+  "age": 47,
+  "species": "human",
+  "subspecies": "traveller",
+  "roles": {
+    "primary": "tank",
+    "secondary": "ally",
+    "tertiary": "bruiser"
+  },
+  "growthCurve": "strong_starter",
+  "weaponItem": "Crowned Shillelagh",
+  "matTags": [
+    "living",
+    "sentient",
+    "wooden",
+    "holy"
+  ],
+  "gang": "GGG",
+  "overview": "Boss O'Brien stands as an immovable pillar of the GGG, absorbing punishment like peat absorbs rain.",
+  "visual_description": "Wears a tattered cap and wool coat. Carries a crowned shillelagh. Rosary beads hang from their belt.",
+  "vibe": "Smells of peat smoke and determination.",
+  "move_list": [
+    "G25_O'Brien_01",
+    "G25_O'Brien_02",
+    "G25_O'Brien_03",
+    "G25_O'Brien_04",
+    "G25_O'Brien_05",
+    "G25_O'Brien_06",
+    "G25_O'Brien_07",
+    "G25_O'Brien_08",
+    "G25_O'Brien_09",
+    "G25_O'Brien_10",
+    "G25_O'Brien_11",
+    "G25_O'Brien_12"
+  ]
+}

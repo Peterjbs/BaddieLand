@@ -1,0 +1,326 @@
+[
+  {
+    "id": "G03_Rosie_01",
+    "name": "Blessing",
+    "description": "Restores health with a prayer",
+    "type": "heal",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 1,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "heal = (MAA * 1.20) + (INT * 0.8)"
+  },
+  {
+    "id": "G03_Rosie_02",
+    "name": "Purify",
+    "description": "Removes ailments and heals",
+    "type": "heal",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 2,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "heal = (MAA * 1.40) + (INT * 0.8)"
+  },
+  {
+    "id": "G03_Rosie_03",
+    "name": "Divine Shield",
+    "description": "Protects ally with holy power",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 3,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "buff_value = (INT * 1.20) + (CRG * 0.5)"
+  },
+  {
+    "id": "G03_Rosie_04",
+    "name": "Mass Heal",
+    "description": "Heals multiple allies",
+    "type": "heal",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 4,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "heal = (MAA * 1.80) + (INT * 0.8)"
+  },
+  {
+    "id": "G03_Rosie_05",
+    "name": "Sacred Touch",
+    "description": "Channel healing energy",
+    "type": "heal",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 5,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "heal = (MAA * 2.00) + (INT * 0.8)"
+  },
+  {
+    "id": "G03_Rosie_06",
+    "name": "Sanctuary",
+    "description": "Creates a protective zone",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 6,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "buff_value = (INT * 1.50) + (CRG * 0.5)"
+  },
+  {
+    "id": "G03_Rosie_07",
+    "name": "Restoration",
+    "description": "Powerful targeted heal",
+    "type": "heal",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 7,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "heal = (MAA * 2.40) + (INT * 0.8)"
+  },
+  {
+    "id": "G03_Rosie_08",
+    "name": "Holy Light",
+    "description": "Radiates healing energy",
+    "type": "heal",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 8,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "heal = (MAA * 2.60) + (INT * 0.8)"
+  },
+  {
+    "id": "G03_Rosie_09",
+    "name": "Miracle",
+    "description": "Revives the heavily wounded",
+    "type": "heal",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 9,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "heal = (MAA * 2.80) + (INT * 0.8)"
+  },
+  {
+    "id": "G03_Rosie_10",
+    "name": "Grace",
+    "description": "Grants divine protection",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 10,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "buff_value = (INT * 1.90) + (CRG * 0.5)"
+  },
+  {
+    "id": "G03_Rosie_11",
+    "name": "Redemption",
+    "description": "Heals and cleanses",
+    "type": "heal",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 11,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "heal = (MAA * 3.20) + (INT * 0.8)"
+  },
+  {
+    "id": "G03_Rosie_12",
+    "name": "Divine Intervention",
+    "description": "Ultimate healing and protection",
+    "type": "mixed",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 12,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "damage = (MLA * 3.50) + (MAA * 0.8) - (target.MLD * 0.5); buff_value = (INT * 1.0)"
+  }
+]
