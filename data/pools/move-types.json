@@ -1,0 +1,52 @@
+{
+  "move_types": {
+    "description": "Categories for Move Generation",
+    "values": [
+      {
+        "id": "melee_attack",
+        "name": "Melee Attack",
+        "description": "Physical contact damage"
+      },
+      {
+        "id": "ranged_attack",
+        "name": "Ranged Attack",
+        "description": "Projectile or thrown weapon damage"
+      },
+      {
+        "id": "magic_attack",
+        "name": "Magic Attack",
+        "description": "Spell or energy damage"
+      },
+      {
+        "id": "status_application",
+        "name": "Status Application",
+        "description": "Applies a State (e.g., Poison, Stun)"
+      },
+      {
+        "id": "heal",
+        "name": "Heal",
+        "description": "Restores HP"
+      },
+      {
+        "id": "buff",
+        "name": "Buff",
+        "description": "Improves Stats"
+      },
+      {
+        "id": "debuff",
+        "name": "Debuff",
+        "description": "Reduces Stats"
+      },
+      {
+        "id": "trap_hazard",
+        "name": "Trap/Hazard",
+        "description": "Creates an environmental effect on the grid"
+      },
+      {
+        "id": "mixed",
+        "name": "Mixed",
+        "description": "Combination of types"
+      }
+    ]
+  }
+}

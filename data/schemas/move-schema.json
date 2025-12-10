@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Move Schema",
+  "description": "Data structure for move/ability entities in BaddieLand RPG",
+  "type": "object",
+  "required": ["id", "name", "description", "type", "target", "learned_at_level", "effect_algorithm"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Alphanumeric identifier of the Move"
+    },
+    "name": {
+      "type": "string",
+      "description": "Player-facing name of the move"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the move's effect"
+    },
+    "type": {
+      "type": "string",
+      "description": "Selected from Move Types Pool",
+      "enum": ["melee_attack", "ranged_attack", "magic_attack", "status_application", "heal", "buff", "debuff", "trap_hazard", "mixed"]
+    },
+    "target": {
+      "type": "object",
+      "description": "Target specification for the move",
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["enemy", "enemies_in_range", "random_enemies", "ally", "self", "environment", "all"]
+        },
+        "count": {
+          "type": "integer",
+          "description": "Number of targets (for enemies_in_range or random_enemies)",
+          "minimum": 1
+        }
+      }
+    },
+    "learned_at_level": {
+      "type": "integer",
+      "description": "LaL: Learned at Level (1 for initial 4 moves, then 2-10)",
+      "minimum": 1,
+      "maximum": 10
+    },
+    "target_mats": {
+      "type": "array",
+      "description": "Array of MaTs that determine the effect of this move if present on target",
+      "items": {
+        "type": "object",
+        "required": ["tag", "multiplier"],
+        "properties": {
+          "tag": {
+            "type": "string",
+            "enum": ["living", "undead", "construct", "magic", "feral", "sentient", "mindless", "flying", "no_legs", "non_corporeal", "saah_small", "saah_big", "fire", "water", "air", "earth", "electric", "plant", "metallic", "wooden", "holy", "dark", "shadow", "blood", "ice"]
+          },
+          "multiplier": {
+            "type": "number",
+            "description": "Damage/effect multiplier when tag is present"
+          }
+        }
+      }
+    },
+    "target_maecs": {
+      "type": "array",
+      "description": "Array of MaECs that affect this move",
+      "items": {
+        "type": "object",
+        "required": ["condition", "multiplier"],
+        "properties": {
+          "condition": {
+            "type": "string",
+            "enum": ["sunlight", "moonlight", "rain", "heavy_rain", "wind", "fog", "urban", "nature", "water_terrain", "sacred_ground", "heatwave", "blizzard", "sandstorm", "indoors", "underground"]
+          },
+          "multiplier": {
+            "type": "number",
+            "description": "Effect multiplier when condition is active"
+          }
+        }
+      }
+    },
+    "effect_algorithm": {
+      "type": "string",
+      "description": "Mathematical formula defined by generation agent (Setter Logic)"
+    }
+  }
+}

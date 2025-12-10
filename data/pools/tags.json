@@ -1,0 +1,85 @@
+{
+  "tags": {
+    "description": "MaT (Multiplier Affecting Tags) - Descriptors defining fundamental nature and specific multipliers",
+    "categories": {
+      "nature": {
+        "description": "Fundamental entity nature",
+        "values": ["living", "undead", "construct", "magic", "feral", "sentient", "mindless"]
+      },
+      "physical": {
+        "description": "Physical characteristics",
+        "values": ["flying", "no_legs", "non_corporeal", "saah_small", "saah_big"]
+      },
+      "elemental": {
+        "description": "Elemental affinities",
+        "values": ["fire", "water", "air", "earth", "electric", "plant", "ice"]
+      },
+      "material": {
+        "description": "Material composition",
+        "values": ["metallic", "wooden"]
+      },
+      "alignment": {
+        "description": "Spiritual alignment",
+        "values": ["holy", "dark", "shadow"]
+      },
+      "other": {
+        "description": "Other special affinities",
+        "values": ["blood"]
+      }
+    },
+    "all_tags": [
+      "living",
+      "undead",
+      "construct",
+      "magic",
+      "feral",
+      "sentient",
+      "mindless",
+      "flying",
+      "no_legs",
+      "non_corporeal",
+      "saah_small",
+      "saah_big",
+      "fire",
+      "water",
+      "air",
+      "earth",
+      "electric",
+      "plant",
+      "metallic",
+      "wooden",
+      "holy",
+      "dark",
+      "shadow",
+      "blood",
+      "ice"
+    ],
+    "tag_details": {
+      "living": "Biological entity",
+      "undead": "Reanimated or necrotic entity",
+      "construct": "Artificial or inorganic entity",
+      "magic": "Entity comprised of or heavily reliant on arcane energy",
+      "feral": "Wild, untamed, or animalistic nature",
+      "sentient": "Human-level intelligence or higher",
+      "mindless": "Lacking higher thought processes",
+      "flying": "Entity hovers or uses wings; not grounded",
+      "no_legs": "Entity moves via slithering, floating, or swimming; no footfalls",
+      "non_corporeal": "Entity lacks a solid physical form",
+      "saah_small": "Significantly Below Average Height - Smaller hitbox, harder to hit",
+      "saah_big": "Significantly Above Average Height - Larger hitbox, immune to knockback from smaller units",
+      "fire": "Affinity with heat/magma",
+      "water": "Affinity with liquid/ice",
+      "air": "Affinity with wind/gas",
+      "earth": "Affinity with stone/mud/solid matter",
+      "electric": "Affinity with lightning/energy",
+      "plant": "Affinity with flora/nature",
+      "metallic": "Made of metal",
+      "wooden": "Made of wood",
+      "holy": "Divine or sacred alignment",
+      "dark": "Cursed or necrotic alignment",
+      "shadow": "Affinity with darkness/void",
+      "blood": "Affinity with vital fluids",
+      "ice": "Affinity with cold/frost"
+    }
+  }
+}
