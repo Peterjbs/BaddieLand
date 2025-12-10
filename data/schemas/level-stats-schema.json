@@ -1,0 +1,121 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Level Statistics Schema",
+  "description": "Individual metrics for character level statistics in BaddieLand RPG",
+  "type": "object",
+  "required": ["level", "hp", "bbs", "spd", "eva", "acc", "mla", "rga", "maa", "spa", "mld", "rgd", "mad", "spd_def", "int", "agg", "crg", "xpa", "xpt"],
+  "properties": {
+    "level": {
+      "type": "integer",
+      "description": "LVL: Level (Range 1-10)",
+      "minimum": 1,
+      "maximum": 10
+    },
+    "hp": {
+      "type": "integer",
+      "description": "HP: Health Points",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "bbs": {
+      "type": "integer",
+      "description": "BBS: Bounce Back Score",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "spd": {
+      "type": "integer",
+      "description": "SPD: Speed",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "eva": {
+      "type": "integer",
+      "description": "EVA: Evasiveness",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "acc": {
+      "type": "integer",
+      "description": "ACC: Accuracy",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "mla": {
+      "type": "integer",
+      "description": "MLA: Melee Attack value",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "rga": {
+      "type": "integer",
+      "description": "RGA: Ranged Attack value",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "maa": {
+      "type": "integer",
+      "description": "MAA: Magic Attack value",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "spa": {
+      "type": "integer",
+      "description": "SPA: Special Attack value",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "mld": {
+      "type": "integer",
+      "description": "MLD: Melee Defense value",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "rgd": {
+      "type": "integer",
+      "description": "RGD: Ranged Defense value",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "mad": {
+      "type": "integer",
+      "description": "MAD: Magic Defense value",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "spd_def": {
+      "type": "integer",
+      "description": "SPD: Special Defense value",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "int": {
+      "type": "integer",
+      "description": "INT: Intuition",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "agg": {
+      "type": "integer",
+      "description": "AGG: Aggression",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "crg": {
+      "type": "integer",
+      "description": "CRG: Courage",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "xpa": {
+      "type": "integer",
+      "description": "XPA: XP Accumulated",
+      "minimum": 0
+    },
+    "xpt": {
+      "type": "integer",
+      "description": "XPT: XP Threshold (to reach next level)",
+      "minimum": 1
+    }
+  }
+}

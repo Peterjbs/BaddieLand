@@ -1,0 +1,48 @@
+{
+  "character_id": 1,
+  "character_name": "Example Warrior",
+  "level_stats": [
+    {
+      "level": 1,
+      "hp": 50,
+      "bbs": 30,
+      "spd": 40,
+      "eva": 25,
+      "acc": 60,
+      "mla": 55,
+      "rga": 20,
+      "maa": 10,
+      "spa": 15,
+      "mld": 45,
+      "rgd": 30,
+      "mad": 20,
+      "spd_def": 25,
+      "int": 40,
+      "agg": 60,
+      "crg": 70,
+      "xpa": 0,
+      "xpt": 100
+    },
+    {
+      "level": 2,
+      "hp": 55,
+      "bbs": 32,
+      "spd": 42,
+      "eva": 27,
+      "acc": 62,
+      "mla": 58,
+      "rga": 22,
+      "maa": 11,
+      "spa": 16,
+      "mld": 47,
+      "rgd": 32,
+      "mad": 21,
+      "spd_def": 26,
+      "int": 42,
+      "agg": 61,
+      "crg": 71,
+      "xpa": 100,
+      "xpt": 250
+    }
+  ]
+}

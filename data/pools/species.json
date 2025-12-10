@@ -1,0 +1,101 @@
+{
+  "species": {
+    "description": "SPECIES (VISUAL & VIBE POOL) - Grouped by visual interchangeability for Asset Generation",
+    "groups": [
+      {
+        "id": "vampire_dhampir",
+        "name": "Vampire / Dhampir",
+        "visual_description": "Pale, elegant, fangs, gothic or tactical attire, red/black motifs"
+      },
+      {
+        "id": "skeleton",
+        "name": "Skeleton",
+        "visual_description": "Visible bones, empty sockets, potentially wearing armor or streetwear"
+      },
+      {
+        "id": "reanimated",
+        "name": "Reanimated (Zombie / Ghoul / Corpse)",
+        "visual_description": "Decaying flesh, grey/green skin tones, ragged clothing, shuffling posture"
+      },
+      {
+        "id": "spirits",
+        "name": "Spirits (Ghost / Banshee / Wraith / Rusalka / Shadow Demon)",
+        "visual_description": "Translucent, glowing, floating, trailing vapors, spectral appearance, silhouettes"
+      },
+      {
+        "id": "elementals",
+        "name": "Elementals (Stone / Ice / Fire / Air / Water / Blood / Plant / Slime / Peat / Asphalt / Bubblegum / Void)",
+        "visual_description": "Body made entirely of the specified substance, lacking standard biology, abstract shapes or humanoid approximations",
+        "subtypes": ["stone", "ice", "fire", "air", "water", "blood", "plant", "slime", "peat", "asphalt", "bubblegum", "void"]
+      },
+      {
+        "id": "animal_hybrids",
+        "name": "Animal Hybrids (Werewolf / Cat / Lion / Fox / Horse / Minotaur / Lizardwoman / Frogman / Dog-Man / Parrot-Man / Kenku / Spider-Man / Spider-Woman)",
+        "visual_description": "Anthropomorphic blend of human and specific animal, fur/scales/feathers, extra limbs, animal head or features on humanoid frame",
+        "subtypes": ["werewolf", "cat", "lion", "fox", "horse", "minotaur", "lizardwoman", "frogman", "dog_man", "parrot_man", "kenku", "spider_man", "spider_woman"]
+      },
+      {
+        "id": "constructs",
+        "name": "Constructs (Golem [Scrap/Flesh/Marble/Mud/Gum] / Statue / Gargoyle / Mimic)",
+        "visual_description": "Artificial appearance, visible joints/seams, made of inorganic material (metal, stone, trash, flesh-staples), rigid or mechanical movement",
+        "subtypes": ["golem_scrap", "golem_flesh", "golem_marble", "golem_mud", "golem_gum", "statue", "gargoyle", "mimic"]
+      },
+      {
+        "id": "small_fae",
+        "name": "Small Fae (Pixie / Sprite / Leprechaun / Goblin)",
+        "visual_description": "Diminutive stature, oversized features (ears/eyes), wings (if applicable), mischievous or magical aura",
+        "subtypes": ["pixie", "sprite", "leprechaun", "goblin"]
+      },
+      {
+        "id": "high_fae",
+        "name": "High Fae (Elf / Drow / Dryad / Quickling)",
+        "visual_description": "Tall, slender, angular features, pointed ears, elegant or nature-integrated attire",
+        "subtypes": ["elf", "drow", "dryad", "quickling"]
+      },
+      {
+        "id": "hags_witches",
+        "name": "Hags & Witches",
+        "visual_description": "Crones or magical practitioners, carrying mystical implements, surrounded by aura or runes"
+      },
+      {
+        "id": "giants",
+        "name": "Giants (Ogre / Troll / Giant / Fomor)",
+        "visual_description": "Oversized, muscular or corpulent, brutish features, heavy/clumsy visual weight",
+        "subtypes": ["ogre", "troll", "giant", "fomor"]
+      },
+      {
+        "id": "dwarf",
+        "name": "Dwarf",
+        "visual_description": "Short, stout, broad, grounded stance, often bearded or masked"
+      },
+      {
+        "id": "merfolk",
+        "name": "Merfolk (Mermaid / Siren / Merman)",
+        "visual_description": "Upper body humanoid, lower body fish/aquatic tail, aquatic accessories",
+        "subtypes": ["mermaid", "siren", "merman"]
+      },
+      {
+        "id": "reptilian",
+        "name": "Reptilian (Gorgon / Basilisk)",
+        "visual_description": "Snake-hair or reptilian features, snake lower body (if Gorgon), predatory gaze",
+        "subtypes": ["gorgon", "basilisk"]
+      },
+      {
+        "id": "preserved",
+        "name": "Preserved (Bog Body)",
+        "visual_description": "Leathery skin, peat-stained, ancient but intact features"
+      },
+      {
+        "id": "harpy_angel",
+        "name": "Harpy / Angel",
+        "visual_description": "Winged humanoids, avian features, divine or monstrous aesthetic",
+        "subtypes": ["harpy", "angel"]
+      },
+      {
+        "id": "poltergeist",
+        "name": "Poltergeist",
+        "visual_description": "Electronic disruption aesthetic, glitch effects"
+      }
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Character Schema",
+  "description": "Data structure for character entities in BaddieLand RPG",
+  "type": "object",
+  "required": ["name", "global_id", "tribe", "species", "roles", "growth_curve", "mat_list", "move_list"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Alphanumeric identifier for the character"
+    },
+    "global_id": {
+      "type": "integer",
+      "description": "Numeric identifier (#01-100)",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "tribe": {
+      "type": "string",
+      "description": "Group affiliation"
+    },
+    "species": {
+      "type": "string",
+      "description": "Primary classification from species pool"
+    },
+    "subspecies": {
+      "type": "string",
+      "description": "Specific variation (optional)"
+    },
+    "age": {
+      "oneOf": [
+        {
+          "type": "integer",
+          "minimum": 0
+        },
+        {
+          "type": "string"
+        }
+      ],
+      "description": "Integer or descriptor"
+    },
+    "roles": {
+      "type": "object",
+      "description": "Role allocations for the character",
+      "required": ["primary"],
+      "properties": {
+        "primary": {
+          "type": "string",
+          "enum": ["tank", "bruiser", "big_hitter", "assassin", "fat_trimmer", "healer", "ally", "debuffer", "controller", "survivor", "sniper", "looter"]
+        },
+        "secondary": {
+          "type": "string",
+          "enum": ["tank", "bruiser", "big_hitter", "assassin", "fat_trimmer", "healer", "ally", "debuffer", "controller", "survivor", "sniper", "looter"]
+        },
+        "tertiary": {
+          "type": "string",
+          "enum": ["tank", "bruiser", "big_hitter", "assassin", "fat_trimmer", "healer", "ally", "debuffer", "controller", "survivor", "sniper", "looter"]
+        }
+      }
+    },
+    "weapon_item": {
+      "type": "string",
+      "description": "Physical prop associated with character"
+    },
+    "growth_curve": {
+      "type": "string",
+      "description": "Progression trajectory type",
+      "enum": ["steady", "strong_starter", "quick_learner", "late_bloomer", "slow", "key_levels"]
+    },
+    "brand_vibe": {
+      "type": "string",
+      "description": "Short descriptive summary of character personality/aesthetic"
+    },
+    "specific_visuals": {
+      "type": "string",
+      "description": "Override instructions for visual generation"
+    },
+    "mat_list": {
+      "type": "array",
+      "description": "Collection of active Multiplier Affecting Tags",
+      "items": {
+        "type": "string",
+        "enum": ["living", "undead", "construct", "magic", "feral", "sentient", "mindless", "flying", "no_legs", "non_corporeal", "saah_small", "saah_big", "fire", "water", "air", "earth", "electric", "plant", "metallic", "wooden", "holy", "dark", "shadow", "blood", "ice"]
+      }
+    },
+    "move_list": {
+      "type": "array",
+      "description": "Array of move IDs specific to this character",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Example Warrior",
+  "global_id": 1,
+  "tribe": "Human Defenders",
+  "species": "vampire_dhampir",
+  "subspecies": "dhampir",
+  "age": 25,
+  "roles": {
+    "primary": "bruiser",
+    "secondary": "tank"
+  },
+  "weapon_item": "Longsword",
+  "growth_curve": "steady",
+  "brand_vibe": "Noble warrior with supernatural abilities, honorable combatant",
+  "specific_visuals": "Wearing silver armor with red cape, pale skin, red eyes",
+  "mat_list": [
+    "living",
+    "sentient",
+    "saah_big"
+  ],
+  "move_list": [
+    "slash_001",
+    "defensive_stance_002",
+    "vampiric_strike_003",
+    "rallying_cry_004"
+  ]
+}

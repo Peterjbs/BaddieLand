@@ -1,0 +1,27 @@
+{
+  "id": "slash_001",
+  "name": "Slash",
+  "description": "A powerful melee strike with a blade weapon",
+  "type": "melee_attack",
+  "target": {
+    "type": "enemy"
+  },
+  "learned_at_level": 1,
+  "target_mats": [
+    {
+      "tag": "undead",
+      "multiplier": 1.2
+    },
+    {
+      "tag": "construct",
+      "multiplier": 0.8
+    }
+  ],
+  "target_maecs": [
+    {
+      "condition": "rain",
+      "multiplier": 0.9
+    }
+  ],
+  "effect_algorithm": "damage = (MLA * 1.5) + (ACC * 0.5) - (target.MLD * 0.7)"
+}
