@@ -1,0 +1,36 @@
+{
+  "name": "Whiskey Liam",
+  "id": "G12",
+  "age": 33,
+  "species": "human",
+  "subspecies": "traveller",
+  "roles": {
+    "primary": "debuffer",
+    "secondary": "controller"
+  },
+  "growthCurve": "steady",
+  "weaponItem": "Bottle & Rag",
+  "matTags": [
+    "living",
+    "sentient",
+    "fire"
+  ],
+  "gang": "GGG",
+  "overview": "Whiskey Liam weakens foes with calculated strikes and shrewd interference for the GGG.",
+  "visual_description": "Wears a worn tweed cap and taffeta vest. Carries a bottle & rag. Weathered hands show years of hard labor.",
+  "vibe": "Speaks in the old tongue, full of wit and wisdom.",
+  "move_list": [
+    "G12_Liam_01",
+    "G12_Liam_02",
+    "G12_Liam_03",
+    "G12_Liam_04",
+    "G12_Liam_05",
+    "G12_Liam_06",
+    "G12_Liam_07",
+    "G12_Liam_08",
+    "G12_Liam_09",
+    "G12_Liam_10",
+    "G12_Liam_11",
+    "G12_Liam_12"
+  ]
+}

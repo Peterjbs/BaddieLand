@@ -1,0 +1,220 @@
+[
+  {
+    "id": "G14_Declan_01",
+    "name": "Fierce Haymaker",
+    "description": "A devastating punch with all their weight behind it",
+    "type": "melee_attack",
+    "target": {
+      "type": "enemies_in_range",
+      "count": 3
+    },
+    "learned_at_level": 1,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "damage = (MLA * 1.00) + (ACC * 0.5) - (target.MLD * 0.7)"
+  },
+  {
+    "id": "G14_Declan_02",
+    "name": "Ground Pound",
+    "description": "Slams the ground, creating a shockwave",
+    "type": "melee_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 2,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "damage = (MLA * 1.15) + (ACC * 0.5) - (target.MLD * 0.7)"
+  },
+  {
+    "id": "G14_Declan_03",
+    "name": "Iron Guard",
+    "description": "Hardens their stance, reducing incoming damage",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 3,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "buff_value = (INT * 1.20) + (CRG * 0.5)"
+  },
+  {
+    "id": "G14_Declan_04",
+    "name": "Whirlwind Strike",
+    "description": "Spins in a circle, hitting all nearby foes",
+    "type": "melee_attack",
+    "target": {
+      "type": "enemies_in_range",
+      "count": 3
+    },
+    "learned_at_level": 4,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "damage = (MLA * 1.45) + (ACC * 0.5) - (target.MLD * 0.7)"
+  },
+  {
+    "id": "G14_Declan_05",
+    "name": "Relentless Assault",
+    "description": "A flurry of powerful blows",
+    "type": "melee_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 5,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "damage = (MLA * 1.60) + (ACC * 0.5) - (target.MLD * 0.7)"
+  },
+  {
+    "id": "G14_Declan_06",
+    "name": "Warrior's Resolve",
+    "description": "Channels inner strength to boost attacks",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 6,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "buff_value = (INT * 1.50) + (CRG * 0.5)"
+  },
+  {
+    "id": "G14_Declan_07",
+    "name": "Crushing Blow",
+    "description": "A mighty overhead strike",
+    "type": "melee_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 7,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "damage = (MLA * 1.90) + (ACC * 0.5) - (target.MLD * 0.7)"
+  },
+  {
+    "id": "G14_Declan_08",
+    "name": "Battle Fury",
+    "description": "Enters a rage, increasing damage output",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 8,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "buff_value = (INT * 1.70) + (CRG * 0.5)"
+  },
+  {
+    "id": "G14_Declan_09",
+    "name": "Bone Breaker",
+    "description": "A targeted strike at weak points",
+    "type": "melee_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 9,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "damage = (MLA * 2.20) + (ACC * 0.5) - (target.MLD * 0.7)"
+  },
+  {
+    "id": "G14_Declan_10",
+    "name": "Titan's Grip",
+    "description": "Grapples and crushes the enemy",
+    "type": "melee_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 10,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "damage = (MLA * 2.35) + (ACC * 0.5) - (target.MLD * 0.7)"
+  },
+  {
+    "id": "G14_Declan_11",
+    "name": "Unstoppable Force",
+    "description": "Charges through defenses",
+    "type": "melee_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 11,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "damage = (MLA * 2.50) + (ACC * 0.5) - (target.MLD * 0.7)"
+  },
+  {
+    "id": "G14_Declan_12",
+    "name": "Berserker Rage",
+    "description": "Ultimate fury attack with self-buff",
+    "type": "mixed",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 12,
+    "target_mats": [
+      {
+        "tag": "construct",
+        "multiplier": 0.8
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "damage = (MLA * 3.50) + (MAA * 0.8) - (target.MLD * 0.5); buff_value = (INT * 1.0)"
+  }
+]

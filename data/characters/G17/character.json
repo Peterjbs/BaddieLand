@@ -1,0 +1,36 @@
+{
+  "name": "Quick Aoife",
+  "id": "G17",
+  "age": 25,
+  "species": "human",
+  "subspecies": "traveller",
+  "roles": {
+    "primary": "assassin",
+    "secondary": "sniper"
+  },
+  "growthCurve": "quick_learner",
+  "weaponItem": "Throwing Knives",
+  "matTags": [
+    "living",
+    "sentient",
+    "metallic"
+  ],
+  "gang": "GGG",
+  "overview": "Quick Aoife strikes like a shadow at twilight, precise and deadly in service to the GGG.",
+  "visual_description": "Wears a flat cap and tweed jacket. Carries a throwing knives. Weathered hands show years of hard labor.",
+  "vibe": "Carries the weight of family honor and tribal pride.",
+  "move_list": [
+    "G17_Aoife_01",
+    "G17_Aoife_02",
+    "G17_Aoife_03",
+    "G17_Aoife_04",
+    "G17_Aoife_05",
+    "G17_Aoife_06",
+    "G17_Aoife_07",
+    "G17_Aoife_08",
+    "G17_Aoife_09",
+    "G17_Aoife_10",
+    "G17_Aoife_11",
+    "G17_Aoife_12"
+  ]
+}

@@ -1,0 +1,266 @@
+[
+  {
+    "id": "G12_Liam_01",
+    "name": "Weaken",
+    "description": "Reduces enemy attack power",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 1,
+    "target_mats": [
+      {
+        "tag": "plant",
+        "multiplier": 1.4
+      },
+      {
+        "tag": "wooden",
+        "multiplier": 1.3
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 0.80) + (MAA * 0.4)"
+  },
+  {
+    "id": "G12_Liam_02",
+    "name": "Expose",
+    "description": "Lowers enemy defenses",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 2,
+    "target_mats": [
+      {
+        "tag": "plant",
+        "multiplier": 1.4
+      },
+      {
+        "tag": "wooden",
+        "multiplier": 1.3
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 0.90) + (MAA * 0.4)"
+  },
+  {
+    "id": "G12_Liam_03",
+    "name": "Curse",
+    "description": "Applies harmful hex",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 3,
+    "target_mats": [
+      {
+        "tag": "plant",
+        "multiplier": 1.4
+      },
+      {
+        "tag": "wooden",
+        "multiplier": 1.3
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 1.00) + (MAA * 0.4)"
+  },
+  {
+    "id": "G12_Liam_04",
+    "name": "Drain",
+    "description": "Saps enemy energy",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 4,
+    "target_mats": [
+      {
+        "tag": "plant",
+        "multiplier": 1.4
+      },
+      {
+        "tag": "wooden",
+        "multiplier": 1.3
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 1.10) + (MAA * 0.4)"
+  },
+  {
+    "id": "G12_Liam_05",
+    "name": "Hex",
+    "description": "Afflicts with bad luck",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 5,
+    "target_mats": [
+      {
+        "tag": "plant",
+        "multiplier": 1.4
+      },
+      {
+        "tag": "wooden",
+        "multiplier": 1.3
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 1.20) + (MAA * 0.4)"
+  },
+  {
+    "id": "G12_Liam_06",
+    "name": "Decay",
+    "description": "Gradually weakens target",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 6,
+    "target_mats": [
+      {
+        "tag": "plant",
+        "multiplier": 1.4
+      },
+      {
+        "tag": "wooden",
+        "multiplier": 1.3
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 1.30) + (MAA * 0.4)"
+  },
+  {
+    "id": "G12_Liam_07",
+    "name": "Corrupt",
+    "description": "Spoils enemy buffs",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 7,
+    "target_mats": [
+      {
+        "tag": "plant",
+        "multiplier": 1.4
+      },
+      {
+        "tag": "wooden",
+        "multiplier": 1.3
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 1.40) + (MAA * 0.4)"
+  },
+  {
+    "id": "G12_Liam_08",
+    "name": "Poison",
+    "description": "Inflicts toxin damage over time",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 8,
+    "target_mats": [
+      {
+        "tag": "plant",
+        "multiplier": 1.4
+      },
+      {
+        "tag": "wooden",
+        "multiplier": 1.3
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 1.50) + (MAA * 0.4)"
+  },
+  {
+    "id": "G12_Liam_09",
+    "name": "Mass Weaken",
+    "description": "Debuffs multiple enemies",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 9,
+    "target_mats": [
+      {
+        "tag": "plant",
+        "multiplier": 1.4
+      },
+      {
+        "tag": "wooden",
+        "multiplier": 1.3
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 1.60) + (MAA * 0.4)"
+  },
+  {
+    "id": "G12_Liam_10",
+    "name": "Cripple",
+    "description": "Severely reduces enemy effectiveness",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 10,
+    "target_mats": [
+      {
+        "tag": "plant",
+        "multiplier": 1.4
+      },
+      {
+        "tag": "wooden",
+        "multiplier": 1.3
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 1.70) + (MAA * 0.4)"
+  },
+  {
+    "id": "G12_Liam_11",
+    "name": "Doom",
+    "description": "Marks enemy for destruction",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 11,
+    "target_mats": [
+      {
+        "tag": "plant",
+        "multiplier": 1.4
+      },
+      {
+        "tag": "wooden",
+        "multiplier": 1.3
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 1.80) + (MAA * 0.4)"
+  },
+  {
+    "id": "G12_Liam_12",
+    "name": "Total Breakdown",
+    "description": "Ultimate debuff combination",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 12,
+    "target_mats": [
+      {
+        "tag": "plant",
+        "multiplier": 1.4
+      },
+      {
+        "tag": "wooden",
+        "multiplier": 1.3
+      }
+    ],
+    "target_maecs": [],
+    "effect_algorithm": "debuff_value = (INT * 1.90) + (MAA * 0.4)"
+  }
+]

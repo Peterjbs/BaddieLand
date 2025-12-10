@@ -1,0 +1,37 @@
+{
+  "name": "Old Cormac",
+  "id": "G21",
+  "age": 71,
+  "species": "human",
+  "subspecies": "traveller",
+  "roles": {
+    "primary": "controller",
+    "secondary": "ally"
+  },
+  "growthCurve": "strong_starter",
+  "weaponItem": "Smoking Pipe",
+  "matTags": [
+    "living",
+    "sentient",
+    "fire",
+    "air"
+  ],
+  "gang": "GGG",
+  "overview": "Old Cormac manipulates the battlefield with cunning tactics, directing the GGG's forces.",
+  "visual_description": "Wears a worn tweed cap and taffeta vest. Carries a smoking pipe. Weathered hands show years of hard labor.",
+  "vibe": "God-fearing and hard-working, with a temper when roused.",
+  "move_list": [
+    "G21_Cormac_01",
+    "G21_Cormac_02",
+    "G21_Cormac_03",
+    "G21_Cormac_04",
+    "G21_Cormac_05",
+    "G21_Cormac_06",
+    "G21_Cormac_07",
+    "G21_Cormac_08",
+    "G21_Cormac_09",
+    "G21_Cormac_10",
+    "G21_Cormac_11",
+    "G21_Cormac_12"
+  ]
+}

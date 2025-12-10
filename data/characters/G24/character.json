@@ -1,0 +1,36 @@
+{
+  "name": "Lucky Niamh",
+  "id": "G24",
+  "age": 21,
+  "species": "human",
+  "subspecies": "traveller",
+  "roles": {
+    "primary": "survivor",
+    "secondary": "looter"
+  },
+  "growthCurve": "quick_learner",
+  "weaponItem": "Lucky Clover",
+  "matTags": [
+    "living",
+    "sentient",
+    "plant"
+  ],
+  "gang": "GGG",
+  "overview": "Lucky Niamh endures where others fall, slippery and resilient in the GGG's struggles.",
+  "visual_description": "Wears a worn tweed cap and taffeta vest. Carries a lucky clover. Weathered hands show years of hard labor.",
+  "vibe": "Speaks in the old tongue, full of wit and wisdom.",
+  "move_list": [
+    "G24_Niamh_01",
+    "G24_Niamh_02",
+    "G24_Niamh_03",
+    "G24_Niamh_04",
+    "G24_Niamh_05",
+    "G24_Niamh_06",
+    "G24_Niamh_07",
+    "G24_Niamh_08",
+    "G24_Niamh_09",
+    "G24_Niamh_10",
+    "G24_Niamh_11",
+    "G24_Niamh_12"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Big Joe",
+  "id": "G01",
+  "age": 34,
+  "species": "human",
+  "subspecies": "traveller",
+  "roles": {
+    "primary": "bruiser",
+    "secondary": "tank"
+  },
+  "growthCurve": "strong_starter",
+  "weaponItem": "Iron Bench",
+  "matTags": [
+    "living",
+    "sentient",
+    "metallic"
+  ],
+  "gang": "GGG",
+  "overview": "Big Joe is a relentless brawler from the GGG, known for bare-knuckle prowess and unwavering grit.",
+  "visual_description": "Wears a tattered cap and wool coat. Carries a iron bench. Weathered hands show years of hard labor.",
+  "vibe": "Smells of peat smoke and determination.",
+  "move_list": [
+    "G01_Joe_01",
+    "G01_Joe_02",
+    "G01_Joe_03",
+    "G01_Joe_04",
+    "G01_Joe_05",
+    "G01_Joe_06",
+    "G01_Joe_07",
+    "G01_Joe_08",
+    "G01_Joe_09",
+    "G01_Joe_10",
+    "G01_Joe_11",
+    "G01_Joe_12"
+  ]
+}

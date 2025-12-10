@@ -1,0 +1,35 @@
+{
+  "name": "Young Seamus",
+  "id": "G06",
+  "age": 19,
+  "species": "human",
+  "subspecies": "traveller",
+  "roles": {
+    "primary": "sniper",
+    "secondary": "assassin"
+  },
+  "growthCurve": "late_bloomer",
+  "weaponItem": "Slingshot",
+  "matTags": [
+    "living",
+    "sentient"
+  ],
+  "gang": "GGG",
+  "overview": "Young Seamus picks off targets from distance with deadly accuracy, the GGG's patient marksman.",
+  "visual_description": "Wears a worn tweed cap and taffeta vest. Carries a slingshot. Weathered hands show years of hard labor.",
+  "vibe": "Speaks in the old tongue, full of wit and wisdom.",
+  "move_list": [
+    "G06_Seamus_01",
+    "G06_Seamus_02",
+    "G06_Seamus_03",
+    "G06_Seamus_04",
+    "G06_Seamus_05",
+    "G06_Seamus_06",
+    "G06_Seamus_07",
+    "G06_Seamus_08",
+    "G06_Seamus_09",
+    "G06_Seamus_10",
+    "G06_Seamus_11",
+    "G06_Seamus_12"
+  ]
+}

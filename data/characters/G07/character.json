@@ -1,0 +1,37 @@
+{
+  "name": "Granny Nora",
+  "id": "G07",
+  "age": 68,
+  "species": "human",
+  "subspecies": "traveller",
+  "roles": {
+    "primary": "ally",
+    "secondary": "healer"
+  },
+  "growthCurve": "strong_starter",
+  "weaponItem": "Walking Stick",
+  "matTags": [
+    "living",
+    "sentient",
+    "wooden",
+    "holy"
+  ],
+  "gang": "GGG",
+  "overview": "Granny Nora bolsters their kin with wisdom and encouragement, a pillar of GGG unity.",
+  "visual_description": "Wears a tattered cap and wool coat. Carries a walking stick. Rosary beads hang from their belt.",
+  "vibe": "Smells of peat smoke and determination.",
+  "move_list": [
+    "G07_Nora_01",
+    "G07_Nora_02",
+    "G07_Nora_03",
+    "G07_Nora_04",
+    "G07_Nora_05",
+    "G07_Nora_06",
+    "G07_Nora_07",
+    "G07_Nora_08",
+    "G07_Nora_09",
+    "G07_Nora_10",
+    "G07_Nora_11",
+    "G07_Nora_12"
+  ]
+}

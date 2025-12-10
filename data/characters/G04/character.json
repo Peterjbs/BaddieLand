@@ -1,0 +1,36 @@
+{
+  "name": "Tinker Tom",
+  "id": "G04",
+  "age": 42,
+  "species": "human",
+  "subspecies": "traveller",
+  "roles": {
+    "primary": "controller",
+    "secondary": "debuffer"
+  },
+  "growthCurve": "quick_learner",
+  "weaponItem": "Peat Shovel",
+  "matTags": [
+    "living",
+    "sentient",
+    "earth"
+  ],
+  "gang": "GGG",
+  "overview": "Tinker Tom manipulates the battlefield with cunning tactics, directing the GGG's forces.",
+  "visual_description": "Wears a tattered cap and wool coat. Carries a peat shovel. Weathered hands show years of hard labor.",
+  "vibe": "Quick with a proverb and quicker with their fists when needed.",
+  "move_list": [
+    "G04_Tom_01",
+    "G04_Tom_02",
+    "G04_Tom_03",
+    "G04_Tom_04",
+    "G04_Tom_05",
+    "G04_Tom_06",
+    "G04_Tom_07",
+    "G04_Tom_08",
+    "G04_Tom_09",
+    "G04_Tom_10",
+    "G04_Tom_11",
+    "G04_Tom_12"
+  ]
+}

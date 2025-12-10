@@ -1,0 +1,37 @@
+{
+  "name": "Smithy Eoin",
+  "id": "G23",
+  "age": 36,
+  "species": "human",
+  "subspecies": "traveller",
+  "roles": {
+    "primary": "bruiser",
+    "secondary": "tank"
+  },
+  "growthCurve": "steady",
+  "weaponItem": "Forging Tongs",
+  "matTags": [
+    "living",
+    "sentient",
+    "metallic",
+    "fire"
+  ],
+  "gang": "GGG",
+  "overview": "Smithy Eoin is a relentless brawler from the GGG, known for bare-knuckle prowess and unwavering grit.",
+  "visual_description": "Wears a flat cap and tweed jacket. Carries a forging tongs. Weathered hands show years of hard labor.",
+  "vibe": "Carries the weight of family honor and tribal pride.",
+  "move_list": [
+    "G23_Eoin_01",
+    "G23_Eoin_02",
+    "G23_Eoin_03",
+    "G23_Eoin_04",
+    "G23_Eoin_05",
+    "G23_Eoin_06",
+    "G23_Eoin_07",
+    "G23_Eoin_08",
+    "G23_Eoin_09",
+    "G23_Eoin_10",
+    "G23_Eoin_11",
+    "G23_Eoin_12"
+  ]
+}

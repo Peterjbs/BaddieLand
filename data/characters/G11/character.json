@@ -1,0 +1,36 @@
+{
+  "name": "Dancing Finn",
+  "id": "G11",
+  "age": 22,
+  "species": "human",
+  "subspecies": "traveller",
+  "roles": {
+    "primary": "survivor",
+    "secondary": "controller"
+  },
+  "growthCurve": "quick_learner",
+  "weaponItem": "Dancing Clogs",
+  "matTags": [
+    "living",
+    "sentient",
+    "wooden"
+  ],
+  "gang": "GGG",
+  "overview": "Dancing Finn endures where others fall, slippery and resilient in the GGG's struggles.",
+  "visual_description": "Wears a flat cap and tweed jacket. Carries a dancing clogs. Weathered hands show years of hard labor.",
+  "vibe": "Carries the weight of family honor and tribal pride.",
+  "move_list": [
+    "G11_Finn_01",
+    "G11_Finn_02",
+    "G11_Finn_03",
+    "G11_Finn_04",
+    "G11_Finn_05",
+    "G11_Finn_06",
+    "G11_Finn_07",
+    "G11_Finn_08",
+    "G11_Finn_09",
+    "G11_Finn_10",
+    "G11_Finn_11",
+    "G11_Finn_12"
+  ]
+}

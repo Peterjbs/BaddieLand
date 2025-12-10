@@ -1,0 +1,36 @@
+{
+  "name": "Knuckles Murphy",
+  "id": "G08",
+  "age": 26,
+  "species": "human",
+  "subspecies": "traveller",
+  "roles": {
+    "primary": "bruiser",
+    "secondary": "big_hitter"
+  },
+  "growthCurve": "steady",
+  "weaponItem": "Brass Knuckles",
+  "matTags": [
+    "living",
+    "sentient",
+    "metallic"
+  ],
+  "gang": "GGG",
+  "overview": "Knuckles Murphy is a relentless brawler from the GGG, known for bare-knuckle prowess and unwavering grit.",
+  "visual_description": "Wears a flat cap and tweed jacket. Carries a brass knuckles. Weathered hands show years of hard labor.",
+  "vibe": "Rough around the edges but loyal to the bone. Salt of the earth.",
+  "move_list": [
+    "G08_Murphy_01",
+    "G08_Murphy_02",
+    "G08_Murphy_03",
+    "G08_Murphy_04",
+    "G08_Murphy_05",
+    "G08_Murphy_06",
+    "G08_Murphy_07",
+    "G08_Murphy_08",
+    "G08_Murphy_09",
+    "G08_Murphy_10",
+    "G08_Murphy_11",
+    "G08_Murphy_12"
+  ]
+}

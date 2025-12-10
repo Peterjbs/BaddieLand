@@ -1,0 +1,326 @@
+[
+  {
+    "id": "G25_O'Brien_01",
+    "name": "Shield Wall",
+    "description": "Raises defenses to absorb damage",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 1,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "buff_value = (INT * 1.00) + (CRG * 0.5)"
+  },
+  {
+    "id": "G25_O'Brien_02",
+    "name": "Taunting Challenge",
+    "description": "Draws enemy attention and weakens them",
+    "type": "debuff",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 2,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "debuff_value = (INT * 0.90) + (MAA * 0.4)"
+  },
+  {
+    "id": "G25_O'Brien_03",
+    "name": "Stone Stance",
+    "description": "Becomes immovable and hardy",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 3,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "buff_value = (INT * 1.20) + (CRG * 0.5)"
+  },
+  {
+    "id": "G25_O'Brien_04",
+    "name": "Counter Strike",
+    "description": "Blocks then retaliates",
+    "type": "melee_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 4,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "damage = (MLA * 1.45) + (ACC * 0.5) - (target.MLD * 0.7)"
+  },
+  {
+    "id": "G25_O'Brien_05",
+    "name": "Fortify",
+    "description": "Strengthens armor and resolve",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 5,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "buff_value = (INT * 1.40) + (CRG * 0.5)"
+  },
+  {
+    "id": "G25_O'Brien_06",
+    "name": "Protective Aura",
+    "description": "Shields nearby allies",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 6,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "buff_value = (INT * 1.50) + (CRG * 0.5)"
+  },
+  {
+    "id": "G25_O'Brien_07",
+    "name": "Anchored Position",
+    "description": "Cannot be moved or knocked back",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 7,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "buff_value = (INT * 1.60) + (CRG * 0.5)"
+  },
+  {
+    "id": "G25_O'Brien_08",
+    "name": "Retribution",
+    "description": "Strikes back with gathered energy",
+    "type": "melee_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 8,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "damage = (MLA * 2.05) + (ACC * 0.5) - (target.MLD * 0.7)"
+  },
+  {
+    "id": "G25_O'Brien_09",
+    "name": "Unbreakable",
+    "description": "Temporary invulnerability",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 9,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "buff_value = (INT * 1.80) + (CRG * 0.5)"
+  },
+  {
+    "id": "G25_O'Brien_10",
+    "name": "Guardian's Strike",
+    "description": "A powerful defensive blow",
+    "type": "melee_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 10,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "damage = (MLA * 2.35) + (ACC * 0.5) - (target.MLD * 0.7)"
+  },
+  {
+    "id": "G25_O'Brien_11",
+    "name": "Bastion",
+    "description": "Maximum defensive stance",
+    "type": "buff",
+    "target": {
+      "type": "ally"
+    },
+    "learned_at_level": 11,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "buff_value = (INT * 2.00) + (CRG * 0.5)"
+  },
+  {
+    "id": "G25_O'Brien_12",
+    "name": "Last Stand",
+    "description": "Ultimate defensive maneuver with counter",
+    "type": "mixed",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 12,
+    "target_mats": [
+      {
+        "tag": "undead",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "dark",
+        "multiplier": 1.2
+      }
+    ],
+    "target_maecs": [
+      {
+        "condition": "sacred_ground",
+        "multiplier": 1.2
+      }
+    ],
+    "effect_algorithm": "damage = (MLA * 3.50) + (MAA * 0.8) - (target.MLD * 0.5); buff_value = (INT * 1.0)"
+  }
+]

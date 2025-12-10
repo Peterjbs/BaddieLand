@@ -1,0 +1,36 @@
+{
+  "name": "Brawler Brendan",
+  "id": "G19",
+  "age": 32,
+  "species": "human",
+  "subspecies": "traveller",
+  "roles": {
+    "primary": "big_hitter",
+    "secondary": "bruiser"
+  },
+  "growthCurve": "late_bloomer",
+  "weaponItem": "Stone Fists",
+  "matTags": [
+    "living",
+    "sentient",
+    "earth"
+  ],
+  "gang": "GGG",
+  "overview": "Brawler Brendan delivers devastating blows that echo through the valleys, a true powerhouse of the GGG.",
+  "visual_description": "Wears a tattered cap and wool coat. Carries a stone fists. Weathered hands show years of hard labor.",
+  "vibe": "Smells of peat smoke and determination.",
+  "move_list": [
+    "G19_Brendan_01",
+    "G19_Brendan_02",
+    "G19_Brendan_03",
+    "G19_Brendan_04",
+    "G19_Brendan_05",
+    "G19_Brendan_06",
+    "G19_Brendan_07",
+    "G19_Brendan_08",
+    "G19_Brendan_09",
+    "G19_Brendan_10",
+    "G19_Brendan_11",
+    "G19_Brendan_12"
+  ]
+}

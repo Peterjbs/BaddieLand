@@ -1,0 +1,36 @@
+{
+  "name": "Father Dermot",
+  "id": "G18",
+  "age": 52,
+  "species": "human",
+  "subspecies": "traveller",
+  "roles": {
+    "primary": "ally",
+    "secondary": "healer"
+  },
+  "growthCurve": "strong_starter",
+  "weaponItem": "Heavy Bible",
+  "matTags": [
+    "living",
+    "sentient",
+    "holy"
+  ],
+  "gang": "GGG",
+  "overview": "Father Dermot bolsters their kin with wisdom and encouragement, a pillar of GGG unity.",
+  "visual_description": "Wears a worn tweed cap and taffeta vest. Carries a heavy bible. Rosary beads hang from their belt.",
+  "vibe": "Speaks in the old tongue, full of wit and wisdom.",
+  "move_list": [
+    "G18_Dermot_01",
+    "G18_Dermot_02",
+    "G18_Dermot_03",
+    "G18_Dermot_04",
+    "G18_Dermot_05",
+    "G18_Dermot_06",
+    "G18_Dermot_07",
+    "G18_Dermot_08",
+    "G18_Dermot_09",
+    "G18_Dermot_10",
+    "G18_Dermot_11",
+    "G18_Dermot_12"
+  ]
+}

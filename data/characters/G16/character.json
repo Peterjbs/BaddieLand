@@ -1,0 +1,36 @@
+{
+  "name": "Peat Pete",
+  "id": "G16",
+  "age": 41,
+  "species": "human",
+  "subspecies": "traveller",
+  "roles": {
+    "primary": "tank",
+    "secondary": "controller"
+  },
+  "growthCurve": "strong_starter",
+  "weaponItem": "Peat Block",
+  "matTags": [
+    "living",
+    "sentient",
+    "earth"
+  ],
+  "gang": "GGG",
+  "overview": "Peat Pete stands as an immovable pillar of the GGG, absorbing punishment like peat absorbs rain.",
+  "visual_description": "Wears a tattered cap and wool coat. Carries a peat block. Weathered hands show years of hard labor.",
+  "vibe": "Quick with a proverb and quicker with their fists when needed.",
+  "move_list": [
+    "G16_Pete_01",
+    "G16_Pete_02",
+    "G16_Pete_03",
+    "G16_Pete_04",
+    "G16_Pete_05",
+    "G16_Pete_06",
+    "G16_Pete_07",
+    "G16_Pete_08",
+    "G16_Pete_09",
+    "G16_Pete_10",
+    "G16_Pete_11",
+    "G16_Pete_12"
+  ]
+}

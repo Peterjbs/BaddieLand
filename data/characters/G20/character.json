@@ -1,0 +1,36 @@
+{
+  "name": "Sly Siobhan",
+  "id": "G20",
+  "age": 26,
+  "species": "human",
+  "subspecies": "traveller",
+  "roles": {
+    "primary": "looter",
+    "secondary": "survivor"
+  },
+  "growthCurve": "quick_learner",
+  "weaponItem": "Lockpick Set",
+  "matTags": [
+    "living",
+    "sentient",
+    "metallic"
+  ],
+  "gang": "GGG",
+  "overview": "Sly Siobhan has quick hands and keen eyes for opportunity, enriching the GGG's coffers.",
+  "visual_description": "Wears a flat cap and tweed jacket. Carries a lockpick set. Weathered hands show years of hard labor.",
+  "vibe": "Rough around the edges but loyal to the bone. Salt of the earth.",
+  "move_list": [
+    "G20_Siobhan_01",
+    "G20_Siobhan_02",
+    "G20_Siobhan_03",
+    "G20_Siobhan_04",
+    "G20_Siobhan_05",
+    "G20_Siobhan_06",
+    "G20_Siobhan_07",
+    "G20_Siobhan_08",
+    "G20_Siobhan_09",
+    "G20_Siobhan_10",
+    "G20_Siobhan_11",
+    "G20_Siobhan_12"
+  ]
+}

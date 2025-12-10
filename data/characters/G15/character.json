@@ -1,0 +1,36 @@
+{
+  "name": "Bonnie Rourke",
+  "id": "G15",
+  "age": 30,
+  "species": "human",
+  "subspecies": "traveller",
+  "roles": {
+    "primary": "ally",
+    "secondary": "fat_trimmer"
+  },
+  "growthCurve": "steady",
+  "weaponItem": "Fiddle Bow",
+  "matTags": [
+    "living",
+    "sentient",
+    "wooden"
+  ],
+  "gang": "GGG",
+  "overview": "Bonnie Rourke bolsters their kin with wisdom and encouragement, a pillar of GGG unity.",
+  "visual_description": "Wears a worn tweed cap and taffeta vest. Carries a fiddle bow. Weathered hands show years of hard labor.",
+  "vibe": "God-fearing and hard-working, with a temper when roused.",
+  "move_list": [
+    "G15_Rourke_01",
+    "G15_Rourke_02",
+    "G15_Rourke_03",
+    "G15_Rourke_04",
+    "G15_Rourke_05",
+    "G15_Rourke_06",
+    "G15_Rourke_07",
+    "G15_Rourke_08",
+    "G15_Rourke_09",
+    "G15_Rourke_10",
+    "G15_Rourke_11",
+    "G15_Rourke_12"
+  ]
+}

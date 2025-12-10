@@ -1,0 +1,36 @@
+{
+  "name": "Mad Paddy",
+  "id": "G02",
+  "age": 29,
+  "species": "human",
+  "subspecies": "traveller",
+  "roles": {
+    "primary": "big_hitter",
+    "secondary": "bruiser"
+  },
+  "growthCurve": "late_bloomer",
+  "weaponItem": "Hurley Stick",
+  "matTags": [
+    "living",
+    "sentient",
+    "wooden"
+  ],
+  "gang": "GGG",
+  "overview": "Mad Paddy delivers devastating blows that echo through the valleys, a true powerhouse of the GGG.",
+  "visual_description": "Wears a flat cap and tweed jacket. Carries a hurley stick. Weathered hands show years of hard labor.",
+  "vibe": "Rough around the edges but loyal to the bone. Salt of the earth.",
+  "move_list": [
+    "G02_Paddy_01",
+    "G02_Paddy_02",
+    "G02_Paddy_03",
+    "G02_Paddy_04",
+    "G02_Paddy_05",
+    "G02_Paddy_06",
+    "G02_Paddy_07",
+    "G02_Paddy_08",
+    "G02_Paddy_09",
+    "G02_Paddy_10",
+    "G02_Paddy_11",
+    "G02_Paddy_12"
+  ]
+}
