@@ -1,0 +1,25 @@
+{
+  "name": "Storm Knight",
+  "global_id": 22,
+  "tribe": "Preserved Ancients",
+  "species": "animal_hybrids",
+  "age": 42,
+  "roles": {
+    "primary": "sniper",
+    "secondary": "looter"
+  },
+  "weapon_item": "Weapon_A22",
+  "growth_curve": "slow",
+  "brand_vibe": "A sniper from the Preserved Ancients with animal_hybrids heritage",
+  "mat_list": [
+    "shadow",
+    "blood",
+    "ice"
+  ],
+  "move_list": [
+    "move_A22_1",
+    "move_A22_2",
+    "move_A22_3",
+    "move_A22_4"
+  ]
+}

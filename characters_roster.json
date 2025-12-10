@@ -1,0 +1,705 @@
+{
+  "characters": [
+    {
+      "id": "A01",
+      "name": "Iron Warrior",
+      "tribe": "Undead Legion",
+      "global_id": 1,
+      "assetsPath": "assets/A01_iron_warrior"
+    },
+    {
+      "id": "A02",
+      "name": "Crystal Warrior",
+      "tribe": "Fae Court",
+      "global_id": 2,
+      "assetsPath": "assets/A02_crystal_warrior"
+    },
+    {
+      "id": "A03",
+      "name": "Thunder Warrior",
+      "tribe": "Elemental Collective",
+      "global_id": 3,
+      "assetsPath": "assets/A03_thunder_warrior"
+    },
+    {
+      "id": "A04",
+      "name": "Flame Warrior",
+      "tribe": "Beast Clan",
+      "global_id": 4,
+      "assetsPath": "assets/A04_flame_warrior"
+    },
+    {
+      "id": "A05",
+      "name": "Frost Warrior",
+      "tribe": "Construct Guild",
+      "global_id": 5,
+      "assetsPath": "assets/A05_frost_warrior"
+    },
+    {
+      "id": "A06",
+      "name": "Storm Warrior",
+      "tribe": "Spirit Realm",
+      "global_id": 6,
+      "assetsPath": "assets/A06_storm_warrior"
+    },
+    {
+      "id": "A07",
+      "name": "Dark Warrior",
+      "tribe": "Giant Kingdom",
+      "global_id": 7,
+      "assetsPath": "assets/A07_dark_warrior"
+    },
+    {
+      "id": "A08",
+      "name": "Shadow Mage",
+      "tribe": "Aquatic Alliance",
+      "global_id": 8,
+      "assetsPath": "assets/A08_shadow_mage"
+    },
+    {
+      "id": "A09",
+      "name": "Iron Mage",
+      "tribe": "Dark Coven",
+      "global_id": 9,
+      "assetsPath": "assets/A09_iron_mage"
+    },
+    {
+      "id": "A10",
+      "name": "Crystal Mage",
+      "tribe": "Preserved Ancients",
+      "global_id": 10,
+      "assetsPath": "assets/A10_crystal_mage"
+    },
+    {
+      "id": "A11",
+      "name": "Thunder Mage",
+      "tribe": "Sky Riders",
+      "global_id": 11,
+      "assetsPath": "assets/A11_thunder_mage"
+    },
+    {
+      "id": "A12",
+      "name": "Flame Mage",
+      "tribe": "Human Defenders",
+      "global_id": 12,
+      "assetsPath": "assets/A12_flame_mage"
+    },
+    {
+      "id": "A13",
+      "name": "Frost Mage",
+      "tribe": "Undead Legion",
+      "global_id": 13,
+      "assetsPath": "assets/A13_frost_mage"
+    },
+    {
+      "id": "A14",
+      "name": "Storm Mage",
+      "tribe": "Fae Court",
+      "global_id": 14,
+      "assetsPath": "assets/A14_storm_mage"
+    },
+    {
+      "id": "A15",
+      "name": "Dark Mage",
+      "tribe": "Elemental Collective",
+      "global_id": 15,
+      "assetsPath": "assets/A15_dark_mage"
+    },
+    {
+      "id": "A16",
+      "name": "Shadow Knight",
+      "tribe": "Beast Clan",
+      "global_id": 16,
+      "assetsPath": "assets/A16_shadow_knight"
+    },
+    {
+      "id": "A17",
+      "name": "Iron Knight",
+      "tribe": "Construct Guild",
+      "global_id": 17,
+      "assetsPath": "assets/A17_iron_knight"
+    },
+    {
+      "id": "A18",
+      "name": "Crystal Knight",
+      "tribe": "Spirit Realm",
+      "global_id": 18,
+      "assetsPath": "assets/A18_crystal_knight"
+    },
+    {
+      "id": "A19",
+      "name": "Thunder Knight",
+      "tribe": "Giant Kingdom",
+      "global_id": 19,
+      "assetsPath": "assets/A19_thunder_knight"
+    },
+    {
+      "id": "A20",
+      "name": "Flame Knight",
+      "tribe": "Aquatic Alliance",
+      "global_id": 20,
+      "assetsPath": "assets/A20_flame_knight"
+    },
+    {
+      "id": "A21",
+      "name": "Frost Knight",
+      "tribe": "Dark Coven",
+      "global_id": 21,
+      "assetsPath": "assets/A21_frost_knight"
+    },
+    {
+      "id": "A22",
+      "name": "Storm Knight",
+      "tribe": "Preserved Ancients",
+      "global_id": 22,
+      "assetsPath": "assets/A22_storm_knight"
+    },
+    {
+      "id": "A23",
+      "name": "Dark Knight",
+      "tribe": "Sky Riders",
+      "global_id": 23,
+      "assetsPath": "assets/A23_dark_knight"
+    },
+    {
+      "id": "A24",
+      "name": "Shadow Ranger",
+      "tribe": "Human Defenders",
+      "global_id": 24,
+      "assetsPath": "assets/A24_shadow_ranger"
+    },
+    {
+      "id": "A25",
+      "name": "Iron Ranger",
+      "tribe": "Undead Legion",
+      "global_id": 25,
+      "assetsPath": "assets/A25_iron_ranger"
+    },
+    {
+      "id": "A26",
+      "name": "Crystal Ranger",
+      "tribe": "Fae Court",
+      "global_id": 26,
+      "assetsPath": "assets/A26_crystal_ranger"
+    },
+    {
+      "id": "A27",
+      "name": "Thunder Ranger",
+      "tribe": "Elemental Collective",
+      "global_id": 27,
+      "assetsPath": "assets/A27_thunder_ranger"
+    },
+    {
+      "id": "A28",
+      "name": "Flame Ranger",
+      "tribe": "Beast Clan",
+      "global_id": 28,
+      "assetsPath": "assets/A28_flame_ranger"
+    },
+    {
+      "id": "A29",
+      "name": "Frost Ranger",
+      "tribe": "Construct Guild",
+      "global_id": 29,
+      "assetsPath": "assets/A29_frost_ranger"
+    },
+    {
+      "id": "A30",
+      "name": "Storm Ranger",
+      "tribe": "Spirit Realm",
+      "global_id": 30,
+      "assetsPath": "assets/A30_storm_ranger"
+    },
+    {
+      "id": "A31",
+      "name": "Dark Ranger",
+      "tribe": "Giant Kingdom",
+      "global_id": 31,
+      "assetsPath": "assets/A31_dark_ranger"
+    },
+    {
+      "id": "A32",
+      "name": "Shadow Guardian",
+      "tribe": "Aquatic Alliance",
+      "global_id": 32,
+      "assetsPath": "assets/A32_shadow_guardian"
+    },
+    {
+      "id": "A33",
+      "name": "Iron Guardian",
+      "tribe": "Dark Coven",
+      "global_id": 33,
+      "assetsPath": "assets/A33_iron_guardian"
+    },
+    {
+      "id": "A34",
+      "name": "Crystal Guardian",
+      "tribe": "Preserved Ancients",
+      "global_id": 34,
+      "assetsPath": "assets/A34_crystal_guardian"
+    },
+    {
+      "id": "A35",
+      "name": "Thunder Guardian",
+      "tribe": "Sky Riders",
+      "global_id": 35,
+      "assetsPath": "assets/A35_thunder_guardian"
+    },
+    {
+      "id": "A36",
+      "name": "Flame Guardian",
+      "tribe": "Human Defenders",
+      "global_id": 36,
+      "assetsPath": "assets/A36_flame_guardian"
+    },
+    {
+      "id": "A37",
+      "name": "Frost Guardian",
+      "tribe": "Undead Legion",
+      "global_id": 37,
+      "assetsPath": "assets/A37_frost_guardian"
+    },
+    {
+      "id": "A38",
+      "name": "Storm Guardian",
+      "tribe": "Fae Court",
+      "global_id": 38,
+      "assetsPath": "assets/A38_storm_guardian"
+    },
+    {
+      "id": "A39",
+      "name": "Dark Guardian",
+      "tribe": "Elemental Collective",
+      "global_id": 39,
+      "assetsPath": "assets/A39_dark_guardian"
+    },
+    {
+      "id": "A40",
+      "name": "Shadow Sentinel",
+      "tribe": "Beast Clan",
+      "global_id": 40,
+      "assetsPath": "assets/A40_shadow_sentinel"
+    },
+    {
+      "id": "A41",
+      "name": "Iron Sentinel",
+      "tribe": "Construct Guild",
+      "global_id": 41,
+      "assetsPath": "assets/A41_iron_sentinel"
+    },
+    {
+      "id": "A42",
+      "name": "Crystal Sentinel",
+      "tribe": "Spirit Realm",
+      "global_id": 42,
+      "assetsPath": "assets/A42_crystal_sentinel"
+    },
+    {
+      "id": "A43",
+      "name": "Thunder Sentinel",
+      "tribe": "Giant Kingdom",
+      "global_id": 43,
+      "assetsPath": "assets/A43_thunder_sentinel"
+    },
+    {
+      "id": "A44",
+      "name": "Flame Sentinel",
+      "tribe": "Aquatic Alliance",
+      "global_id": 44,
+      "assetsPath": "assets/A44_flame_sentinel"
+    },
+    {
+      "id": "A45",
+      "name": "Frost Sentinel",
+      "tribe": "Dark Coven",
+      "global_id": 45,
+      "assetsPath": "assets/A45_frost_sentinel"
+    },
+    {
+      "id": "A46",
+      "name": "Storm Sentinel",
+      "tribe": "Preserved Ancients",
+      "global_id": 46,
+      "assetsPath": "assets/A46_storm_sentinel"
+    },
+    {
+      "id": "A47",
+      "name": "Dark Sentinel",
+      "tribe": "Sky Riders",
+      "global_id": 47,
+      "assetsPath": "assets/A47_dark_sentinel"
+    },
+    {
+      "id": "A48",
+      "name": "Shadow Hunter",
+      "tribe": "Human Defenders",
+      "global_id": 48,
+      "assetsPath": "assets/A48_shadow_hunter"
+    },
+    {
+      "id": "A49",
+      "name": "Iron Hunter",
+      "tribe": "Undead Legion",
+      "global_id": 49,
+      "assetsPath": "assets/A49_iron_hunter"
+    },
+    {
+      "id": "A50",
+      "name": "Crystal Hunter",
+      "tribe": "Fae Court",
+      "global_id": 50,
+      "assetsPath": "assets/A50_crystal_hunter"
+    },
+    {
+      "id": "A51",
+      "name": "Thunder Hunter",
+      "tribe": "Elemental Collective",
+      "global_id": 51,
+      "assetsPath": "assets/A51_thunder_hunter"
+    },
+    {
+      "id": "A52",
+      "name": "Flame Hunter",
+      "tribe": "Beast Clan",
+      "global_id": 52,
+      "assetsPath": "assets/A52_flame_hunter"
+    },
+    {
+      "id": "A53",
+      "name": "Frost Hunter",
+      "tribe": "Construct Guild",
+      "global_id": 53,
+      "assetsPath": "assets/A53_frost_hunter"
+    },
+    {
+      "id": "A54",
+      "name": "Storm Hunter",
+      "tribe": "Spirit Realm",
+      "global_id": 54,
+      "assetsPath": "assets/A54_storm_hunter"
+    },
+    {
+      "id": "A55",
+      "name": "Dark Hunter",
+      "tribe": "Giant Kingdom",
+      "global_id": 55,
+      "assetsPath": "assets/A55_dark_hunter"
+    },
+    {
+      "id": "A56",
+      "name": "Shadow Assassin",
+      "tribe": "Aquatic Alliance",
+      "global_id": 56,
+      "assetsPath": "assets/A56_shadow_assassin"
+    },
+    {
+      "id": "A57",
+      "name": "Iron Assassin",
+      "tribe": "Dark Coven",
+      "global_id": 57,
+      "assetsPath": "assets/A57_iron_assassin"
+    },
+    {
+      "id": "A58",
+      "name": "Crystal Assassin",
+      "tribe": "Preserved Ancients",
+      "global_id": 58,
+      "assetsPath": "assets/A58_crystal_assassin"
+    },
+    {
+      "id": "A59",
+      "name": "Thunder Assassin",
+      "tribe": "Sky Riders",
+      "global_id": 59,
+      "assetsPath": "assets/A59_thunder_assassin"
+    },
+    {
+      "id": "A60",
+      "name": "Flame Assassin",
+      "tribe": "Human Defenders",
+      "global_id": 60,
+      "assetsPath": "assets/A60_flame_assassin"
+    },
+    {
+      "id": "A61",
+      "name": "Frost Assassin",
+      "tribe": "Undead Legion",
+      "global_id": 61,
+      "assetsPath": "assets/A61_frost_assassin"
+    },
+    {
+      "id": "A62",
+      "name": "Storm Assassin",
+      "tribe": "Fae Court",
+      "global_id": 62,
+      "assetsPath": "assets/A62_storm_assassin"
+    },
+    {
+      "id": "A63",
+      "name": "Dark Assassin",
+      "tribe": "Elemental Collective",
+      "global_id": 63,
+      "assetsPath": "assets/A63_dark_assassin"
+    },
+    {
+      "id": "A64",
+      "name": "Shadow Warrior",
+      "tribe": "Beast Clan",
+      "global_id": 64,
+      "assetsPath": "assets/A64_shadow_warrior"
+    },
+    {
+      "id": "A65",
+      "name": "Iron Warrior",
+      "tribe": "Construct Guild",
+      "global_id": 65,
+      "assetsPath": "assets/A65_iron_warrior"
+    },
+    {
+      "id": "A66",
+      "name": "Crystal Warrior",
+      "tribe": "Spirit Realm",
+      "global_id": 66,
+      "assetsPath": "assets/A66_crystal_warrior"
+    },
+    {
+      "id": "A67",
+      "name": "Thunder Warrior",
+      "tribe": "Giant Kingdom",
+      "global_id": 67,
+      "assetsPath": "assets/A67_thunder_warrior"
+    },
+    {
+      "id": "A68",
+      "name": "Flame Warrior",
+      "tribe": "Aquatic Alliance",
+      "global_id": 68,
+      "assetsPath": "assets/A68_flame_warrior"
+    },
+    {
+      "id": "A69",
+      "name": "Frost Warrior",
+      "tribe": "Dark Coven",
+      "global_id": 69,
+      "assetsPath": "assets/A69_frost_warrior"
+    },
+    {
+      "id": "A70",
+      "name": "Storm Warrior",
+      "tribe": "Preserved Ancients",
+      "global_id": 70,
+      "assetsPath": "assets/A70_storm_warrior"
+    },
+    {
+      "id": "A71",
+      "name": "Dark Warrior",
+      "tribe": "Sky Riders",
+      "global_id": 71,
+      "assetsPath": "assets/A71_dark_warrior"
+    },
+    {
+      "id": "A72",
+      "name": "Shadow Mage",
+      "tribe": "Human Defenders",
+      "global_id": 72,
+      "assetsPath": "assets/A72_shadow_mage"
+    },
+    {
+      "id": "A73",
+      "name": "Iron Mage",
+      "tribe": "Undead Legion",
+      "global_id": 73,
+      "assetsPath": "assets/A73_iron_mage"
+    },
+    {
+      "id": "A74",
+      "name": "Crystal Mage",
+      "tribe": "Fae Court",
+      "global_id": 74,
+      "assetsPath": "assets/A74_crystal_mage"
+    },
+    {
+      "id": "A75",
+      "name": "Thunder Mage",
+      "tribe": "Elemental Collective",
+      "global_id": 75,
+      "assetsPath": "assets/A75_thunder_mage"
+    },
+    {
+      "id": "B01",
+      "name": "Brutal Beast",
+      "tribe": "BBB",
+      "global_id": 76,
+      "assetsPath": "assets/B01_brutal_beast"
+    },
+    {
+      "id": "B02",
+      "name": "Bold Beast",
+      "tribe": "BBB",
+      "global_id": 77,
+      "assetsPath": "assets/B02_bold_beast"
+    },
+    {
+      "id": "B03",
+      "name": "Brave Beast",
+      "tribe": "BBB",
+      "global_id": 78,
+      "assetsPath": "assets/B03_brave_beast"
+    },
+    {
+      "id": "B04",
+      "name": "Blazing Beast",
+      "tribe": "BBB",
+      "global_id": 79,
+      "assetsPath": "assets/B04_blazing_beast"
+    },
+    {
+      "id": "B05",
+      "name": "Bouncing Beast",
+      "tribe": "BBB",
+      "global_id": 80,
+      "assetsPath": "assets/B05_bouncing_beast"
+    },
+    {
+      "id": "B06",
+      "name": "Brawling Beast",
+      "tribe": "BBB",
+      "global_id": 81,
+      "assetsPath": "assets/B06_brawling_beast"
+    },
+    {
+      "id": "B07",
+      "name": "Burning Beast",
+      "tribe": "BBB",
+      "global_id": 82,
+      "assetsPath": "assets/B07_burning_beast"
+    },
+    {
+      "id": "B08",
+      "name": "Bad Brawler",
+      "tribe": "BBB",
+      "global_id": 83,
+      "assetsPath": "assets/B08_bad_brawler"
+    },
+    {
+      "id": "B09",
+      "name": "Brutal Brawler",
+      "tribe": "BBB",
+      "global_id": 84,
+      "assetsPath": "assets/B09_brutal_brawler"
+    },
+    {
+      "id": "B10",
+      "name": "Bold Brawler",
+      "tribe": "BBB",
+      "global_id": 85,
+      "assetsPath": "assets/B10_bold_brawler"
+    },
+    {
+      "id": "B11",
+      "name": "Brave Brawler",
+      "tribe": "BBB",
+      "global_id": 86,
+      "assetsPath": "assets/B11_brave_brawler"
+    },
+    {
+      "id": "B12",
+      "name": "Blazing Brawler",
+      "tribe": "BBB",
+      "global_id": 87,
+      "assetsPath": "assets/B12_blazing_brawler"
+    },
+    {
+      "id": "B13",
+      "name": "Bouncing Brawler",
+      "tribe": "BBB",
+      "global_id": 88,
+      "assetsPath": "assets/B13_bouncing_brawler"
+    },
+    {
+      "id": "B14",
+      "name": "Brawling Brawler",
+      "tribe": "BBB",
+      "global_id": 89,
+      "assetsPath": "assets/B14_brawling_brawler"
+    },
+    {
+      "id": "B15",
+      "name": "Burning Brawler",
+      "tribe": "BBB",
+      "global_id": 90,
+      "assetsPath": "assets/B15_burning_brawler"
+    },
+    {
+      "id": "B16",
+      "name": "Bad Bandit",
+      "tribe": "BBB",
+      "global_id": 91,
+      "assetsPath": "assets/B16_bad_bandit"
+    },
+    {
+      "id": "B17",
+      "name": "Brutal Bandit",
+      "tribe": "BBB",
+      "global_id": 92,
+      "assetsPath": "assets/B17_brutal_bandit"
+    },
+    {
+      "id": "B18",
+      "name": "Bold Bandit",
+      "tribe": "BBB",
+      "global_id": 93,
+      "assetsPath": "assets/B18_bold_bandit"
+    },
+    {
+      "id": "B19",
+      "name": "Brave Bandit",
+      "tribe": "BBB",
+      "global_id": 94,
+      "assetsPath": "assets/B19_brave_bandit"
+    },
+    {
+      "id": "B20",
+      "name": "Blazing Bandit",
+      "tribe": "BBB",
+      "global_id": 95,
+      "assetsPath": "assets/B20_blazing_bandit"
+    },
+    {
+      "id": "B21",
+      "name": "Bouncing Bandit",
+      "tribe": "BBB",
+      "global_id": 96,
+      "assetsPath": "assets/B21_bouncing_bandit"
+    },
+    {
+      "id": "B22",
+      "name": "Brawling Bandit",
+      "tribe": "BBB",
+      "global_id": 97,
+      "assetsPath": "assets/B22_brawling_bandit"
+    },
+    {
+      "id": "B23",
+      "name": "Burning Bandit",
+      "tribe": "BBB",
+      "global_id": 98,
+      "assetsPath": "assets/B23_burning_bandit"
+    },
+    {
+      "id": "B24",
+      "name": "Bad Boss",
+      "tribe": "BBB",
+      "global_id": 99,
+      "assetsPath": "assets/B24_bad_boss"
+    },
+    {
+      "id": "B25",
+      "name": "Brutal Boss",
+      "tribe": "BBB",
+      "global_id": 100,
+      "assetsPath": "assets/B25_brutal_boss"
+    }
+  ],
+  "total_count": 100
+}

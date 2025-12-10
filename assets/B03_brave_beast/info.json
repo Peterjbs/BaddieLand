@@ -1,0 +1,24 @@
+{
+  "name": "Brave Beast",
+  "global_id": 78,
+  "tribe": "BBB",
+  "species": "giants",
+  "age": 48,
+  "roles": {
+    "primary": "ally",
+    "secondary": "debuffer"
+  },
+  "weapon_item": "Weapon_B03",
+  "growth_curve": "steady",
+  "brand_vibe": "A ally from the BBB with giants heritage",
+  "mat_list": [
+    "magic",
+    "feral"
+  ],
+  "move_list": [
+    "move_B03_1",
+    "move_B03_2",
+    "move_B03_3",
+    "move_B03_4"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Frost Knight",
+  "global_id": 21,
+  "tribe": "Dark Coven",
+  "species": "elementals",
+  "age": 41,
+  "roles": {
+    "primary": "survivor",
+    "secondary": "sniper"
+  },
+  "weapon_item": "Weapon_A21",
+  "growth_curve": "late_bloomer",
+  "brand_vibe": "A survivor from the Dark Coven with elementals heritage",
+  "mat_list": [
+    "dark",
+    "shadow"
+  ],
+  "move_list": [
+    "move_A21_1",
+    "move_A21_2",
+    "move_A21_3",
+    "move_A21_4"
+  ]
+}

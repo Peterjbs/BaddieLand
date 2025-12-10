@@ -1,0 +1,26 @@
+{
+  "name": "Shadow Assassin",
+  "global_id": 56,
+  "tribe": "Aquatic Alliance",
+  "species": "animal_hybrids",
+  "age": 26,
+  "roles": {
+    "primary": "controller",
+    "secondary": "survivor"
+  },
+  "weapon_item": "Weapon_A56",
+  "growth_curve": "quick_learner",
+  "brand_vibe": "A controller from the Aquatic Alliance with animal_hybrids heritage",
+  "mat_list": [
+    "mindless",
+    "flying",
+    "no_legs",
+    "non_corporeal"
+  ],
+  "move_list": [
+    "move_A56_1",
+    "move_A56_2",
+    "move_A56_3",
+    "move_A56_4"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Storm Warrior",
+  "global_id": 70,
+  "tribe": "Preserved Ancients",
+  "species": "reanimated",
+  "age": 40,
+  "roles": {
+    "primary": "sniper",
+    "secondary": "looter"
+  },
+  "weapon_item": "Weapon_A70",
+  "growth_curve": "slow",
+  "brand_vibe": "A sniper from the Preserved Ancients with reanimated heritage",
+  "mat_list": [
+    "holy",
+    "dark",
+    "shadow"
+  ],
+  "move_list": [
+    "move_A70_1",
+    "move_A70_2",
+    "move_A70_3",
+    "move_A70_4"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Burning Beast",
+  "global_id": 82,
+  "tribe": "BBB",
+  "species": "preserved",
+  "age": 52,
+  "roles": {
+    "primary": "sniper",
+    "secondary": "looter"
+  },
+  "weapon_item": "Weapon_B07",
+  "growth_curve": "slow",
+  "brand_vibe": "A sniper from the BBB with preserved heritage",
+  "mat_list": [
+    "flying",
+    "no_legs",
+    "non_corporeal"
+  ],
+  "move_list": [
+    "move_B07_1",
+    "move_B07_2",
+    "move_B07_3",
+    "move_B07_4"
+  ]
+}

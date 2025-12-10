@@ -1,0 +1,26 @@
+{
+  "name": "Iron Warrior",
+  "global_id": 65,
+  "tribe": "Construct Guild",
+  "species": "preserved",
+  "age": 35,
+  "roles": {
+    "primary": "healer",
+    "secondary": "ally"
+  },
+  "weapon_item": "Weapon_A65",
+  "growth_curve": "key_levels",
+  "brand_vibe": "A healer from the Construct Guild with preserved heritage",
+  "mat_list": [
+    "earth",
+    "electric",
+    "plant",
+    "metallic"
+  ],
+  "move_list": [
+    "move_A65_1",
+    "move_A65_2",
+    "move_A65_3",
+    "move_A65_4"
+  ]
+}

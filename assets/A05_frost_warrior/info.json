@@ -1,0 +1,26 @@
+{
+  "name": "Frost Warrior",
+  "global_id": 5,
+  "tribe": "Construct Guild",
+  "species": "animal_hybrids",
+  "age": 25,
+  "roles": {
+    "primary": "healer",
+    "secondary": "ally"
+  },
+  "weapon_item": "Weapon_A05",
+  "growth_curve": "key_levels",
+  "brand_vibe": "A healer from the Construct Guild with animal_hybrids heritage",
+  "mat_list": [
+    "sentient",
+    "mindless",
+    "flying",
+    "no_legs"
+  ],
+  "move_list": [
+    "move_A05_1",
+    "move_A05_2",
+    "move_A05_3",
+    "move_A05_4"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Shadow Hunter",
+  "global_id": 48,
+  "tribe": "Human Defenders",
+  "species": "preserved",
+  "age": 68,
+  "roles": {
+    "primary": "tank",
+    "secondary": "bruiser"
+  },
+  "weapon_item": "Weapon_A48",
+  "growth_curve": "steady",
+  "brand_vibe": "A tank from the Human Defenders with preserved heritage",
+  "mat_list": [
+    "blood",
+    "ice"
+  ],
+  "move_list": [
+    "move_A48_1",
+    "move_A48_2",
+    "move_A48_3",
+    "move_A48_4"
+  ]
+}

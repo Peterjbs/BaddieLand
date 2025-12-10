@@ -1,0 +1,26 @@
+{
+  "name": "Dark Warrior",
+  "global_id": 71,
+  "tribe": "Sky Riders",
+  "species": "spirits",
+  "age": 41,
+  "roles": {
+    "primary": "looter",
+    "secondary": "tank"
+  },
+  "weapon_item": "Weapon_A71",
+  "growth_curve": "key_levels",
+  "brand_vibe": "A looter from the Sky Riders with spirits heritage",
+  "mat_list": [
+    "dark",
+    "shadow",
+    "blood",
+    "ice"
+  ],
+  "move_list": [
+    "move_A71_1",
+    "move_A71_2",
+    "move_A71_3",
+    "move_A71_4"
+  ]
+}

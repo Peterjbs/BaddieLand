@@ -1,0 +1,24 @@
+{
+  "name": "Bad Boss",
+  "global_id": 99,
+  "tribe": "BBB",
+  "species": "preserved",
+  "age": 69,
+  "roles": {
+    "primary": "assassin",
+    "secondary": "fat_trimmer"
+  },
+  "weapon_item": "Weapon_B24",
+  "growth_curve": "late_bloomer",
+  "brand_vibe": "A assassin from the BBB with preserved heritage",
+  "mat_list": [
+    "ice",
+    "living"
+  ],
+  "move_list": [
+    "move_B24_1",
+    "move_B24_2",
+    "move_B24_3",
+    "move_B24_4"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Iron Mage",
+  "global_id": 9,
+  "tribe": "Dark Coven",
+  "species": "hags_witches",
+  "age": 29,
+  "roles": {
+    "primary": "survivor",
+    "secondary": "sniper"
+  },
+  "weapon_item": "Weapon_A09",
+  "growth_curve": "late_bloomer",
+  "brand_vibe": "A survivor from the Dark Coven with hags_witches heritage",
+  "mat_list": [
+    "non_corporeal",
+    "saah_small"
+  ],
+  "move_list": [
+    "move_A09_1",
+    "move_A09_2",
+    "move_A09_3",
+    "move_A09_4"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Dark Warrior",
+  "global_id": 7,
+  "tribe": "Giant Kingdom",
+  "species": "small_fae",
+  "age": 27,
+  "roles": {
+    "primary": "debuffer",
+    "secondary": "controller"
+  },
+  "weapon_item": "Weapon_A07",
+  "growth_curve": "strong_starter",
+  "brand_vibe": "A debuffer from the Giant Kingdom with small_fae heritage",
+  "mat_list": [
+    "flying",
+    "no_legs",
+    "non_corporeal"
+  ],
+  "move_list": [
+    "move_A07_1",
+    "move_A07_2",
+    "move_A07_3",
+    "move_A07_4"
+  ]
+}

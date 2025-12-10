@@ -1,0 +1,25 @@
+{
+  "name": "Thunder Warrior",
+  "global_id": 67,
+  "tribe": "Giant Kingdom",
+  "species": "poltergeist",
+  "age": 37,
+  "roles": {
+    "primary": "debuffer",
+    "secondary": "controller"
+  },
+  "weapon_item": "Weapon_A67",
+  "growth_curve": "strong_starter",
+  "brand_vibe": "A debuffer from the Giant Kingdom with poltergeist heritage",
+  "mat_list": [
+    "plant",
+    "metallic",
+    "wooden"
+  ],
+  "move_list": [
+    "move_A67_1",
+    "move_A67_2",
+    "move_A67_3",
+    "move_A67_4"
+  ]
+}

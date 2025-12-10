@@ -1,0 +1,24 @@
+{
+  "name": "Brawling Beast",
+  "global_id": 81,
+  "tribe": "BBB",
+  "species": "reptilian",
+  "age": 51,
+  "roles": {
+    "primary": "survivor",
+    "secondary": "sniper"
+  },
+  "weapon_item": "Weapon_B06",
+  "growth_curve": "late_bloomer",
+  "brand_vibe": "A survivor from the BBB with reptilian heritage",
+  "mat_list": [
+    "mindless",
+    "flying"
+  ],
+  "move_list": [
+    "move_B06_1",
+    "move_B06_2",
+    "move_B06_3",
+    "move_B06_4"
+  ]
+}

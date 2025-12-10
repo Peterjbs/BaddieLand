@@ -1,0 +1,26 @@
+{
+  "name": "Shadow Guardian",
+  "global_id": 32,
+  "tribe": "Aquatic Alliance",
+  "species": "harpy_angel",
+  "age": 52,
+  "roles": {
+    "primary": "controller",
+    "secondary": "survivor"
+  },
+  "weapon_item": "Weapon_A32",
+  "growth_curve": "quick_learner",
+  "brand_vibe": "A controller from the Aquatic Alliance with harpy_angel heritage",
+  "mat_list": [
+    "flying",
+    "no_legs",
+    "non_corporeal",
+    "saah_small"
+  ],
+  "move_list": [
+    "move_A32_1",
+    "move_A32_2",
+    "move_A32_3",
+    "move_A32_4"
+  ]
+}

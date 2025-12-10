@@ -1,0 +1,25 @@
+{
+  "name": "Bad Bandit",
+  "global_id": 91,
+  "tribe": "BBB",
+  "species": "constructs",
+  "age": 61,
+  "roles": {
+    "primary": "debuffer",
+    "secondary": "controller"
+  },
+  "weapon_item": "Weapon_B16",
+  "growth_curve": "strong_starter",
+  "brand_vibe": "A debuffer from the BBB with constructs heritage",
+  "mat_list": [
+    "electric",
+    "plant",
+    "metallic"
+  ],
+  "move_list": [
+    "move_B16_1",
+    "move_B16_2",
+    "move_B16_3",
+    "move_B16_4"
+  ]
+}

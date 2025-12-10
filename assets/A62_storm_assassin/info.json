@@ -1,0 +1,26 @@
+{
+  "name": "Storm Assassin",
+  "global_id": 62,
+  "tribe": "Fae Court",
+  "species": "dwarf",
+  "age": 32,
+  "roles": {
+    "primary": "big_hitter",
+    "secondary": "assassin"
+  },
+  "weapon_item": "Weapon_A62",
+  "growth_curve": "quick_learner",
+  "brand_vibe": "A big_hitter from the Fae Court with dwarf heritage",
+  "mat_list": [
+    "fire",
+    "water",
+    "air",
+    "earth"
+  ],
+  "move_list": [
+    "move_A62_1",
+    "move_A62_2",
+    "move_A62_3",
+    "move_A62_4"
+  ]
+}

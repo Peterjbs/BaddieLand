@@ -1,0 +1,24 @@
+{
+  "name": "Shadow Mage",
+  "global_id": 72,
+  "tribe": "Human Defenders",
+  "species": "elementals",
+  "age": 42,
+  "roles": {
+    "primary": "tank",
+    "secondary": "bruiser"
+  },
+  "weapon_item": "Weapon_A72",
+  "growth_curve": "steady",
+  "brand_vibe": "A tank from the Human Defenders with elementals heritage",
+  "mat_list": [
+    "shadow",
+    "blood"
+  ],
+  "move_list": [
+    "move_A72_1",
+    "move_A72_2",
+    "move_A72_3",
+    "move_A72_4"
+  ]
+}

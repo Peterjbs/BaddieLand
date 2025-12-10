@@ -1,0 +1,26 @@
+{
+  "name": "Crystal Mage",
+  "global_id": 74,
+  "tribe": "Fae Court",
+  "species": "constructs",
+  "age": 44,
+  "roles": {
+    "primary": "big_hitter",
+    "secondary": "assassin"
+  },
+  "weapon_item": "Weapon_A74",
+  "growth_curve": "quick_learner",
+  "brand_vibe": "A big_hitter from the Fae Court with constructs heritage",
+  "mat_list": [
+    "ice",
+    "living",
+    "undead",
+    "construct"
+  ],
+  "move_list": [
+    "move_A74_1",
+    "move_A74_2",
+    "move_A74_3",
+    "move_A74_4"
+  ]
+}

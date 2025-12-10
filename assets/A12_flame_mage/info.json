@@ -1,0 +1,24 @@
+{
+  "name": "Flame Mage",
+  "global_id": 12,
+  "tribe": "Human Defenders",
+  "species": "merfolk",
+  "age": 32,
+  "roles": {
+    "primary": "tank",
+    "secondary": "bruiser"
+  },
+  "weapon_item": "Weapon_A12",
+  "growth_curve": "steady",
+  "brand_vibe": "A tank from the Human Defenders with merfolk heritage",
+  "mat_list": [
+    "fire",
+    "water"
+  ],
+  "move_list": [
+    "move_A12_1",
+    "move_A12_2",
+    "move_A12_3",
+    "move_A12_4"
+  ]
+}

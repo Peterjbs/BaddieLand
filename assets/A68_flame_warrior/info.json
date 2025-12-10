@@ -1,0 +1,26 @@
+{
+  "name": "Flame Warrior",
+  "global_id": 68,
+  "tribe": "Aquatic Alliance",
+  "species": "vampire_dhampir",
+  "age": 38,
+  "roles": {
+    "primary": "controller",
+    "secondary": "survivor"
+  },
+  "weapon_item": "Weapon_A68",
+  "growth_curve": "quick_learner",
+  "brand_vibe": "A controller from the Aquatic Alliance with vampire_dhampir heritage",
+  "mat_list": [
+    "metallic",
+    "wooden",
+    "holy",
+    "dark"
+  ],
+  "move_list": [
+    "move_A68_1",
+    "move_A68_2",
+    "move_A68_3",
+    "move_A68_4"
+  ]
+}

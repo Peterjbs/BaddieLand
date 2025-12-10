@@ -1,0 +1,24 @@
+{
+  "name": "Thunder Warrior",
+  "global_id": 3,
+  "tribe": "Elemental Collective",
+  "species": "spirits",
+  "age": 23,
+  "roles": {
+    "primary": "assassin",
+    "secondary": "fat_trimmer"
+  },
+  "weapon_item": "Weapon_A03",
+  "growth_curve": "late_bloomer",
+  "brand_vibe": "A assassin from the Elemental Collective with spirits heritage",
+  "mat_list": [
+    "magic",
+    "feral"
+  ],
+  "move_list": [
+    "move_A03_1",
+    "move_A03_2",
+    "move_A03_3",
+    "move_A03_4"
+  ]
+}

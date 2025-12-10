@@ -1,0 +1,24 @@
+{
+  "name": "Frost Warrior",
+  "global_id": 69,
+  "tribe": "Dark Coven",
+  "species": "skeleton",
+  "age": 39,
+  "roles": {
+    "primary": "survivor",
+    "secondary": "sniper"
+  },
+  "weapon_item": "Weapon_A69",
+  "growth_curve": "late_bloomer",
+  "brand_vibe": "A survivor from the Dark Coven with skeleton heritage",
+  "mat_list": [
+    "wooden",
+    "holy"
+  ],
+  "move_list": [
+    "move_A69_1",
+    "move_A69_2",
+    "move_A69_3",
+    "move_A69_4"
+  ]
+}

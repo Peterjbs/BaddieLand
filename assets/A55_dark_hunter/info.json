@@ -1,0 +1,25 @@
+{
+  "name": "Dark Hunter",
+  "global_id": 55,
+  "tribe": "Giant Kingdom",
+  "species": "elementals",
+  "age": 25,
+  "roles": {
+    "primary": "debuffer",
+    "secondary": "controller"
+  },
+  "weapon_item": "Weapon_A55",
+  "growth_curve": "strong_starter",
+  "brand_vibe": "A debuffer from the Giant Kingdom with elementals heritage",
+  "mat_list": [
+    "sentient",
+    "mindless",
+    "flying"
+  ],
+  "move_list": [
+    "move_A55_1",
+    "move_A55_2",
+    "move_A55_3",
+    "move_A55_4"
+  ]
+}

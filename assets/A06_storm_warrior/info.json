@@ -1,0 +1,24 @@
+{
+  "name": "Storm Warrior",
+  "global_id": 6,
+  "tribe": "Spirit Realm",
+  "species": "constructs",
+  "age": 26,
+  "roles": {
+    "primary": "ally",
+    "secondary": "debuffer"
+  },
+  "weapon_item": "Weapon_A06",
+  "growth_curve": "steady",
+  "brand_vibe": "A ally from the Spirit Realm with constructs heritage",
+  "mat_list": [
+    "mindless",
+    "flying"
+  ],
+  "move_list": [
+    "move_A06_1",
+    "move_A06_2",
+    "move_A06_3",
+    "move_A06_4"
+  ]
+}

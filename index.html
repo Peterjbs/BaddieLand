@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaddieLand - Character Roster</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e4e4e4;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #00d4ff;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+        }
+
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 20px;
+        }
+
+        .character-list {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 20px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .character-list h2 {
+            color: #00d4ff;
+            margin-bottom: 15px;
+            position: sticky;
+            top: 0;
+            background: rgba(26, 26, 46, 0.95);
+            padding: 10px 0;
+            z-index: 10;
+        }
+
+        .character-item {
+            padding: 12px;
+            margin-bottom: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-left: 3px solid transparent;
+        }
+
+        .character-item:hover {
+            background: rgba(0, 212, 255, 0.2);
+            border-left-color: #00d4ff;
+        }
+
+        .character-item.active {
+            background: rgba(0, 212, 255, 0.3);
+            border-left-color: #00d4ff;
+        }
+
+        .character-item .id {
+            font-weight: bold;
+            color: #00d4ff;
+            font-size: 0.9em;
+        }
+
+        .character-item .name {
+            font-size: 1.1em;
+            margin: 5px 0;
+        }
+
+        .character-item .tribe {
+            font-size: 0.85em;
+            color: #aaa;
+        }
+
+        .character-detail {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 30px;
+            min-height: 80vh;
+        }
+
+        .character-detail.empty {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 1.2em;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+            flex-wrap: wrap;
+        }
+
+        .tab {
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.05);
+            border: none;
+            color: #aaa;
+            cursor: pointer;
+            border-radius: 5px 5px 0 0;
+            transition: all 0.3s ease;
+            font-size: 1em;
+        }
+
+        .tab:hover {
+            background: rgba(0, 212, 255, 0.1);
+            color: #00d4ff;
+        }
+
+        .tab.active {
+            background: rgba(0, 212, 255, 0.2);
+            color: #00d4ff;
+            border-bottom: 2px solid #00d4ff;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .info-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 3px solid #00d4ff;
+        }
+
+        .info-item .label {
+            color: #00d4ff;
+            font-size: 0.85em;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .info-item .value {
+            font-size: 1.1em;
+        }
+
+        .mat-list, .move-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background: rgba(0, 212, 255, 0.2);
+            color: #00d4ff;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.9em;
+        }
+
+        .move-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-left: 3px solid #ff6b6b;
+        }
+
+        .stats-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .stats-table th,
+        .stats-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .stats-table th {
+            background: rgba(0, 212, 255, 0.1);
+            color: #00d4ff;
+        }
+
+        .stats-table tr:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .images-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .image-item {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .image-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .log-content {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+
+        .empty-message {
+            color: #666;
+            font-style: italic;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #00d4ff;
+        }
+
+        .error {
+            color: #ff6b6b;
+            padding: 20px;
+            background: rgba(255, 107, 107, 0.1);
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(0, 212, 255, 0.3);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 212, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚔️ BaddieLand Character Roster ⚔️</h1>
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <strong>Total Characters:</strong> <span id="total-chars">0</span>
+                </div>
+                <div class="stat-item">
+                    <strong>BBB Tribe:</strong> <span id="bbb-count">0</span>
+                </div>
+                <div class="stat-item">
+                    <strong>Other Tribes:</strong> <span id="other-count">0</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="character-list">
+                <h2>Characters</h2>
+                <div id="character-list-content">
+                    <div class="loading">Loading characters...</div>
+                </div>
+            </div>
+
+            <div class="character-detail empty" id="character-detail">
+                <div>Select a character to view details</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let roster = null;
+        let currentCharacter = null;
+
+        // Load the roster on page load
+        async function loadRoster() {
+            try {
+                const response = await fetch('characters_roster.json');
+                if (!response.ok) throw new Error('Failed to load roster');
+                
+                const data = await response.json();
+                roster = data.characters;
+                
+                updateStats();
+                renderCharacterList();
+            } catch (error) {
+                console.error('Error loading roster:', error);
+                document.getElementById('character-list-content').innerHTML = 
+                    `<div class="error">Error loading character roster: ${error.message}</div>`;
+            }
+        }
+
+        function updateStats() {
+            const bbbCount = roster.filter(c => c.tribe === 'BBB').length;
+            const otherCount = roster.length - bbbCount;
+            
+            document.getElementById('total-chars').textContent = roster.length;
+            document.getElementById('bbb-count').textContent = bbbCount;
+            document.getElementById('other-count').textContent = otherCount;
+        }
+
+        function renderCharacterList() {
+            const container = document.getElementById('character-list-content');
+            
+            const html = roster.map(char => `
+                <div class="character-item" onclick="selectCharacter('${char.id}')" data-id="${char.id}">
+                    <div class="id">${char.id} - #${char.global_id}</div>
+                    <div class="name">${char.name}</div>
+                    <div class="tribe">${char.tribe}</div>
+                </div>
+            `).join('');
+            
+            container.innerHTML = html;
+        }
+
+        async function selectCharacter(charId) {
+            const char = roster.find(c => c.id === charId);
+            if (!char) return;
+            
+            currentCharacter = char;
+            
+            // Update active state
+            document.querySelectorAll('.character-item').forEach(item => {
+                item.classList.toggle('active', item.dataset.id === charId);
+            });
+            
+            // Load character data
+            await loadCharacterData(char);
+        }
+
+        async function loadCharacterData(char) {
+            const detailDiv = document.getElementById('character-detail');
+            detailDiv.className = 'character-detail';
+            
+            detailDiv.innerHTML = `
+                <div class="loading">Loading ${char.name}...</div>
+            `;
+            
+            try {
+                // Load all data files
+                const [info, moves, stats, log, images] = await Promise.all([
+                    fetchJSON(`${char.assetsPath}/info.json`),
+                    fetchJSON(`${char.assetsPath}/moves.json`),
+                    fetchJSON(`${char.assetsPath}/stats.json`),
+                    fetchText(`${char.assetsPath}/log.md`),
+                    fetchImages(`${char.assetsPath}/images/`)
+                ]);
+                
+                renderCharacterDetail(char, { info, moves, stats, log, images });
+            } catch (error) {
+                console.error('Error loading character data:', error);
+                detailDiv.innerHTML = `<div class="error">Error loading character data: ${error.message}</div>`;
+            }
+        }
+
+        async function fetchJSON(url) {
+            try {
+                const response = await fetch(url);
+                if (!response.ok) return null;
+                return await response.json();
+            } catch (error) {
+                console.error(`Error fetching ${url}:`, error);
+                return null;
+            }
+        }
+
+        async function fetchText(url) {
+            try {
+                const response = await fetch(url);
+                if (!response.ok) return null;
+                return await response.text();
+            } catch (error) {
+                console.error(`Error fetching ${url}:`, error);
+                return null;
+            }
+        }
+
+        async function fetchImages(dirPath) {
+            // We can't list directory contents directly, so we return empty
+            // In a real implementation, images would need to be listed in a manifest
+            return [];
+        }
+
+        function renderCharacterDetail(char, data) {
+            const detailDiv = document.getElementById('character-detail');
+            
+            detailDiv.innerHTML = `
+                <h2 style="color: #00d4ff; margin-bottom: 20px;">${char.name} (${char.id})</h2>
+                
+                <div class="tabs">
+                    <button class="tab active" onclick="switchTab('info')">Info</button>
+                    <button class="tab" onclick="switchTab('moves')">Moves</button>
+                    <button class="tab" onclick="switchTab('stats')">Stats</button>
+                    <button class="tab" onclick="switchTab('images')">Images</button>
+                    <button class="tab" onclick="switchTab('log')">Log</button>
+                </div>
+                
+                <div id="tab-info" class="tab-content active">
+                    ${renderInfo(data.info)}
+                </div>
+                
+                <div id="tab-moves" class="tab-content">
+                    ${renderMoves(data.moves)}
+                </div>
+                
+                <div id="tab-stats" class="tab-content">
+                    ${renderStats(data.stats)}
+                </div>
+                
+                <div id="tab-images" class="tab-content">
+                    ${renderImages(data.images)}
+                </div>
+                
+                <div id="tab-log" class="tab-content">
+                    ${renderLog(data.log)}
+                </div>
+            `;
+        }
+
+        function switchTab(tabName) {
+            // Update tab buttons
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            // Update tab content
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(`tab-${tabName}`).classList.add('active');
+        }
+
+        function renderInfo(info) {
+            if (!info) return '<div class="empty-message">No info data available</div>';
+            
+            return `
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="label">Name</div>
+                        <div class="value">${info.name || 'N/A'}</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Global ID</div>
+                        <div class="value">#${info.global_id || 'N/A'}</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Tribe</div>
+                        <div class="value">${info.tribe || 'N/A'}</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Species</div>
+                        <div class="value">${info.species || 'N/A'}</div>
+                    </div>
+                    ${info.subspecies ? `
+                    <div class="info-item">
+                        <div class="label">Subspecies</div>
+                        <div class="value">${info.subspecies}</div>
+                    </div>
+                    ` : ''}
+                    <div class="info-item">
+                        <div class="label">Age</div>
+                        <div class="value">${info.age || 'N/A'}</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Primary Role</div>
+                        <div class="value">${info.roles?.primary || 'N/A'}</div>
+                    </div>
+                    ${info.roles?.secondary ? `
+                    <div class="info-item">
+                        <div class="label">Secondary Role</div>
+                        <div class="value">${info.roles.secondary}</div>
+                    </div>
+                    ` : ''}
+                    ${info.roles?.tertiary ? `
+                    <div class="info-item">
+                        <div class="label">Tertiary Role</div>
+                        <div class="value">${info.roles.tertiary}</div>
+                    </div>
+                    ` : ''}
+                    <div class="info-item">
+                        <div class="label">Weapon</div>
+                        <div class="value">${info.weapon_item || 'N/A'}</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Growth Curve</div>
+                        <div class="value">${info.growth_curve || 'N/A'}</div>
+                    </div>
+                </div>
+                
+                ${info.brand_vibe ? `
+                <div class="info-item" style="margin-top: 20px;">
+                    <div class="label">Brand & Vibe</div>
+                    <div class="value">${info.brand_vibe}</div>
+                </div>
+                ` : ''}
+                
+                ${info.specific_visuals ? `
+                <div class="info-item" style="margin-top: 10px;">
+                    <div class="label">Visual Details</div>
+                    <div class="value">${info.specific_visuals}</div>
+                </div>
+                ` : ''}
+                
+                ${info.mat_list && info.mat_list.length > 0 ? `
+                <div style="margin-top: 20px;">
+                    <div class="label" style="margin-bottom: 10px; color: #00d4ff;">Multiplier Affecting Tags (MaT)</div>
+                    <div class="mat-list">
+                        ${info.mat_list.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                    </div>
+                </div>
+                ` : ''}
+                
+                ${info.move_list && info.move_list.length > 0 ? `
+                <div style="margin-top: 20px;">
+                    <div class="label" style="margin-bottom: 10px; color: #00d4ff;">Move List IDs</div>
+                    <div class="move-list">
+                        ${info.move_list.map(move => `<span class="tag" style="background: rgba(255, 107, 107, 0.2); color: #ff6b6b;">${move}</span>`).join('')}
+                    </div>
+                </div>
+                ` : ''}
+            `;
+        }
+
+        function renderMoves(moves) {
+            if (!moves || moves.length === 0) {
+                return '<div class="empty-message">No moves defined yet</div>';
+            }
+            
+            return moves.map(move => `
+                <div class="move-item">
+                    <h3 style="color: #ff6b6b; margin-bottom: 10px;">${move.name || 'Unnamed Move'}</h3>
+                    <p style="margin-bottom: 10px;">${move.description || 'No description'}</p>
+                    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                        ${move.type ? `<div><strong>Type:</strong> ${move.type}</div>` : ''}
+                        ${move.learned_at_level ? `<div><strong>Learned at:</strong> Level ${move.learned_at_level}</div>` : ''}
+                        ${move.target?.type ? `<div><strong>Target:</strong> ${move.target.type}</div>` : ''}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderStats(stats) {
+            if (!stats || Object.keys(stats).length === 0) {
+                return '<div class="empty-message">No stats defined yet</div>';
+            }
+            
+            const entries = Object.entries(stats);
+            
+            return `
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Stat</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${entries.map(([key, value]) => `
+                            <tr>
+                                <td style="text-transform: uppercase;">${key}</td>
+                                <td>${value}</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            `;
+        }
+
+        function renderImages(images) {
+            if (!images || images.length === 0) {
+                return '<div class="empty-message">No images available</div>';
+            }
+            
+            return `
+                <div class="images-grid">
+                    ${images.map(img => `
+                        <div class="image-item">
+                            <img src="${img}" alt="Character Image" onerror="this.parentElement.style.display='none'">
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        function renderLog(log) {
+            if (!log || log.trim().length === 0) {
+                return '<div class="empty-message">No log entries yet</div>';
+            }
+            
+            return `<div class="log-content">${escapeHtml(log)}</div>`;
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Initialize on page load
+        window.addEventListener('DOMContentLoaded', loadRoster);
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "Bouncing Beast",
+  "global_id": 80,
+  "tribe": "BBB",
+  "species": "merfolk",
+  "age": 50,
+  "roles": {
+    "primary": "controller",
+    "secondary": "survivor"
+  },
+  "weapon_item": "Weapon_B05",
+  "growth_curve": "quick_learner",
+  "brand_vibe": "A controller from the BBB with merfolk heritage",
+  "mat_list": [
+    "sentient",
+    "mindless",
+    "flying",
+    "no_legs"
+  ],
+  "move_list": [
+    "move_B05_1",
+    "move_B05_2",
+    "move_B05_3",
+    "move_B05_4"
+  ]
+}

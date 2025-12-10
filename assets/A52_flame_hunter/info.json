@@ -1,0 +1,25 @@
+{
+  "name": "Flame Hunter",
+  "global_id": 52,
+  "tribe": "Beast Clan",
+  "species": "skeleton",
+  "age": 22,
+  "roles": {
+    "primary": "fat_trimmer",
+    "secondary": "healer"
+  },
+  "weapon_item": "Weapon_A52",
+  "growth_curve": "slow",
+  "brand_vibe": "A fat_trimmer from the Beast Clan with skeleton heritage",
+  "mat_list": [
+    "construct",
+    "magic",
+    "feral"
+  ],
+  "move_list": [
+    "move_A52_1",
+    "move_A52_2",
+    "move_A52_3",
+    "move_A52_4"
+  ]
+}

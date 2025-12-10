@@ -1,0 +1,25 @@
+{
+  "name": "Shadow Warrior",
+  "global_id": 64,
+  "tribe": "Beast Clan",
+  "species": "reptilian",
+  "age": 34,
+  "roles": {
+    "primary": "fat_trimmer",
+    "secondary": "healer"
+  },
+  "weapon_item": "Weapon_A64",
+  "growth_curve": "slow",
+  "brand_vibe": "A fat_trimmer from the Beast Clan with reptilian heritage",
+  "mat_list": [
+    "air",
+    "earth",
+    "electric"
+  ],
+  "move_list": [
+    "move_A64_1",
+    "move_A64_2",
+    "move_A64_3",
+    "move_A64_4"
+  ]
+}

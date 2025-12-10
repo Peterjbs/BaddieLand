@@ -1,0 +1,25 @@
+{
+  "name": "Thunder Knight",
+  "global_id": 19,
+  "tribe": "Giant Kingdom",
+  "species": "reanimated",
+  "age": 39,
+  "roles": {
+    "primary": "debuffer",
+    "secondary": "controller"
+  },
+  "weapon_item": "Weapon_A19",
+  "growth_curve": "strong_starter",
+  "brand_vibe": "A debuffer from the Giant Kingdom with reanimated heritage",
+  "mat_list": [
+    "wooden",
+    "holy",
+    "dark"
+  ],
+  "move_list": [
+    "move_A19_1",
+    "move_A19_2",
+    "move_A19_3",
+    "move_A19_4"
+  ]
+}

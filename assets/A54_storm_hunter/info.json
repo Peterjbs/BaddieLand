@@ -1,0 +1,24 @@
+{
+  "name": "Storm Hunter",
+  "global_id": 54,
+  "tribe": "Spirit Realm",
+  "species": "spirits",
+  "age": 24,
+  "roles": {
+    "primary": "ally",
+    "secondary": "debuffer"
+  },
+  "weapon_item": "Weapon_A54",
+  "growth_curve": "steady",
+  "brand_vibe": "A ally from the Spirit Realm with spirits heritage",
+  "mat_list": [
+    "feral",
+    "sentient"
+  ],
+  "move_list": [
+    "move_A54_1",
+    "move_A54_2",
+    "move_A54_3",
+    "move_A54_4"
+  ]
+}

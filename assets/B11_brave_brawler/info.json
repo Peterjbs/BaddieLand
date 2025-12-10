@@ -1,0 +1,26 @@
+{
+  "name": "Brave Brawler",
+  "global_id": 86,
+  "tribe": "BBB",
+  "species": "skeleton",
+  "age": 56,
+  "roles": {
+    "primary": "big_hitter",
+    "secondary": "assassin"
+  },
+  "weapon_item": "Weapon_B11",
+  "growth_curve": "quick_learner",
+  "brand_vibe": "A big_hitter from the BBB with skeleton heritage",
+  "mat_list": [
+    "saah_big",
+    "fire",
+    "water",
+    "air"
+  ],
+  "move_list": [
+    "move_B11_1",
+    "move_B11_2",
+    "move_B11_3",
+    "move_B11_4"
+  ]
+}

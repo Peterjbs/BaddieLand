@@ -1,0 +1,25 @@
+{
+  "name": "Iron Warrior",
+  "global_id": 1,
+  "tribe": "Undead Legion",
+  "species": "skeleton",
+  "age": 21,
+  "roles": {
+    "primary": "bruiser",
+    "secondary": "big_hitter"
+  },
+  "weapon_item": "Weapon_A01",
+  "growth_curve": "strong_starter",
+  "brand_vibe": "A bruiser from the Undead Legion with skeleton heritage",
+  "mat_list": [
+    "undead",
+    "construct",
+    "magic"
+  ],
+  "move_list": [
+    "move_A01_1",
+    "move_A01_2",
+    "move_A01_3",
+    "move_A01_4"
+  ]
+}

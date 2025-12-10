@@ -1,0 +1,24 @@
+{
+  "name": "Crystal Sentinel",
+  "global_id": 42,
+  "tribe": "Spirit Realm",
+  "species": "high_fae",
+  "age": 62,
+  "roles": {
+    "primary": "ally",
+    "secondary": "debuffer"
+  },
+  "weapon_item": "Weapon_A42",
+  "growth_curve": "steady",
+  "brand_vibe": "A ally from the Spirit Realm with high_fae heritage",
+  "mat_list": [
+    "plant",
+    "metallic"
+  ],
+  "move_list": [
+    "move_A42_1",
+    "move_A42_2",
+    "move_A42_3",
+    "move_A42_4"
+  ]
+}

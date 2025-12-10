@@ -1,0 +1,26 @@
+{
+  "name": "Storm Guardian",
+  "global_id": 38,
+  "tribe": "Fae Court",
+  "species": "elementals",
+  "age": 58,
+  "roles": {
+    "primary": "big_hitter",
+    "secondary": "assassin"
+  },
+  "weapon_item": "Weapon_A38",
+  "growth_curve": "quick_learner",
+  "brand_vibe": "A big_hitter from the Fae Court with elementals heritage",
+  "mat_list": [
+    "water",
+    "air",
+    "earth",
+    "electric"
+  ],
+  "move_list": [
+    "move_A38_1",
+    "move_A38_2",
+    "move_A38_3",
+    "move_A38_4"
+  ]
+}

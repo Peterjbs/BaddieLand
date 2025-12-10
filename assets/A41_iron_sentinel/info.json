@@ -1,0 +1,26 @@
+{
+  "name": "Iron Sentinel",
+  "global_id": 41,
+  "tribe": "Construct Guild",
+  "species": "small_fae",
+  "age": 61,
+  "roles": {
+    "primary": "healer",
+    "secondary": "ally"
+  },
+  "weapon_item": "Weapon_A41",
+  "growth_curve": "key_levels",
+  "brand_vibe": "A healer from the Construct Guild with small_fae heritage",
+  "mat_list": [
+    "electric",
+    "plant",
+    "metallic",
+    "wooden"
+  ],
+  "move_list": [
+    "move_A41_1",
+    "move_A41_2",
+    "move_A41_3",
+    "move_A41_4"
+  ]
+}

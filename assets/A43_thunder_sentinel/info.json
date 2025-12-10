@@ -1,0 +1,25 @@
+{
+  "name": "Thunder Sentinel",
+  "global_id": 43,
+  "tribe": "Giant Kingdom",
+  "species": "hags_witches",
+  "age": 63,
+  "roles": {
+    "primary": "debuffer",
+    "secondary": "controller"
+  },
+  "weapon_item": "Weapon_A43",
+  "growth_curve": "strong_starter",
+  "brand_vibe": "A debuffer from the Giant Kingdom with hags_witches heritage",
+  "mat_list": [
+    "metallic",
+    "wooden",
+    "holy"
+  ],
+  "move_list": [
+    "move_A43_1",
+    "move_A43_2",
+    "move_A43_3",
+    "move_A43_4"
+  ]
+}

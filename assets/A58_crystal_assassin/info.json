@@ -1,0 +1,25 @@
+{
+  "name": "Crystal Assassin",
+  "global_id": 58,
+  "tribe": "Preserved Ancients",
+  "species": "small_fae",
+  "age": 28,
+  "roles": {
+    "primary": "sniper",
+    "secondary": "looter"
+  },
+  "weapon_item": "Weapon_A58",
+  "growth_curve": "slow",
+  "brand_vibe": "A sniper from the Preserved Ancients with small_fae heritage",
+  "mat_list": [
+    "no_legs",
+    "non_corporeal",
+    "saah_small"
+  ],
+  "move_list": [
+    "move_A58_1",
+    "move_A58_2",
+    "move_A58_3",
+    "move_A58_4"
+  ]
+}
