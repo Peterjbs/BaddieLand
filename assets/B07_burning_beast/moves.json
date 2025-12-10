@@ -1,1 +1,102 @@
-[]
+[
+  {
+    "id": "move_B07_1",
+    "name": "Precise Shot",
+    "description": "High accuracy ranged attack",
+    "type": "ranged_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "damage = (RGA * 1.5) + (ACC * 0.6) - (target.RGD * 0.8)",
+    "target_mats": [
+      {
+        "tag": "ice",
+        "multiplier": 1.5
+      },
+      {
+        "tag": "plant",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "water",
+        "multiplier": 0.7
+      }
+    ]
+  },
+  {
+    "id": "move_B07_2",
+    "name": "Headshot",
+    "description": "Critical ranged strike",
+    "type": "ranged_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "damage = (RGA * 1.5) + (ACC * 0.6) - (target.RGD * 0.8)",
+    "target_mats": [
+      {
+        "tag": "ice",
+        "multiplier": 1.5
+      },
+      {
+        "tag": "plant",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "water",
+        "multiplier": 0.7
+      }
+    ]
+  },
+  {
+    "id": "move_B07_3",
+    "name": "Piercing Arrow",
+    "description": "Arrow that penetrates defenses",
+    "type": "ranged_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "damage = (RGA * 1.5) + (ACC * 0.6) - (target.RGD * 0.8)",
+    "target_mats": [
+      {
+        "tag": "ice",
+        "multiplier": 1.5
+      },
+      {
+        "tag": "plant",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "water",
+        "multiplier": 0.7
+      }
+    ]
+  },
+  {
+    "id": "move_B07_4",
+    "name": "Aimed Shot",
+    "description": "Carefully aimed powerful shot",
+    "type": "ranged_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "damage = (RGA * 1.5) + (ACC * 0.6) - (target.RGD * 0.8)",
+    "target_mats": [
+      {
+        "tag": "ice",
+        "multiplier": 1.5
+      },
+      {
+        "tag": "plant",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "water",
+        "multiplier": 0.7
+      }
+    ]
+  }
+]

@@ -1,1 +1,102 @@
-[]
+[
+  {
+    "id": "move_A62_1",
+    "name": "Devastating Blow",
+    "description": "Massive burst damage attack",
+    "type": "melee_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "damage = (MLA * 1.5) + (ACC * 0.5) - (target.MLD * 0.8)",
+    "target_mats": [
+      {
+        "tag": "ice",
+        "multiplier": 1.5
+      },
+      {
+        "tag": "plant",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "water",
+        "multiplier": 0.7
+      }
+    ]
+  },
+  {
+    "id": "move_A62_2",
+    "name": "Power Strike",
+    "description": "High damage single strike",
+    "type": "melee_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "damage = (MLA * 1.5) + (ACC * 0.5) - (target.MLD * 0.8)",
+    "target_mats": [
+      {
+        "tag": "ice",
+        "multiplier": 1.5
+      },
+      {
+        "tag": "plant",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "water",
+        "multiplier": 0.7
+      }
+    ]
+  },
+  {
+    "id": "move_A62_3",
+    "name": "Charge",
+    "description": "Rushing attack with massive impact",
+    "type": "melee_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "damage = (MLA * 1.5) + (ACC * 0.5) - (target.MLD * 0.8)",
+    "target_mats": [
+      {
+        "tag": "ice",
+        "multiplier": 1.5
+      },
+      {
+        "tag": "plant",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "water",
+        "multiplier": 0.7
+      }
+    ]
+  },
+  {
+    "id": "move_A62_4",
+    "name": "Execute",
+    "description": "Finishing move dealing extreme damage",
+    "type": "melee_attack",
+    "target": {
+      "type": "enemy"
+    },
+    "learned_at_level": 1,
+    "effect_algorithm": "damage = (MLA * 1.5) + (ACC * 0.5) - (target.MLD * 0.8)",
+    "target_mats": [
+      {
+        "tag": "ice",
+        "multiplier": 1.5
+      },
+      {
+        "tag": "plant",
+        "multiplier": 1.3
+      },
+      {
+        "tag": "water",
+        "multiplier": 0.7
+      }
+    ]
+  }
+]
