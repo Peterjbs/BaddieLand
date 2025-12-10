@@ -9,7 +9,7 @@ This directory contains initial character statistics and attributes.
 - Document character classes and types
 
 ## File Format
-Character stats should be stored in JSON or YAML format for easy parsing and modification.
+Character stats should be stored in **JSON format** for easy parsing and modification. Use `.json` extension for all character stat files.
 
 ## Typical Stats
 - Health Points (HP)

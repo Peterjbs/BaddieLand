@@ -19,8 +19,17 @@ characters/
 ```
 
 ## File Naming Convention
+Use the following pattern: `[character-name]-[state-action].[extension]`
+
+Examples:
+- `hero-idle.png` - Hero character in idle state
+- `hero-attack.png` - Hero character performing attack
+- `goblin-damaged.png` - Goblin character taking damage
+- `mage-spell-cast.png` - Mage character casting a spell
+
+Guidelines:
 - Use lowercase with hyphens for character names
-- Include state/action in filename (e.g., `hero-idle.png`, `hero-attack.png`)
+- Use descriptive state/action names
 - Use consistent image formats (PNG for transparency, JPG for backgrounds)
 
 ## Supported Formats
