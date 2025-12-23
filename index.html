@@ -694,16 +694,19 @@
             }
         }
 
-        async function fetchImages() {
+        async function fetchImages(dirPath) {
+            // Placeholder: requires manifest or API listing. Returns empty until backend/manifest is provided.
             return [];
         }
+
+        const TAB_ORDER = ['info','moves','stats','images','log','console','generation','assets','progress','export','gang'];
 
         function renderCharacterDetail(char, data, activeTab = 'info') {
             const detailDiv = document.getElementById('character-detail');
             detailDiv.innerHTML = `
                 <h2 style="color: #00d4ff; margin-bottom: 20px;">${char.name} (${char.id})</h2>
                 <div class="tabs">
-                    ${['info','moves','stats','images','log','console','generation','assets','progress','export','gang'].map(tab => `
+                    ${TAB_ORDER.map(tab => `
                         <button class="tab ${activeTab === tab ? 'active' : ''}" data-tab="${tab}" onclick="switchTab('${tab}', this)">${tabLabel(tab)}</button>
                     `).join('')}
                 </div>
@@ -1216,13 +1219,13 @@
         function updateAvatarStatus(index, status) {
             const charId = currentCharacter?.id;
             if (!charId) return;
-            consoleState.avatars[charId] = consoleState.avatars[charId].map((avatar, idx) => ({
-                ...avatar,
-                status: idx === index ? status : avatar.status === 'active' && status === 'active' ? 'approved' : avatar.status
-            }));
+            consoleState.avatars[charId] = consoleState.avatars[charId].map((avatar, idx) => {
+                if (idx === index) return { ...avatar, status };
+                if (status === 'active' && avatar.status === 'active') return { ...avatar, status: 'approved' };
+                return avatar;
+            });
             document.getElementById('avatar-drafts').innerHTML = renderAvatarList();
             document.getElementById('tab-assets').innerHTML = renderAssetsConsole();
-            switchTab('assets');
         }
 
         function addSpriteSheetDraft(event) {
