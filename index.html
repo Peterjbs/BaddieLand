@@ -303,6 +303,216 @@
         ::-webkit-scrollbar-thumb:hover {
             background: rgba(0, 212, 255, 0.5);
         }
+
+        .search-controls {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .search-controls input,
+        .search-controls select,
+        .section-card input,
+        .section-card textarea,
+        .section-card select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.25);
+            color: #e4e4e4;
+        }
+
+        .section-card {
+            background: rgba(255, 255, 255, 0.04);
+            padding: 16px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-weight: 700;
+            color: #00d4ff;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .pill {
+            padding: 5px 10px;
+            border-radius: 12px;
+            background: rgba(0, 212, 255, 0.15);
+            color: #00d4ff;
+            font-size: 0.85em;
+        }
+
+        .grid-two {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 10px;
+        }
+
+        .button-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .btn {
+            padding: 8px 14px;
+            border-radius: 6px;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            background: rgba(0, 212, 255, 0.12);
+            color: #e4e4e4;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn.secondary {
+            background: rgba(255, 255, 255, 0.04);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .btn:hover {
+            border-color: #00d4ff;
+            color: #00d4ff;
+        }
+
+        .chips {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            margin-top: 6px;
+        }
+
+        .chip {
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            font-size: 0.9em;
+        }
+
+        .progress-shell {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 999px;
+            height: 14px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 14px;
+            background: linear-gradient(90deg, #00d4ff, #6bffb5);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .list-stack {
+            display: grid;
+            gap: 8px;
+        }
+
+        .list-item {
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 6px;
+            border-left: 3px solid rgba(0, 212, 255, 0.6);
+        }
+
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 6px;
+        }
+
+        .status-draft { background: #ffbb54; }
+        .status-refine { background: #00d4ff; }
+        .status-approved { background: #6bffb5; }
+        .status-active { background: #ff6b6b; }
+
+        .mini-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .mini-table td {
+            padding: 8px 4px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .avatar-preview {
+            width: 100%;
+            height: 140px;
+            border-radius: 8px;
+            background: radial-gradient(circle at 30% 30%, rgba(0,212,255,0.2), transparent), rgba(255,255,255,0.03);
+            display: grid;
+            place-items: center;
+            border: 1px dashed rgba(255,255,255,0.1);
+        }
+
+        .animation-stage {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 4px;
+        }
+
+        .animation-cell {
+            aspect-ratio: 1/1;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.07);
+        }
+
+        .wireframe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 10px;
+        }
+
+        .wireframe-card {
+            border: 1px dashed rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .wireframe-card h4 {
+            margin-bottom: 6px;
+            color: #00d4ff;
+        }
+
+        .ui-map-list {
+            display: grid;
+            gap: 4px;
+            font-size: 0.95em;
+        }
+
+        .ui-map-badge {
+            padding: 4px 8px;
+            border-radius: 6px;
+            background: rgba(255, 255, 255, 0.05);
+            display: inline-block;
+            margin-right: 4px;
+        }
+
+        .map-section {
+            margin-top: 8px;
+            padding: 8px;
+            border-radius: 6px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .map-list {
+            margin: 6px 0 0 16px;
+            display: grid;
+            gap: 4px;
+        }
     </style>
 </head>
 <body>
@@ -325,6 +535,24 @@
         <div class="main-content">
             <div class="character-list">
                 <h2>Characters</h2>
+                <div class="search-controls">
+                    <input id="search-input" type="search" placeholder="Search by name, ID, tribe" oninput="handleSearchInput(this.value)">
+                    <select id="tribe-filter" onchange="handleTribeFilter(this.value)">
+                        <option value="all">All Tribes</option>
+                    </select>
+                    <select id="sort-order" onchange="handleSortChange(this.value)">
+                        <option value="name">Sort: Name</option>
+                        <option value="global_id">Sort: Global ID</option>
+                        <option value="tribe">Sort: Tribe</option>
+                    </select>
+                </div>
+                <div class="section-card" id="gang-roster-mini">
+                    <div class="section-title">
+                        <span>Gang / Tribe roster snapshot</span>
+                        <span class="pill" id="mini-roster-count">0</span>
+                    </div>
+                    <div class="chips" id="gang-roster-mini-list"></div>
+                </div>
                 <div id="character-list-content">
                     <div class="loading">Loading characters...</div>
                 </div>
@@ -337,75 +565,150 @@
     </div>
 
     <script>
-        let roster = null;
+        let roster = [];
         let currentCharacter = null;
+        let currentWorkingData = null;
+        const filters = { query: '', tribe: 'all', sort: 'name' };
+        const consoleState = {
+            avatars: {},
+            spriteSheets: {},
+            progress: {},
+            drafts: {},
+            generatedDescriptions: {},
+            exports: {}
+        };
 
-        // Load the roster on page load
+        const groupByTribe = (list = []) => list.reduce((acc, cur) => {
+            acc[cur.tribe] = acc[cur.tribe] || [];
+            acc[cur.tribe].push(cur);
+            return acc;
+        }, {});
+
+        function deriveTags(data) {
+            if (!data?.info) return [];
+            const info = data.info;
+            const stats = data.stats || {};
+            const topStats = Object.entries(stats).sort((a,b)=>(b[1]||0)-(a[1]||0)).slice(0,3).map(([k]) => k.toUpperCase());
+            const base = [
+                info.tribe,
+                info.roles?.primary,
+                info.weapon_item,
+                info.growth_curve,
+                ...(info.mat_list || []),
+                ...topStats
+            ].filter(Boolean);
+            return Array.from(new Set(base.map(t => t.toString())));
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        const safeText = (value) => escapeHtml(String(value ?? ''));
+
+        // Initialize on page load
+        window.addEventListener('DOMContentLoaded', loadRoster);
+
+        // Data loading + roster search
         async function loadRoster() {
             try {
                 const response = await fetch('characters_roster.json');
                 if (!response.ok) throw new Error('Failed to load roster');
-                
                 const data = await response.json();
-                roster = data.characters;
-                
+                roster = data.characters || [];
+                populateTribeFilter();
                 updateStats();
+                renderGangRosterMini();
                 renderCharacterList();
             } catch (error) {
                 console.error('Error loading roster:', error);
-                document.getElementById('character-list-content').innerHTML = 
+                document.getElementById('character-list-content').innerHTML =
                     `<div class="error">Error loading character roster: ${error.message}</div>`;
             }
+        }
+
+        function populateTribeFilter() {
+            const tribeSelect = document.getElementById('tribe-filter');
+            const tribes = [...new Set(roster.map(c => c.tribe))].sort();
+            tribeSelect.innerHTML = `<option value="all">All Tribes</option>` + tribes.map(t => `<option value="${safeText(t)}">${safeText(t)}</option>`).join('');
         }
 
         function updateStats() {
             const bbbCount = roster.filter(c => c.tribe === 'BBB').length;
             const otherCount = roster.length - bbbCount;
-            
             document.getElementById('total-chars').textContent = roster.length;
             document.getElementById('bbb-count').textContent = bbbCount;
             document.getElementById('other-count').textContent = otherCount;
         }
 
+        function getFilteredRoster() {
+            let list = [...roster];
+            if (filters.query) {
+                const q = filters.query.toLowerCase();
+                list = list.filter(c =>
+                    c.name.toLowerCase().includes(q) ||
+                    c.id.toLowerCase().includes(q) ||
+                    c.tribe.toLowerCase().includes(q)
+                );
+            }
+            if (filters.tribe !== 'all') {
+                list = list.filter(c => c.tribe === filters.tribe);
+            }
+            list.sort((a, b) => {
+                if (filters.sort === 'name') return a.name.localeCompare(b.name);
+                if (filters.sort === 'tribe') return a.tribe.localeCompare(b.tribe);
+                return (a.global_id || 0) - (b.global_id || 0);
+            });
+            return list;
+        }
+
         function renderCharacterList() {
             const container = document.getElementById('character-list-content');
-            
-            const html = roster.map(char => `
-                <div class="character-item" onclick="selectCharacter('${char.id}')" data-id="${char.id}">
-                    <div class="id">${char.id} - #${char.global_id}</div>
-                    <div class="name">${char.name}</div>
-                    <div class="tribe">${char.tribe}</div>
+            const filtered = getFilteredRoster();
+            const html = filtered.map(char => `
+                <div class="character-item" onclick="selectCharacter('${safeText(char.id)}')" data-id="${safeText(char.id)}">
+                    <div class="id">${safeText(char.id)} - #${safeText(char.global_id)}</div>
+                    <div class="name">${safeText(char.name)}</div>
+                    <div class="tribe">${safeText(char.tribe)}</div>
                 </div>
             `).join('');
-            
-            container.innerHTML = html;
+            container.innerHTML = html || '<div class="empty-message">No characters match the filters</div>';
+        }
+
+        function handleSearchInput(value) {
+            filters.query = value;
+            renderCharacterList();
+            renderGangRosterMini();
+        }
+
+        function handleTribeFilter(value) {
+            filters.tribe = value;
+            renderCharacterList();
+            renderGangRosterMini();
+        }
+
+        function handleSortChange(value) {
+            filters.sort = value;
+            renderCharacterList();
         }
 
         async function selectCharacter(charId) {
             const char = roster.find(c => c.id === charId);
             if (!char) return;
-            
             currentCharacter = char;
-            
-            // Update active state
             document.querySelectorAll('.character-item').forEach(item => {
                 item.classList.toggle('active', item.dataset.id === charId);
             });
-            
-            // Load character data
             await loadCharacterData(char);
         }
 
         async function loadCharacterData(char) {
             const detailDiv = document.getElementById('character-detail');
             detailDiv.className = 'character-detail';
-            
-            detailDiv.innerHTML = `
-                <div class="loading">Loading ${char.name}...</div>
-            `;
-            
+            detailDiv.innerHTML = `<div class="loading">Loading ${char.name}...</div>`;
             try {
-                // Load all data files
                 const [info, moves, stats, log, images] = await Promise.all([
                     fetchJSON(`${char.assetsPath}/info.json`),
                     fetchJSON(`${char.assetsPath}/moves.json`),
@@ -413,12 +716,36 @@
                     fetchText(`${char.assetsPath}/log.md`),
                     fetchImages(`${char.assetsPath}/images/`)
                 ]);
-                
-                renderCharacterDetail(char, { info, moves, stats, log, images });
+                const fallbackInfo = info || {
+                    name: char.name,
+                    global_id: char.global_id,
+                    tribe: char.tribe,
+                    move_list: [],
+                    mat_list: [],
+                    roles: {}
+                };
+                currentWorkingData = {
+                    info: fallbackInfo,
+                    moves: Array.isArray(moves) ? moves : [],
+                    stats: stats || {},
+                    log: log || '',
+                    images: images || []
+                };
+                ensureConsoleState(char.id);
+                renderCharacterDetail(char, currentWorkingData);
             } catch (error) {
                 console.error('Error loading character data:', error);
                 detailDiv.innerHTML = `<div class="error">Error loading character data: ${error.message}</div>`;
             }
+        }
+
+        function ensureConsoleState(charId) {
+            if (!consoleState.avatars[charId]) consoleState.avatars[charId] = [];
+            if (!consoleState.spriteSheets[charId]) consoleState.spriteSheets[charId] = [];
+            if (!consoleState.progress[charId]) consoleState.progress[charId] = { completion: 0, entries: [] };
+            if (!consoleState.drafts[charId]) consoleState.drafts[charId] = [];
+            if (!consoleState.generatedDescriptions[charId]) consoleState.generatedDescriptions[charId] = '';
+            if (!consoleState.exports[charId]) consoleState.exports[charId] = '';
         }
 
         async function fetchJSON(url) {
@@ -444,241 +771,702 @@
         }
 
         async function fetchImages(dirPath) {
-            // Note: Browser security prevents direct directory listing.
-            // To enable image display, images must be:
-            // 1. Manually listed in a manifest file (e.g., images.json in each character directory)
-            // 2. Or served via a backend API that can list directory contents
-            // For now, returns empty array - images can be added later via manifest approach
+            // Placeholder: requires manifest or API listing. Returns empty until backend/manifest is provided.
             return [];
         }
 
-        function renderCharacterDetail(char, data) {
+        const TAB_ORDER = ['info','moves','stats','images','log','console','generation','assets','progress','export','gang','map'];
+
+        function renderCharacterDetail(char, data, activeTab = 'info') {
             const detailDiv = document.getElementById('character-detail');
-            
             detailDiv.innerHTML = `
-                <h2 style="color: #00d4ff; margin-bottom: 20px;">${char.name} (${char.id})</h2>
-                
+                <h2 style="color: #00d4ff; margin-bottom: 20px;">${safeText(char.name)} (${safeText(char.id)})</h2>
                 <div class="tabs">
-                    <button class="tab active" onclick="switchTab('info', this)">Info</button>
-                    <button class="tab" onclick="switchTab('moves', this)">Moves</button>
-                    <button class="tab" onclick="switchTab('stats', this)">Stats</button>
-                    <button class="tab" onclick="switchTab('images', this)">Images</button>
-                    <button class="tab" onclick="switchTab('log', this)">Log</button>
+                    ${TAB_ORDER.map(tab => `
+                        <button class="tab ${activeTab === tab ? 'active' : ''}" data-tab="${tab}" onclick="switchTab('${tab}', this)">${tabLabel(tab)}</button>
+                    `).join('')}
                 </div>
-                
-                <div id="tab-info" class="tab-content active">
+                <div id="tab-info" class="tab-content ${activeTab === 'info' ? 'active' : ''}">
                     ${renderInfo(data.info)}
                 </div>
-                
-                <div id="tab-moves" class="tab-content">
+                <div id="tab-moves" class="tab-content ${activeTab === 'moves' ? 'active' : ''}">
                     ${renderMoves(data.moves)}
                 </div>
-                
-                <div id="tab-stats" class="tab-content">
+                <div id="tab-stats" class="tab-content ${activeTab === 'stats' ? 'active' : ''}">
                     ${renderStats(data.stats)}
                 </div>
-                
-                <div id="tab-images" class="tab-content">
+                <div id="tab-images" class="tab-content ${activeTab === 'images' ? 'active' : ''}">
                     ${renderImages(data.images)}
                 </div>
-                
-                <div id="tab-log" class="tab-content">
+                <div id="tab-log" class="tab-content ${activeTab === 'log' ? 'active' : ''}">
                     ${renderLog(data.log)}
+                </div>
+                <div id="tab-console" class="tab-content ${activeTab === 'console' ? 'active' : ''}">
+                    ${renderConsoleTools(data)}
+                </div>
+                <div id="tab-generation" class="tab-content ${activeTab === 'generation' ? 'active' : ''}">
+                    ${renderGenerationTools(data)}
+                </div>
+                <div id="tab-assets" class="tab-content ${activeTab === 'assets' ? 'active' : ''}">
+                    ${renderAssetsConsole(data)}
+                </div>
+                <div id="tab-progress" class="tab-content ${activeTab === 'progress' ? 'active' : ''}">
+                    ${renderProgressConsole()}
+                </div>
+                <div id="tab-export" class="tab-content ${activeTab === 'export' ? 'active' : ''}">
+                    ${renderExportConsole()}
+                </div>
+                <div id="tab-gang" class="tab-content ${activeTab === 'gang' ? 'active' : ''}">
+                    ${renderGangConsole()}
+                </div>
+                <div id="tab-map" class="tab-content ${activeTab === 'map' ? 'active' : ''}">
+                    ${renderUiMap()}
                 </div>
             `;
         }
 
+        function tabLabel(tab) {
+            const labels = {
+                info: 'Info',
+                moves: 'Moves',
+                stats: 'Stats',
+                images: 'Images',
+                log: 'Log',
+                console: 'Console',
+                generation: 'Generation',
+                assets: 'Assets',
+                progress: 'Progress',
+                export: 'Export',
+                gang: 'Gang / Tribe',
+                map: 'UI Map'
+            };
+            return labels[tab] || tab;
+        }
+
         function switchTab(tabName, clickedElement) {
-            // Update tab buttons
-            document.querySelectorAll('.tab').forEach(tab => {
-                tab.classList.remove('active');
-            });
-            if (clickedElement) {
-                clickedElement.classList.add('active');
-            } else {
-                // Fallback: find the button with the matching onclick
-                document.querySelectorAll('.tab').forEach(tab => {
-                    if (tab.textContent.toLowerCase() === tabName.toLowerCase()) {
-                        tab.classList.add('active');
-                    }
-                });
-            }
-            
-            // Update tab content
-            document.querySelectorAll('.tab-content').forEach(content => {
-                content.classList.remove('active');
-            });
-            document.getElementById(`tab-${tabName}`).classList.add('active');
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            if (clickedElement) clickedElement.classList.add('active');
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            const target = document.getElementById(`tab-${tabName}`);
+            if (target) target.classList.add('active');
         }
 
         function renderInfo(info) {
             if (!info) return '<div class="empty-message">No info data available</div>';
-            
             return `
                 <div class="info-grid">
-                    <div class="info-item">
-                        <div class="label">Name</div>
-                        <div class="value">${info.name || 'N/A'}</div>
-                    </div>
-                    <div class="info-item">
-                        <div class="label">Global ID</div>
-                        <div class="value">#${info.global_id || 'N/A'}</div>
-                    </div>
-                    <div class="info-item">
-                        <div class="label">Tribe</div>
-                        <div class="value">${info.tribe || 'N/A'}</div>
-                    </div>
-                    <div class="info-item">
-                        <div class="label">Species</div>
-                        <div class="value">${info.species || 'N/A'}</div>
-                    </div>
-                    ${info.subspecies ? `
-                    <div class="info-item">
-                        <div class="label">Subspecies</div>
-                        <div class="value">${info.subspecies}</div>
-                    </div>
-                    ` : ''}
-                    <div class="info-item">
-                        <div class="label">Age</div>
-                        <div class="value">${info.age || 'N/A'}</div>
-                    </div>
-                    <div class="info-item">
-                        <div class="label">Primary Role</div>
-                        <div class="value">${info.roles?.primary || 'N/A'}</div>
-                    </div>
-                    ${info.roles?.secondary ? `
-                    <div class="info-item">
-                        <div class="label">Secondary Role</div>
-                        <div class="value">${info.roles.secondary}</div>
-                    </div>
-                    ` : ''}
-                    ${info.roles?.tertiary ? `
-                    <div class="info-item">
-                        <div class="label">Tertiary Role</div>
-                        <div class="value">${info.roles.tertiary}</div>
-                    </div>
-                    ` : ''}
-                    <div class="info-item">
-                        <div class="label">Weapon</div>
-                        <div class="value">${info.weapon_item || 'N/A'}</div>
-                    </div>
-                    <div class="info-item">
-                        <div class="label">Growth Curve</div>
-                        <div class="value">${info.growth_curve || 'N/A'}</div>
-                    </div>
+                    <div class="info-item"><div class="label">Name</div><div class="value">${safeText(info.name || 'N/A')}</div></div>
+                    <div class="info-item"><div class="label">Global ID</div><div class="value">#${safeText(info.global_id || 'N/A')}</div></div>
+                    <div class="info-item"><div class="label">Tribe</div><div class="value">${safeText(info.tribe || 'N/A')}</div></div>
+                    <div class="info-item"><div class="label">Species</div><div class="value">${safeText(info.species || 'N/A')}</div></div>
+                    ${info.subspecies ? `<div class="info-item"><div class="label">Subspecies</div><div class="value">${safeText(info.subspecies)}</div></div>` : ''}
+                    <div class="info-item"><div class="label">Age</div><div class="value">${safeText(info.age || 'N/A')}</div></div>
+                    <div class="info-item"><div class="label">Primary Role</div><div class="value">${safeText(info.roles?.primary || 'N/A')}</div></div>
+                    ${info.roles?.secondary ? `<div class="info-item"><div class="label">Secondary Role</div><div class="value">${safeText(info.roles.secondary)}</div></div>` : ''}
+                    ${info.roles?.tertiary ? `<div class="info-item"><div class="label">Tertiary Role</div><div class="value">${safeText(info.roles.tertiary)}</div></div>` : ''}
+                    <div class="info-item"><div class="label">Weapon</div><div class="value">${safeText(info.weapon_item || 'N/A')}</div></div>
+                    <div class="info-item"><div class="label">Growth Curve</div><div class="value">${safeText(info.growth_curve || 'N/A')}</div></div>
                 </div>
-                
-                ${info.brand_vibe ? `
-                <div class="info-item" style="margin-top: 20px;">
-                    <div class="label">Brand & Vibe</div>
-                    <div class="value">${info.brand_vibe}</div>
-                </div>
-                ` : ''}
-                
-                ${info.specific_visuals ? `
-                <div class="info-item" style="margin-top: 10px;">
-                    <div class="label">Visual Details</div>
-                    <div class="value">${info.specific_visuals}</div>
-                </div>
-                ` : ''}
-                
+                ${info.brand_vibe ? `<div class="info-item" style="margin-top: 20px;"><div class="label">Brand & Vibe</div><div class="value">${safeText(info.brand_vibe)}</div></div>` : ''}
+                ${info.specific_visuals ? `<div class="info-item" style="margin-top: 10px;"><div class="label">Visual Details</div><div class="value">${safeText(info.specific_visuals)}</div></div>` : ''}
                 ${info.mat_list && info.mat_list.length > 0 ? `
                 <div style="margin-top: 20px;">
                     <div class="label" style="margin-bottom: 10px; color: #00d4ff;">Multiplier Affecting Tags (MaT)</div>
-                    <div class="mat-list">
-                        ${info.mat_list.map(tag => `<span class="tag">${tag}</span>`).join('')}
-                    </div>
-                </div>
-                ` : ''}
-                
+                    <div class="mat-list">${info.mat_list.map(tag => `<span class="tag">${safeText(tag)}</span>`).join('')}</div>
+                </div>` : ''}
                 ${info.move_list && info.move_list.length > 0 ? `
                 <div style="margin-top: 20px;">
                     <div class="label" style="margin-bottom: 10px; color: #00d4ff;">Move List IDs</div>
-                    <div class="move-list">
-                        ${info.move_list.map(move => `<span class="tag" style="background: rgba(255, 107, 107, 0.2); color: #ff6b6b;">${move}</span>`).join('')}
-                    </div>
-                </div>
-                ` : ''}
+                    <div class="move-list">${info.move_list.map(move => `<span class="tag" style="background: rgba(255, 107, 107, 0.2); color: #ff6b6b;">${safeText(move)}</span>`).join('')}</div>
+                </div>` : ''}
             `;
         }
 
         function renderMoves(moves) {
-            if (!moves || moves.length === 0) {
-                return '<div class="empty-message">No moves defined yet</div>';
-            }
-            
+            if (!moves || moves.length === 0) return '<div class="empty-message">No moves defined yet</div>';
             return moves.map(move => `
                 <div class="move-item">
-                    <h3 style="color: #ff6b6b; margin-bottom: 10px;">${move.name || 'Unnamed Move'}</h3>
-                    <p style="margin-bottom: 10px;">${move.description || 'No description'}</p>
+                    <h3 style="color: #ff6b6b; margin-bottom: 10px;">${safeText(move.name || 'Unnamed Move')}</h3>
+                    <p style="margin-bottom: 10px;">${safeText(move.description || 'No description')}</p>
                     <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-                        ${move.type ? `<div><strong>Type:</strong> ${move.type}</div>` : ''}
-                        ${move.learned_at_level ? `<div><strong>Learned at:</strong> Level ${move.learned_at_level}</div>` : ''}
-                        ${move.target?.type ? `<div><strong>Target:</strong> ${move.target.type}</div>` : ''}
+                        ${move.type ? `<div><strong>Type:</strong> ${safeText(move.type)}</div>` : ''}
+                        ${move.learned_at_level ? `<div><strong>Learned at:</strong> Level ${safeText(move.learned_at_level)}</div>` : ''}
+                        ${move.target?.type ? `<div><strong>Target:</strong> ${safeText(move.target.type)}</div>` : ''}
                     </div>
                 </div>
             `).join('');
         }
 
         function renderStats(stats) {
-            if (!stats || Object.keys(stats).length === 0) {
-                return '<div class="empty-message">No stats defined yet</div>';
-            }
-            
+            if (!stats || Object.keys(stats).length === 0) return '<div class="empty-message">No stats defined yet</div>';
             const entries = Object.entries(stats);
-            
             return `
                 <table class="stats-table">
-                    <thead>
-                        <tr>
-                            <th>Stat</th>
-                            <th>Value</th>
-                        </tr>
-                    </thead>
+                    <thead><tr><th>Stat</th><th>Value</th></tr></thead>
                     <tbody>
-                        ${entries.map(([key, value]) => `
-                            <tr>
-                                <td style="text-transform: uppercase;">${key}</td>
-                                <td>${value}</td>
-                            </tr>
-                        `).join('')}
+                        ${entries.map(([key, value]) => `<tr><td style="text-transform: uppercase;">${key}</td><td>${value}</td></tr>`).join('')}
                     </tbody>
                 </table>
             `;
         }
 
         function renderImages(images) {
-            if (!images || images.length === 0) {
-                return '<div class="empty-message">No images available</div>';
-            }
-            
+            if (!images || images.length === 0) return '<div class="empty-message">No images available</div>';
+            return `<div class="images-grid">
+                ${images.map(img => `<div class="image-item"><img src="${img}" alt="Character Image" onerror="this.parentElement.style.display='none'"></div>`).join('')}
+            </div>`;
+        }
+
+        function renderLog(log) {
+            if (!log || log.trim().length === 0) return '<div class="empty-message">No log entries yet</div>';
+            return `<div class="log-content">${escapeHtml(log)}</div>`;
+        }
+
+        function renderConsoleTools(data) {
             return `
-                <div class="images-grid">
-                    ${images.map(img => `
-                        <div class="image-item">
-                            <img src="${img}" alt="Character Image" onerror="this.parentElement.style.display='none'">
+                <div class="section-card">
+                    <div class="section-title">Info updater <span class="pill">edit</span></div>
+                    <form id="info-updater" onsubmit="handleInfoUpdate(event)">
+                        <div class="grid-two">
+                            <input name="name" placeholder="Name" value="${safeText(data.info?.name || '')}">
+                            <input name="tribe" placeholder="Tribe" value="${safeText(data.info?.tribe || '')}">
+                            <input name="weapon_item" placeholder="Weapon" value="${safeText(data.info?.weapon_item || '')}">
+                            <input name="brand_vibe" placeholder="Brand / Vibe" value="${safeText(data.info?.brand_vibe || '')}">
                         </div>
-                    `).join('')}
+                        <textarea name="specific_visuals" rows="3" placeholder="Visual details / API response">${safeText(data.info?.specific_visuals || '')}</textarea>
+                        <div class="button-row">
+                            <button class="btn" type="submit">Apply updates</button>
+                            <span id="info-update-status" class="pill" style="display:none;"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="grid-two">
+                    <div class="section-card">
+                        <div class="section-title">Tag adder / generator</div>
+                        <form onsubmit="handleTagAdd(event)">
+                            <input name="tag" placeholder="Add new tag">
+                            <div class="button-row">
+                                <button class="btn" type="submit">Add tag</button>
+                                <button class="btn secondary" type="button" onclick="generateTagsFromStats()">Generate from stats</button>
+                            </div>
+                        </form>
+                        <div class="chips" id="tag-list">${deriveTags(currentWorkingData).map(tag => `<span class="chip">${safeText(tag)}</span>`).join('')}</div>
+                    </div>
+                    <div class="section-card">
+                        <div class="section-title">Stat generator / equaliser</div>
+                        <p>Balance stats around a neutral curve then re-render the stat sheet.</p>
+                        <div class="button-row">
+                            <button class="btn" type="button" onclick="equalizeStats()">Equalise current stats</button>
+                        </div>
+                        <div class="chips stat-equalizer-result"></div>
+                    </div>
+                </div>
+                <div class="section-card">
+                    <div class="section-title">Move generator / editor</div>
+                    <form id="move-draft-form" onsubmit="handleMoveDraft(event)">
+                        <div class="grid-two">
+                            <input name="name" placeholder="Move name">
+                            <input name="type" placeholder="Type / style">
+                            <input name="learned_at_level" placeholder="Level threshold">
+                            <input name="target" placeholder="Target (self, enemy, group)">
+                        </div>
+                        <textarea name="description" rows="2" placeholder="Description linked to stat thresholds"></textarea>
+                        <div class="button-row">
+                            <button class="btn" type="submit">Add / update move</button>
+                        </div>
+                    </form>
+                    <div id="move-editor-list">${renderMoves(data.moves)}</div>
+                </div>
+                <div class="section-card">
+                    <div class="section-title">CRUD operations</div>
+                    <div class="button-row">
+                        <button class="btn secondary" type="button" onclick="startNewCharacterDraft()">New draft</button>
+                        <button class="btn secondary" type="button" onclick="duplicateCurrentCharacter()">Duplicate current</button>
+                        <button class="btn secondary" type="button" onclick="archiveCharacter()">Archive (session)</button>
+                    </div>
+                    <div class="list-stack" id="crud-drafts">${renderDrafts()}</div>
                 </div>
             `;
         }
 
-        function renderLog(log) {
-            if (!log || log.trim().length === 0) {
-                return '<div class="empty-message">No log entries yet</div>';
+        function renderGenerationTools(data) {
+            const generated = consoleState.generatedDescriptions[currentCharacter?.id] || '';
+            return `
+                <div class="section-card">
+                    <div class="section-title">Visual description API generator / field populator</div>
+                    <textarea id="visual-description-input" rows="3" placeholder="Prompt, vibes, colour palette"></textarea>
+                    <div class="button-row">
+                        <button class="btn" type="button" onclick="generateVisualDescription()">Generate + populate</button>
+                    </div>
+                    <textarea id="visual-description-output" rows="3" placeholder="Generated description will appear here">${generated}</textarea>
+                </div>
+                <div class="section-card">
+                    <div class="section-title">Character search + quick info updater</div>
+                    <div class="grid-two">
+                        <input type="search" placeholder="Search roster again" oninput="handleSearchInput(this.value)">
+                        <select onchange="handleTribeFilter(this.value)"><option value="all">All Tribes</option>${[...new Set(roster.map(r => r.tribe))].map(t => `<option value="${safeText(t)}">${safeText(t)}</option>`).join('')}</select>
+                    </div>
+                    <div class="chips">
+                        <span class="chip">Live filters re-use roster panel</span>
+                        <span class="chip">Use Info tab to verify updates</span>
+                    </div>
+                </div>
+                <div class="section-card">
+                    <div class="section-title">Stat generator / equaliser</div>
+                    <p>Mirror fighting styles by normalising extremes.</p>
+                    <div class="button-row">
+                        <button class="btn" type="button" onclick="equalizeStats()">Equalise + recalc</button>
+                    </div>
+                        <div class="chips stat-equalizer-result"></div>
+                </div>
+            `;
+        }
+
+        function renderAssetsConsole() {
+            const charId = currentCharacter?.id;
+            const avatars = consoleState.avatars[charId] || [];
+            const sheets = consoleState.spriteSheets[charId] || [];
+            const activeAvatar = avatars.find(a => a.status === 'active');
+            return `
+                <div class="section-card">
+                    <div class="section-title">Avatar generator (drafting / approval / active)</div>
+                    <div class="avatar-preview">${activeAvatar ? `<div><strong>${activeAvatar.label}</strong><br><small>${activeAvatar.stage}</small></div>` : 'No active avatar'}</div>
+                    <form onsubmit="addAvatarDraft(event)" class="grid-two" style="margin-top:10px;">
+                        <input name="label" placeholder="Idea / prompt">
+                        <select name="stage">
+                            <option value="draft">Draft</option>
+                            <option value="refinement">Refinement</option>
+                            <option value="approved">Approved</option>
+                        </select>
+                        <textarea name="notes" rows="2" placeholder="Notes / refinement feedback" style="grid-column: 1 / -1;"></textarea>
+                        <div class="button-row">
+                            <button class="btn" type="submit">Add to pipeline</button>
+                        </div>
+                    </form>
+                    <div class="list-stack" id="avatar-drafts">${renderAvatarList()}</div>
+                </div>
+                <div class="section-card">
+                    <div class="section-title">Sprite sheet generators</div>
+                    <form onsubmit="addSpriteSheetDraft(event)" class="grid-two">
+                        <input name="name" placeholder="Sheet name">
+                        <input name="frames" placeholder="Frames (e.g. 12)">
+                        <textarea name="notes" rows="2" placeholder="Pose ranges, camera notes" style="grid-column:1/-1;"></textarea>
+                        <div class="button-row">
+                            <button class="btn" type="submit">Queue sheet</button>
+                        </div>
+                    </form>
+                    <div class="list-stack" id="sprite-drafts">${renderSpriteSheetList()}</div>
+                </div>
+                <div class="section-card">
+                    <div class="section-title">Animation render (from generated sprite sheet)</div>
+                    <div class="animation-stage">
+                        ${Array.from({length:8}).map((_,i)=>`<div class="animation-cell" style="opacity:${0.4 + (i%4)*0.12};"></div>`).join('')}
+                    </div>
+                    <div class="button-row">
+                        <button class="btn secondary" type="button" onclick="previewAnimation()">Preview active sheet</button>
+                    </div>
+                    <div id="animation-preview" class="chips"></div>
+                </div>
+            `;
+        }
+
+        function renderProgressConsole() {
+            const state = consoleState.progress[currentCharacter?.id] || { completion: 0, entries: [] };
+            return `
+                <div class="section-card">
+                    <div class="section-title">Character completion / progress log</div>
+                    <div class="progress-shell"><div class="progress-bar" id="progress-bar" style="width:${state.completion}%;"></div></div>
+                    <div class="button-row">
+                        <input type="number" id="progress-input" min="0" max="100" value="${state.completion}" style="width:120px;">
+                        <button class="btn" type="button" onclick="updateProgress()">Set completion</button>
+                    </div>
+                    <form onsubmit="logProgress(event)">
+                        <textarea name="log" rows="2" placeholder="Add progress note"></textarea>
+                        <div class="button-row">
+                            <button class="btn" type="submit">Append log</button>
+                        </div>
+                    </form>
+                    <div class="log-content" id="progress-log">${state.entries.map(e => `• ${escapeHtml(e)}`).join('<br>') || 'No logs yet'}</div>
+                </div>
+            `;
+        }
+
+        function renderExportConsole() {
+            const existing = consoleState.exports[currentCharacter?.id] || '';
+            return `
+                <div class="section-card">
+                    <div class="section-title">Character exporter</div>
+                    <div class="grid-two">
+                        <select id="export-format">
+                            <option value="json">JSON</option>
+                            <option value="markdown">Markdown</option>
+                            <option value="yaml">YAML-like</option>
+                        </select>
+                        <select id="export-section">
+                            <option value="full">Full profile</option>
+                            <option value="stats">Stats only</option>
+                            <option value="moves">Moves only</option>
+                            <option value="assets">Assets overview</option>
+                        </select>
+                    </div>
+                    <div class="button-row">
+                        <button class="btn" type="button" onclick="renderExport()">Generate export</button>
+                    </div>
+                    <textarea id="export-output" rows="6" placeholder="Export preview">${existing}</textarea>
+                </div>
+            `;
+        }
+
+        function renderGangConsole() {
+            const grouped = groupByTribe(roster);
+            return `
+                <div class="section-card">
+                    <div class="section-title">Gang / Tribe viewer</div>
+                    <table class="mini-table">
+                        ${Object.entries(grouped).map(([tribe, chars]) => `
+                            <tr>
+                                <td style="color:#00d4ff;">${safeText(tribe)}</td>
+                                <td>${chars.length} members</td>
+                                <td>${chars.slice(0,4).map(c => `<span class="chip">${safeText(c.name)}</span>`).join('')}</td>
+                            </tr>
+                        `).join('')}
+                    </table>
+                    <div class="button-row">
+                        <input type="search" placeholder="Filter roster" oninput="handleSearchInput(this.value)">
+                        <button class="btn secondary" type="button" onclick="renderCharacterList()">Apply filter</button>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderUiMap() {
+            const flows = [
+                { title: 'Roster → Detail', steps: ['Search / filter', 'Select character', 'Load assets & stats', 'Persist working state'] },
+                { title: 'Console', steps: ['Info updater', 'Tags & stat equaliser', 'Move editor', 'CRUD drafts'] },
+                { title: 'Generation', steps: ['Visual description prompt', 'Stat-driven tags', 'Re-run filters', 'Verify in Info tab'] },
+                { title: 'Assets', steps: ['Avatar drafts > refinement > approve > activate', 'Sprite sheets queue > approve > activate', 'Preview animation'] },
+                { title: 'Progress & Export', steps: ['Set completion', 'Append log', 'Export JSON / MD / YAML-like'] },
+                { title: 'Gang / Tribe', steps: ['Counts by tribe', 'Roster chips', 'Filter handoff'] }
+            ];
+            const tabDefinitions = [
+                { title: 'Info', fields: ['name, id, global_id, tribe, species/subspecies, roles (primary/secondary/tertiary), weapon_item, growth_curve, brand_vibe, specific_visuals'], actions: ['read-only render', 'updated via Console → Info updater form'], visibility: 'default tab; shows derived tags from stats/mat_list' },
+                { title: 'Moves', fields: ['name, description, type, learned_at_level, target.type'], actions: ['render list', 'add/update via Move editor form'], visibility: 'visible when moves array exists; shows empty state otherwise' },
+                { title: 'Stats', fields: ['all stats key/value entries'], actions: ['equalise updates values in-place', 're-render table'], visibility: 'table layout' },
+                { title: 'Images', fields: ['images[] (future manifest)'], actions: ['render grid; hides broken images'], visibility: 'empty state until manifest provided' },
+                { title: 'Log', fields: ['log.md text'], actions: ['read-only render'], visibility: 'empty state if no log' },
+                { title: 'Console', fields: ['info updater inputs', 'tag list (derived + manual)', 'stat equaliser result', 'move editor', 'CRUD drafts list'], actions: ['submit info form updates info', 'add tag, generate tags from stats', 'equalise stats', 'add moves', 'create/duplicate/archive drafts'], visibility: 'always available' },
+                { title: 'Generation', fields: ['visual description prompt/output', 'quick search controls', 'secondary stat equaliser output'], actions: ['generate visual description populates info.specific_visuals', 'filters roster', 'equalise stats'], visibility: 'always available' },
+                { title: 'Assets', fields: ['avatar drafts (label, stage, notes, status)', 'sprite sheet drafts (name, frames, notes, status)', 'animation preview placeholder'], actions: ['add avatar draft', 'approve/set active avatar', 'add sprite sheet', 'approve/set active sheet', 'preview animation'], visibility: 'always available' },
+                { title: 'Progress', fields: ['completion %', 'progress log entries'], actions: ['set completion bar', 'append log entries'], visibility: 'always available' },
+                { title: 'Export', fields: ['export format selector', 'section selector', 'export output'], actions: ['generate export JSON/Markdown/YAML-like'], visibility: 'always available' },
+                { title: 'Gang / Tribe', fields: ['table of tribes with counts and sample chips'], actions: ['filter input hooks roster filters'], visibility: 'always available' },
+                { title: 'UI Map', fields: ['flow cards', 'space plan badges'], actions: ['read-only guidance'], visibility: 'always available' }
+            ];
+            const clickMap = [
+                { title: 'Primary interactions', steps: ['Roster item click → selectCharacter → loadCharacterData', 'Tabs click → switchTab updates active panel', 'Buttons inside panels mutate local working state (no backend write)'] },
+                { title: 'Visibility rules', steps: ['Empty datasets show empty-message blocks', 'Active tab toggles .active class on tab-content'] },
+                { title: 'Spatial hierarchy', steps: ['Header stats bar', 'Left column: search/filter, gang snapshot, roster list', 'Right: tabbed content with per-panel sections'] }
+            ];
+            return `
+                <div class="wireframe-grid">
+                    ${flows.map(flow => `
+                        <div class="wireframe-card">
+                            <h4>${safeText(flow.title)}</h4>
+                            <div class="ui-map-list">
+                                ${flow.steps.map(step => `<span class="ui-map-badge">${safeText(step)}</span>`).join('')}
+                            </div>
+                        </div>
+                    `).join('')}
+                    <div class="wireframe-card">
+                        <h4>Tab definitions</h4>
+                        ${tabDefinitions.map(tab => `
+                            <div class="map-section">
+                                <strong>${safeText(tab.title)}</strong>
+                                <div class="map-list">
+                                    <span>Fields: ${safeText(tab.fields)}</span>
+                                    <span>Actions: ${safeText(tab.actions)}</span>
+                                    <span>Visibility: ${safeText(tab.visibility)}</span>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="wireframe-card">
+                        <h4>Click & visibility map</h4>
+                        ${clickMap.map(group => `
+                            <div class="map-section">
+                                <strong>${safeText(group.title)}</strong>
+                                <div class="map-list">
+                                    ${group.steps.map(step => `<span>${safeText(step)}</span>`).join('')}
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+                <div class="wireframe-card" style="margin-top:10px;">
+                    <h4>Space plan</h4>
+                    <div class="ui-map-list">
+                        <span class="ui-map-badge">Left column: roster + filters + gang snapshot</span>
+                        <span class="ui-map-badge">Top: stats bar</span>
+                        <span class="ui-map-badge">Main: tabbed console (info, moves, stats, images, log, console, generation, assets, progress, export, gang, UI map)</span>
+                        <span class="ui-map-badge">Bottom of tabs: action-specific panels (forms, chips, tables)</span>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderAvatarList() {
+            const charId = currentCharacter?.id;
+            const avatars = consoleState.avatars[charId] || [];
+            if (!avatars.length) return '<div class="empty-message">No avatar drafts yet</div>';
+            return avatars.map((avatar, idx) => `
+                <div class="list-item">
+                    <div><span class="status-dot status-${avatar.status || avatar.stage || 'draft'}"></span><strong>${avatar.label}</strong> <small>${avatar.stage}</small></div>
+                    <small>${avatar.notes || ''}</small>
+                    <div class="button-row">
+                        <button class="btn secondary" type="button" onclick="updateAvatarStatus(${idx}, 'approved')">Approve</button>
+                        <button class="btn secondary" type="button" onclick="updateAvatarStatus(${idx}, 'active')">Set active</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderSpriteSheetList() {
+            const charId = currentCharacter?.id;
+            const sheets = consoleState.spriteSheets[charId] || [];
+            if (!sheets.length) return '<div class="empty-message">No sprite sheets queued</div>';
+            return sheets.map((sheet, idx) => `
+                <div class="list-item">
+                    <div><span class="status-dot status-${sheet.status || 'draft'}"></span>${sheet.name} (${sheet.frames} frames)</div>
+                    <small>${sheet.notes || ''}</small>
+                    <div class="button-row">
+                        <button class="btn secondary" type="button" onclick="updateSpriteStatus(${idx}, 'approved')">Approve</button>
+                        <button class="btn secondary" type="button" onclick="updateSpriteStatus(${idx}, 'active')">Set active</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderDrafts() {
+            const charId = currentCharacter?.id;
+            const drafts = consoleState.drafts[charId] || [];
+            if (!drafts.length) return '<div class="empty-message">No drafts yet</div>';
+            return drafts.map(d => `<div class="list-item"><strong>${d.name}</strong> <small>${d.status}</small></div>`).join('');
+        }
+
+        function renderGangRosterMini() {
+            const target = document.getElementById('gang-roster-mini-list');
+            if (!target) return;
+            const filtered = getFilteredRoster();
+            const grouped = Object.entries(groupByTribe(filtered)).reduce((acc, [tribe, chars]) => {
+                acc[tribe] = chars.length;
+                return acc;
+            }, {});
+            target.innerHTML = Object.entries(grouped).map(([tribe, count]) => `<span class="chip">${safeText(tribe)}: ${count}</span>`).join('') || '<span class="chip">No tribes</span>';
+            const countEl = document.getElementById('mini-roster-count');
+            if (countEl) countEl.textContent = filtered.length;
+        }
+
+        // Actions
+        function handleInfoUpdate(event) {
+            event.preventDefault();
+            if (!currentWorkingData) return;
+            const form = event.target;
+            const formData = new FormData(form);
+            formData.forEach((value, key) => {
+                currentWorkingData.info[key] = value;
+            });
+            document.getElementById('tab-info').innerHTML = renderInfo(currentWorkingData.info);
+            const status = document.getElementById('info-update-status');
+            if (status) {
+                status.style.display = 'inline-flex';
+                status.textContent = 'Updated locally';
             }
-            
-            return `<div class="log-content">${escapeHtml(log)}</div>`;
         }
 
-        function escapeHtml(text) {
-            const div = document.createElement('div');
-            div.textContent = text;
-            return div.innerHTML;
+        function handleTagAdd(event) {
+            event.preventDefault();
+            if (!currentWorkingData) return;
+            const tag = event.target.tag.value.trim();
+            if (!tag) return;
+            currentWorkingData.info.mat_list = currentWorkingData.info.mat_list || [];
+            if (!currentWorkingData.info.mat_list.includes(tag)) {
+                currentWorkingData.info.mat_list.push(tag);
+            }
+            document.getElementById('tag-list').innerHTML = currentWorkingData.info.mat_list.map(t => `<span class="chip">${safeText(t)}</span>`).join('');
+            event.target.reset();
         }
 
-        // Initialize on page load
-        window.addEventListener('DOMContentLoaded', loadRoster);
+        function generateTagsFromStats() {
+            if (!currentWorkingData?.stats) return;
+            const entries = Object.entries(currentWorkingData.stats);
+            const sorted = entries.sort((a, b) => (b[1] || 0) - (a[1] || 0)).slice(0, 3).map(([k]) => k.toUpperCase());
+            currentWorkingData.info.mat_list = Array.from(new Set([...(currentWorkingData.info.mat_list || []), ...sorted]));
+            document.getElementById('tag-list').innerHTML = currentWorkingData.info.mat_list.map(t => `<span class="chip">${safeText(t)}</span>`).join('');
+        }
+
+        function equalizeStats() {
+            if (!currentWorkingData || !currentWorkingData.stats || Object.keys(currentWorkingData.stats).length === 0) return;
+            const values = Object.values(currentWorkingData.stats).map(v => Number(v) || 0);
+            const target = Math.round(values.reduce((a, b) => a + b, 0) / values.length);
+            Object.keys(currentWorkingData.stats).forEach(key => currentWorkingData.stats[key] = target);
+            document.getElementById('tab-stats').innerHTML = renderStats(currentWorkingData.stats);
+            const result = `Balanced to ${target} across ${values.length} stats`;
+            const resultElements = document.querySelectorAll('.stat-equalizer-result');
+            resultElements.forEach(el => { if (el) el.textContent = result; });
+        }
+
+        function handleMoveDraft(event) {
+            event.preventDefault();
+            if (!currentWorkingData) return;
+            const data = Object.fromEntries(new FormData(event.target).entries());
+            const move = {
+                name: data.name || 'Draft Move',
+                type: data.type,
+                learned_at_level: data.learned_at_level,
+                description: data.description,
+                target: { type: data.target }
+            };
+            currentWorkingData.moves.push(move);
+            document.getElementById('move-editor-list').innerHTML = renderMoves(currentWorkingData.moves);
+            event.target.reset();
+        }
+
+        function startNewCharacterDraft() {
+            const charId = currentCharacter?.id;
+            if (!charId) return;
+            consoleState.drafts[charId].push({ name: `Draft of ${charId} v${consoleState.drafts[charId].length + 1}`, status: 'draft' });
+            document.getElementById('crud-drafts').innerHTML = renderDrafts();
+        }
+
+        function duplicateCurrentCharacter() {
+            const charId = currentCharacter?.id;
+            if (!charId || !currentWorkingData) return;
+            consoleState.drafts[charId].push({ name: `${currentWorkingData.info.name} clone`, status: 'cloned' });
+            document.getElementById('crud-drafts').innerHTML = renderDrafts();
+        }
+
+        function archiveCharacter() {
+            const charId = currentCharacter?.id;
+            if (!charId) return;
+            consoleState.drafts[charId].push({ name: `${charId} archived`, status: 'archived' });
+            document.getElementById('crud-drafts').innerHTML = renderDrafts();
+        }
+
+        function addAvatarDraft(event) {
+            event.preventDefault();
+            const charId = currentCharacter?.id;
+            if (!charId) return;
+            const formData = Object.fromEntries(new FormData(event.target).entries());
+            consoleState.avatars[charId].push({
+                label: formData.label || 'Untitled avatar',
+                stage: formData.stage,
+                notes: formData.notes,
+                status: formData.stage
+            });
+            document.getElementById('avatar-drafts').innerHTML = renderAvatarList();
+            event.target.reset();
+        }
+
+        function updateAvatarStatus(index, status) {
+            const charId = currentCharacter?.id;
+            if (!charId) return;
+            const avatars = consoleState.avatars[charId];
+            if (!avatars[index]) return;
+            avatars[index].status = status;
+            if (status === 'active') {
+                avatars.forEach((avatar, idx) => {
+                    if (idx !== index && avatar.status === 'active') avatar.status = 'approved';
+                });
+            }
+            document.getElementById('avatar-drafts').innerHTML = renderAvatarList();
+            document.getElementById('tab-assets').innerHTML = renderAssetsConsole();
+        }
+
+        function addSpriteSheetDraft(event) {
+            event.preventDefault();
+            const charId = currentCharacter?.id;
+            if (!charId) return;
+            const formData = Object.fromEntries(new FormData(event.target).entries());
+            consoleState.spriteSheets[charId].push({
+                name: formData.name || 'Sheet',
+                frames: formData.frames || '0',
+                notes: formData.notes,
+                status: 'draft'
+            });
+            document.getElementById('sprite-drafts').innerHTML = renderSpriteSheetList();
+            event.target.reset();
+        }
+
+        function updateSpriteStatus(index, status) {
+            const charId = currentCharacter?.id;
+            if (!charId) return;
+            const sheets = consoleState.spriteSheets[charId] || [];
+            sheets[index].status = status;
+            document.getElementById('sprite-drafts').innerHTML = renderSpriteSheetList();
+        }
+
+        function previewAnimation() {
+            const charId = currentCharacter?.id;
+            const activeSheet = (consoleState.spriteSheets[charId] || []).find(s => s.status === 'active');
+            const target = document.getElementById('animation-preview');
+            if (target) target.textContent = activeSheet ? `Previewing ${activeSheet.name} (${activeSheet.frames} frames)` : 'No active sprite sheet';
+        }
+
+        function logProgress(event) {
+            event.preventDefault();
+            const charId = currentCharacter?.id;
+            if (!charId) return;
+            const note = event.target.log.value.trim();
+            if (!note) return;
+            consoleState.progress[charId].entries.unshift(`${new Date().toLocaleTimeString()} - ${note}`);
+            document.getElementById('progress-log').innerHTML = consoleState.progress[charId].entries.map(e => `• ${escapeHtml(e)}`).join('<br>');
+            event.target.reset();
+        }
+
+        function updateProgress() {
+            const charId = currentCharacter?.id;
+            if (!charId) return;
+            const value = Math.max(0, Math.min(100, Number(document.getElementById('progress-input').value)));
+            consoleState.progress[charId].completion = value;
+            const bar = document.getElementById('progress-bar');
+            if (bar) bar.style.width = `${value}%`;
+        }
+
+        function renderExport() {
+            if (!currentWorkingData) return;
+            const format = document.getElementById('export-format').value;
+            const section = document.getElementById('export-section').value;
+            let payload = {};
+            if (section === 'full') payload = currentWorkingData;
+            if (section === 'stats') payload = currentWorkingData.stats;
+            if (section === 'moves') payload = currentWorkingData.moves;
+            if (section === 'assets') payload = {
+                avatars: consoleState.avatars[currentCharacter?.id] || [],
+                spriteSheets: consoleState.spriteSheets[currentCharacter?.id] || []
+            };
+            let output = '';
+            if (format === 'json') {
+                output = JSON.stringify(payload, null, 2);
+            } else if (format === 'markdown') {
+                output = `# ${currentWorkingData.info.name}\n\n## Section: ${section}\n\`\`\`json\n${JSON.stringify(payload, null, 2)}\n\`\`\`\n`;
+            } else {
+                const safePayload = payload || {};
+                output = Object.entries(safePayload).map(([k, v]) => `${k}: ${typeof v === 'object' ? JSON.stringify(v) : v}`).join('\n');
+            }
+            consoleState.exports[currentCharacter?.id] = output;
+            document.getElementById('export-output').value = output;
+        }
+
+        function generateVisualDescription() {
+            if (!currentWorkingData) return;
+            const prompt = document.getElementById('visual-description-input').value || 'no prompt';
+            const blend = `${currentWorkingData.info.tribe || 'unknown tribe'} • ${currentWorkingData.info.weapon_item || 'weapon focus'}`;
+            const description = `API: Style ${blend} | Prompt: ${prompt}`;
+            currentWorkingData.info.specific_visuals = description;
+            consoleState.generatedDescriptions[currentCharacter?.id] = description;
+            document.getElementById('visual-description-output').value = description;
+            document.getElementById('tab-info').innerHTML = renderInfo(currentWorkingData.info);
+        }
     </script>
 </body>
 </html>
