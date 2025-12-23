@@ -9,6 +9,20 @@ type Rgba = { r: number; g: number; b: number; a?: number };
 const TILE_WIDTH = 64;
 const TILE_HEIGHT = 32;
 const ATLAS_SIZE = 1000;
+const RIVER_WOBBLE_FREQUENCY = 30;
+const RIVER_CURVE_FACTOR = 0.2;
+const SUPPORTED_AREAS = ['06.05'];
+
+// Simple deterministic PRNG (mulberry32)
+function createPrng(seed: number) {
+  let t = seed >>> 0;
+  return () => {
+    t += 0x6D2B79F5;
+    let r = Math.imul(t ^ (t >>> 15), 1 | t);
+    r ^= r + Math.imul(r ^ (r >>> 7), 61 | r);
+    return ((r ^ (r >>> 14)) >>> 0) / 4294967296;
+  };
+}
 
 function setPixel(png: PNG, x: number, y: number, color: Rgba) {
   if (x < 0 || y < 0 || x >= png.width || y >= png.height) return;
@@ -50,8 +64,17 @@ function drawLineWithThickness(
   width: number,
   color: Rgba
 ) {
-  for (let offset = -Math.floor(width / 2); offset <= Math.floor(width / 2); offset++) {
-    drawLine(png, x0, y0 + offset, x1, y1 + offset, color);
+  const half = Math.floor(width / 2);
+  const dx = x1 - x0;
+  const dy = y1 - y0;
+  const length = Math.hypot(dx, dy) || 1;
+  const offsetX = (-dy / length);
+  const offsetY = (dx / length);
+
+  for (let offset = -half; offset <= half; offset++) {
+    const ox = offsetX * offset;
+    const oy = offsetY * offset;
+    drawLine(png, Math.round(x0 + ox), Math.round(y0 + oy), Math.round(x1 + ox), Math.round(y1 + oy), color);
   }
 }
 
@@ -81,8 +104,9 @@ function lerpColor(a: Rgba, b: Rgba, t: number): Rgba {
 }
 
 function fillVerticalGradient(png: PNG, top: Rgba, bottom: Rgba) {
+  const denom = png.height > 1 ? png.height - 1 : 1;
   for (let y = 0; y < png.height; y++) {
-    const t = y / (png.height - 1);
+    const t = png.height > 1 ? y / denom : 0;
     const color = lerpColor(top, bottom, t);
     for (let x = 0; x < png.width; x++) {
       setPixel(png, x, y, color);
@@ -90,16 +114,16 @@ function fillVerticalGradient(png: PNG, top: Rgba, bottom: Rgba) {
   }
 }
 
-function scatterTexture(png: PNG, density: number, color: Rgba, jitter = 0) {
+function scatterTexture(png: PNG, density: number, color: Rgba, jitter = 0, prng: () => number = Math.random) {
   const total = Math.floor(png.width * png.height * density);
   for (let i = 0; i < total; i++) {
-    const x = Math.floor(Math.random() * png.width);
-    const y = Math.floor(Math.random() * png.height);
+    const x = Math.floor(prng() * png.width);
+    const y = Math.floor(prng() * png.height);
     const c = jitter
       ? {
-          r: Math.max(0, Math.min(255, color.r + Math.floor((Math.random() - 0.5) * jitter))),
-          g: Math.max(0, Math.min(255, color.g + Math.floor((Math.random() - 0.5) * jitter))),
-          b: Math.max(0, Math.min(255, color.b + Math.floor((Math.random() - 0.5) * jitter))),
+          r: Math.max(0, Math.min(255, color.r + Math.floor((prng() - 0.5) * jitter))),
+          g: Math.max(0, Math.min(255, color.g + Math.floor((prng() - 0.5) * jitter))),
+          b: Math.max(0, Math.min(255, color.b + Math.floor((prng() - 0.5) * jitter))),
           a: color.a,
         }
       : color;
@@ -114,11 +138,13 @@ function paintRiver(png: PNG) {
   const bandWidth = 180;
 
   for (let y = 0; y < png.height; y++) {
-    const wobble = Math.sin(y / 30) * 30;
-    const ribbonCenter = centerX + wobble - (y - png.height / 2) * 0.2;
+    const wobble = Math.sin(y / RIVER_WOBBLE_FREQUENCY) * 30;
+    const ribbonCenter = centerX + wobble - (y - png.height / 2) * RIVER_CURVE_FACTOR;
     const halfBand = bandWidth / 2;
+    const startX = Math.max(0, Math.floor(ribbonCenter - halfBand));
+    const endX = Math.min(png.width, Math.floor(ribbonCenter + halfBand));
 
-    for (let x = Math.max(0, Math.floor(ribbonCenter - halfBand)); x < Math.min(png.width, Math.floor(ribbonCenter + halfBand)); x++) {
+    for (let x = startX; x < endX; x++) {
       const dist = Math.abs(x - ribbonCenter);
       const t = dist / halfBand;
       const color = lerpColor(riverColor, { r: 18, g: 120, b: 180, a: 255 }, t);
@@ -177,6 +203,7 @@ function overlayIsoGrid(png: PNG) {
 
 async function renderSegment0605(): Promise<{ atlas: Buffer; metadata: Record<string, unknown> }> {
   const png = new PNG({ width: ATLAS_SIZE, height: ATLAS_SIZE });
+  const prng = createPrng(605);
 
   // Base Fairyglade to Rainbow Riverbank gradient
   fillVerticalGradient(
@@ -186,8 +213,8 @@ async function renderSegment0605(): Promise<{ atlas: Buffer; metadata: Record<st
   );
 
   // Light meadow texture
-  scatterTexture(png, 0.002, { r: 90, g: 170, b: 120, a: 255 }, 25);
-  scatterTexture(png, 0.0015, { r: 80, g: 140, b: 95, a: 255 }, 35);
+  scatterTexture(png, 0.002, { r: 90, g: 170, b: 120, a: 255 }, 25, prng);
+  scatterTexture(png, 0.0015, { r: 80, g: 140, b: 95, a: 255 }, 35, prng);
 
   // Rainbow Riverbank ribbon
   paintRiver(png);
@@ -246,7 +273,7 @@ export const generateAvatar = functions.https.onCall(async (request) => {
   const email = requireEmail(request.auth?.token?.email);
   await assertIsAdmin(email);
 
-  const { characterId } = request.data as { characterId?: string; visualDescription?: string };
+  const { characterId } = request.data as { characterId?: string };
 
   if (!characterId) {
     throw new functions.https.HttpsError('invalid-argument', 'characterId is required');
@@ -278,9 +305,7 @@ export const generateDraftSpriteSheet = functions.https.onCall(async (request) =
 
   const { characterId, templateType } = request.data as {
     characterId?: string;
-    visualDescription?: string;
     templateType?: string;
-    feedback?: string;
   };
 
   if (!characterId || !templateType) {
@@ -347,8 +372,7 @@ export const generateTileAtlas = functions.https.onCall(async (request) => {
   }
 
   try {
-    // Download sprite sheet from Storage
-    
+    // TODO: Download sprite sheet from Storage when sprite generation is implemented
     // TODO: Implement atlas generation logic
     // 1. Download sprite sheet
     // 2. Parse sprite sheet based on template
@@ -386,7 +410,7 @@ export const generateAreaTileAtlas = functions.https.onCall(async (request) => {
   await assertIsAdmin(email);
 
   const { areaId } = request.data as { areaId?: string };
-  if (!areaId || areaId !== '06.05') {
+  if (!areaId || !SUPPORTED_AREAS.includes(areaId)) {
     throw new functions.https.HttpsError('invalid-argument', 'Only area segment 06.05 is supported in this draft generator');
   }
 
