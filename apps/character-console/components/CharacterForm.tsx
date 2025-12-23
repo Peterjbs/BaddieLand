@@ -4,17 +4,12 @@ import { useState, useEffect } from 'react';
 import { Character, Move, getMove } from '@/lib/firestore-helpers';
 import StatsTable from './StatsTable';
 import MoveEditorModal from './MoveEditorModal';
+import { getRoles, getAllTags, getTagDetails, getSpeciesGroups, getGrowthCurves } from '@/lib/reference-data';
 
 interface CharacterFormProps {
   character: Character;
   onChange: (character: Character) => void;
 }
-
-// Reference data will be loaded from data/pools
-const ROLES_DATA = require('../../data/pools/roles.json');
-const TAGS_DATA = require('../../data/pools/tags.json');
-const SPECIES_DATA = require('../../data/pools/species.json');
-const GROWTH_CURVES_DATA = require('../../data/pools/growth-curves.json');
 
 export default function CharacterForm({ character, onChange }: CharacterFormProps) {
   const [activeTab, setActiveTab] = useState(0);
@@ -102,11 +97,11 @@ export default function CharacterForm({ character, onChange }: CharacterFormProp
     loadMoves();
   };
 
-  const roles = ROLES_DATA.roles.values.map((r: any) => r.id);
-  const allTags = TAGS_DATA.tags.all_tags;
-  const tagDetails = TAGS_DATA.tags.tag_details;
-  const speciesGroups = SPECIES_DATA.species.groups;
-  const growthCurves = GROWTH_CURVES_DATA.growth_curves.values.map((g: any) => g.id);
+  const roles = getRoles();
+  const allTags = getAllTags();
+  const tagDetails = getTagDetails();
+  const speciesGroups = getSpeciesGroups();
+  const growthCurves = getGrowthCurves();
 
   return (
     <div>

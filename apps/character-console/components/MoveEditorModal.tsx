@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Move, saveMove } from '@/lib/firestore-helpers';
+import { getMoveTypes, getAllTags, getEnvironmentalConditions } from '@/lib/reference-data';
 
 interface MoveEditorModalProps {
   move: Move;
@@ -9,17 +10,13 @@ interface MoveEditorModalProps {
   onClose: () => void;
 }
 
-const MOVE_TYPES_DATA = require('../../data/pools/move-types.json');
-const TAGS_DATA = require('../../data/pools/tags.json');
-const ENV_CONDITIONS_DATA = require('../../data/pools/environmental-conditions.json');
-
 export default function MoveEditorModal({ move: initialMove, onSave, onClose }: MoveEditorModalProps) {
   const [move, setMove] = useState<Move>(initialMove);
   const [saving, setSaving] = useState(false);
 
-  const moveTypes = MOVE_TYPES_DATA.move_types.values.map((t: any) => t.id);
-  const allTags = TAGS_DATA.tags.all_tags;
-  const envConditions = ENV_CONDITIONS_DATA.environmental_conditions.values.map((c: any) => c.id);
+  const moveTypes = getMoveTypes();
+  const allTags = getAllTags();
+  const envConditions = getEnvironmentalConditions();
 
   const handleInputChange = (field: string, value: any) => {
     const keys = field.split('.');
