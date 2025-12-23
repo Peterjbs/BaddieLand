@@ -13,6 +13,7 @@ const RIVER_WOBBLE_FREQUENCY = 30;
 const RIVER_CURVE_FACTOR = 0.2;
 const VERTICAL_PIXELS_PER_METER = 32;
 const DRAFT_STATUS = 'draft';
+const FOAM_THRESHOLD = 0.9;
 const HUB_AREA = {
   id: '06.05',
   name: 'The Hub',
@@ -20,6 +21,11 @@ const HUB_AREA = {
   locations: ['Cobble Cross', 'The Whisper Kiosk'],
 };
 const SUPPORTED_AREAS = [HUB_AREA.id];
+type AvatarRequest = { characterId?: string; visualDescription?: string };
+type SpriteDraftRequest = { characterId?: string; templateType?: string; visualDescription?: string; feedback?: string };
+type FinalizeRequest = { characterId?: string; draftPath?: string };
+type TileAtlasRequest = { characterId?: string; spriteSheetPath?: string };
+type AreaAtlasRequest = { areaId?: string };
 
 // Simple deterministic PRNG (mulberry32)
 function createPrng(seed: number) {
@@ -80,12 +86,12 @@ function drawLineWithThickness(
     setPixel(png, Math.round(x0), Math.round(y0), color);
     return;
   }
-  const offsetX = (-dy / length);
-  const offsetY = (dx / length);
+  const perpX = (-dy / length);
+  const perpY = (dx / length);
 
   for (let offset = -half; offset <= half; offset++) {
-    const ox = offsetX * offset;
-    const oy = offsetY * offset;
+    const ox = perpX * offset;
+    const oy = perpY * offset;
     drawLine(png, Math.round(x0 + ox), Math.round(y0 + oy), Math.round(x1 + ox), Math.round(y1 + oy), color);
   }
 }
@@ -169,7 +175,7 @@ function paintRiver(png: PNG) {
       const t = dist / halfBand;
       const color = lerpColor(riverColor, { r: 18, g: 120, b: 180, a: 255 }, t);
       setPixel(png, x, y, color);
-      if (dist > halfBand * 0.9) {
+      if (dist > halfBand * FOAM_THRESHOLD) {
         setPixel(png, x, y, foamColor);
       }
     }
@@ -289,11 +295,11 @@ export async function assertIsAdmin(email: string): Promise<void> {
  * Generate avatar for a character using OpenAI
  * This is a placeholder implementation
  */
-export const generateAvatar = functions.https.onCall(async (request) => {
+export const generateAvatar = functions.https.onCall(async (request: functions.https.CallableRequest<AvatarRequest>) => {
   const email = requireEmail(request.auth?.token?.email);
   await assertIsAdmin(email);
 
-  const { characterId } = request.data as { characterId?: string; visualDescription?: string };
+  const { characterId } = request.data;
 
   if (!characterId) {
     throw new functions.https.HttpsError('invalid-argument', 'characterId is required');
@@ -319,16 +325,11 @@ export const generateAvatar = functions.https.onCall(async (request) => {
  * Generate sprite sheet for a character using OpenAI
  * This is a placeholder implementation
  */
-export const generateDraftSpriteSheet = functions.https.onCall(async (request) => {
+export const generateDraftSpriteSheet = functions.https.onCall(async (request: functions.https.CallableRequest<SpriteDraftRequest>) => {
   const email = requireEmail(request.auth?.token?.email);
   await assertIsAdmin(email);
 
-  const { characterId, templateType } = request.data as {
-    characterId?: string;
-    templateType?: string;
-    visualDescription?: string;
-    feedback?: string;
-  };
+  const { characterId, templateType } = request.data;
 
   if (!characterId || !templateType) {
     throw new functions.https.HttpsError(
@@ -353,11 +354,11 @@ export const generateDraftSpriteSheet = functions.https.onCall(async (request) =
 /**
  * Finalize a draft sprite sheet to permanent storage
  */
-export const finalizeSpriteSheet = functions.https.onCall(async (request) => {
+export const finalizeSpriteSheet = functions.https.onCall(async (request: functions.https.CallableRequest<FinalizeRequest>) => {
   const email = requireEmail(request.auth?.token?.email);
   await assertIsAdmin(email);
 
-  const { characterId, draftPath } = request.data as { characterId?: string; draftPath?: string };
+  const { characterId, draftPath } = request.data;
 
   if (!characterId || !draftPath) {
     throw new functions.https.HttpsError(
@@ -380,11 +381,11 @@ export const finalizeSpriteSheet = functions.https.onCall(async (request) => {
 /**
  * Generate tile atlas from a sprite sheet
  */
-export const generateTileAtlas = functions.https.onCall(async (request) => {
+export const generateTileAtlas = functions.https.onCall(async (request: functions.https.CallableRequest<TileAtlasRequest>) => {
   const email = requireEmail(request.auth?.token?.email);
   await assertIsAdmin(email);
 
-  const { characterId, spriteSheetPath } = request.data as { characterId?: string; spriteSheetPath?: string };
+  const { characterId, spriteSheetPath } = request.data;
 
   if (!characterId || !spriteSheetPath) {
     throw new functions.https.HttpsError(
@@ -427,13 +428,13 @@ export const generateTileAtlas = functions.https.onCall(async (request) => {
 /**
  * Generate a world tile atlas for area segments (supports 06.05)
  */
-export const generateAreaTileAtlas = functions.https.onCall(async (request) => {
+export const generateAreaTileAtlas = functions.https.onCall(async (request: functions.https.CallableRequest<AreaAtlasRequest>) => {
   const email = requireEmail(request.auth?.token?.email);
   await assertIsAdmin(email);
 
-  const { areaId } = request.data as { areaId?: string };
+  const { areaId } = request.data;
   if (!areaId || !SUPPORTED_AREAS.includes(areaId)) {
-    throw new functions.https.HttpsError('invalid-argument', `Invalid areaId. Only area ${HUB_AREA.id} (${HUB_AREA.name}) is currently supported.`);
+    throw new functions.https.HttpsError('invalid-argument', `Unsupported areaId. Supported areas: ${SUPPORTED_AREAS.join(', ')}`);
   }
 
   const bucket = admin.storage().bucket();
