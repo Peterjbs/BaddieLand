@@ -886,7 +886,7 @@
                         <div class="button-row">
                             <button class="btn" type="button" onclick="equalizeStats()">Equalise current stats</button>
                         </div>
-                        <div id="stat-equalizer-result" class="chips"></div>
+                        <div class="chips stat-equalizer-result"></div>
                     </div>
                 </div>
                 <div class="section-card">
@@ -945,7 +945,7 @@
                     <div class="button-row">
                         <button class="btn" type="button" onclick="equalizeStats()">Equalise + recalc</button>
                     </div>
-                    <div id="stat-equalizer-result-secondary" class="chips"></div>
+                        <div class="chips stat-equalizer-result"></div>
                 </div>
             `;
         }
@@ -1168,7 +1168,7 @@
             Object.keys(currentWorkingData.stats).forEach(key => currentWorkingData.stats[key] = target);
             document.getElementById('tab-stats').innerHTML = renderStats(currentWorkingData.stats);
             const result = `Balanced to ${target} across ${values.length} stats`;
-            const resultElements = document.querySelectorAll('#stat-equalizer-result, #stat-equalizer-result-secondary');
+            const resultElements = document.querySelectorAll('.stat-equalizer-result');
             resultElements.forEach(el => { if (el) el.textContent = result; });
         }
 
