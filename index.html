@@ -467,6 +467,38 @@
             border-radius: 4px;
             background: rgba(255, 255, 255, 0.07);
         }
+
+        .wireframe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 10px;
+        }
+
+        .wireframe-card {
+            border: 1px dashed rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .wireframe-card h4 {
+            margin-bottom: 6px;
+            color: #00d4ff;
+        }
+
+        .ui-map-list {
+            display: grid;
+            gap: 4px;
+            font-size: 0.95em;
+        }
+
+        .ui-map-badge {
+            padding: 4px 8px;
+            border-radius: 6px;
+            background: rgba(255, 255, 255, 0.05);
+            display: inline-block;
+            margin-right: 4px;
+        }
     </style>
 </head>
 <body>
@@ -537,6 +569,22 @@
             acc[cur.tribe].push(cur);
             return acc;
         }, {});
+
+        function deriveTags(data) {
+            if (!data?.info) return [];
+            const info = data.info;
+            const stats = data.stats || {};
+            const topStats = Object.entries(stats).sort((a,b)=>(b[1]||0)-(a[1]||0)).slice(0,3).map(([k]) => k.toUpperCase());
+            const base = [
+                info.tribe,
+                info.roles?.primary,
+                info.weapon_item,
+                info.growth_curve,
+                ...(info.mat_list || []),
+                ...topStats
+            ].filter(Boolean);
+            return Array.from(new Set(base.map(t => t.toString())));
+        }
 
         function escapeHtml(text) {
             const div = document.createElement('div');
@@ -713,7 +761,7 @@
             return [];
         }
 
-        const TAB_ORDER = ['info','moves','stats','images','log','console','generation','assets','progress','export','gang'];
+        const TAB_ORDER = ['info','moves','stats','images','log','console','generation','assets','progress','export','gang','map'];
 
         function renderCharacterDetail(char, data, activeTab = 'info') {
             const detailDiv = document.getElementById('character-detail');
@@ -757,6 +805,9 @@
                 <div id="tab-gang" class="tab-content ${activeTab === 'gang' ? 'active' : ''}">
                     ${renderGangConsole()}
                 </div>
+                <div id="tab-map" class="tab-content ${activeTab === 'map' ? 'active' : ''}">
+                    ${renderUiMap()}
+                </div>
             `;
         }
 
@@ -772,7 +823,8 @@
                 assets: 'Assets',
                 progress: 'Progress',
                 export: 'Export',
-                gang: 'Gang / Tribe'
+                gang: 'Gang / Tribe',
+                map: 'UI Map'
             };
             return labels[tab] || tab;
         }
@@ -884,7 +936,7 @@
                                 <button class="btn secondary" type="button" onclick="generateTagsFromStats()">Generate from stats</button>
                             </div>
                         </form>
-                        <div class="chips" id="tag-list">${(data.info?.mat_list || []).map(tag => `<span class="chip">${safeText(tag)}</span>`).join('')}</div>
+                        <div class="chips" id="tag-list">${deriveTags(currentWorkingData).map(tag => `<span class="chip">${safeText(tag)}</span>`).join('')}</div>
                     </div>
                     <div class="section-card">
                         <div class="section-title">Stat generator / equaliser</div>
@@ -1068,6 +1120,38 @@
                     <div class="button-row">
                         <input type="search" placeholder="Filter roster" oninput="handleSearchInput(this.value)">
                         <button class="btn secondary" type="button" onclick="renderCharacterList()">Apply filter</button>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderUiMap() {
+            const flows = [
+                { title: 'Roster → Detail', steps: ['Search / filter', 'Select character', 'Load assets & stats', 'Persist working state'] },
+                { title: 'Console', steps: ['Info updater', 'Tags & stat equaliser', 'Move editor', 'CRUD drafts'] },
+                { title: 'Generation', steps: ['Visual description prompt', 'Stat-driven tags', 'Re-run filters', 'Verify in Info tab'] },
+                { title: 'Assets', steps: ['Avatar drafts > refinement > approve > activate', 'Sprite sheets queue > approve > activate', 'Preview animation'] },
+                { title: 'Progress & Export', steps: ['Set completion', 'Append log', 'Export JSON / MD / YAML-like'] },
+                { title: 'Gang / Tribe', steps: ['Counts by tribe', 'Roster chips', 'Filter handoff'] }
+            ];
+            return `
+                <div class="wireframe-grid">
+                    ${flows.map(flow => `
+                        <div class="wireframe-card">
+                            <h4>${safeText(flow.title)}</h4>
+                            <div class="ui-map-list">
+                                ${flow.steps.map(step => `<span class="ui-map-badge">${safeText(step)}</span>`).join('')}
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+                <div class="wireframe-card" style="margin-top:10px;">
+                    <h4>Space plan</h4>
+                    <div class="ui-map-list">
+                        <span class="ui-map-badge">Left column: roster + filters + gang snapshot</span>
+                        <span class="ui-map-badge">Top: stats bar</span>
+                        <span class="ui-map-badge">Main: tabbed console (info, moves, stats, images, log, console, generation, assets, progress, export, gang, UI map)</span>
+                        <span class="ui-map-badge">Bottom of tabs: action-specific panels (forms, chips, tables)</span>
                     </div>
                 </div>
             `;
