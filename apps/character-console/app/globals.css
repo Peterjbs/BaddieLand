@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --bg-primary: #1a1a2e;
   --bg-secondary: #16213e;
@@ -241,32 +245,6 @@ body {
 
 .close-button:hover {
   color: var(--text-primary);
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
@@ -274,6 +252,7 @@ body {
     text-wrap: balance;
   }
 }
+
 
 /* ============================================================================
    ENHANCED STATS TABLE STYLES
@@ -1021,3 +1000,36 @@ body {
   color: var(--text-secondary);
   font-style: italic;
 }
+
+
+/* ============================================================================
+   STATS GENERATOR TAB LAYOUT
+   ============================================================================ */
+
+.stats-generator-tab {
+  padding: 1rem;
+}
+
+.stats-generator-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: var(--bg-tertiary);
+  border-radius: 8px;
+}
+
+.stats-generator-header h3 {
+  margin: 0;
+}
+
+.stats-generator-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.stat-sheet-section {
+  margin-bottom: 2rem;
+}
+

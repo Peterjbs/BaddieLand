@@ -3,8 +3,12 @@
 import { useState, useEffect } from 'react';
 import { Character, Move, getMove } from '@/lib/firestore-helpers';
 import StatsTable from './StatsTable';
+import EnhancedStatsTable from './EnhancedStatsTable';
+import TagSystem from './TagSystem';
+import StatsTimeline from './StatsTimeline';
 import MoveEditorModal from './MoveEditorModal';
 import { getRoles, getAllTags, getTagDetails, getSpeciesGroups, getGrowthCurves } from '@/lib/reference-data';
+import { createDefaultStatSheet, exportStatSheet, importStatSheet, StatSheet } from '@/lib/stat-utils';
 
 interface CharacterFormProps {
   character: Character;
@@ -22,7 +26,8 @@ export default function CharacterForm({ character, onChange }: CharacterFormProp
     'Visual Description',
     'Roles & Growth',
     'Tags & Conditions',
-    'Level Stats',
+    'Level Stats (Legacy)',
+    'Stats Generator',
     'Moves'
   ];
 
@@ -95,6 +100,68 @@ export default function CharacterForm({ character, onChange }: CharacterFormProp
     setShowMoveEditor(false);
     setEditingMove(null);
     loadMoves();
+  };
+
+  // Handlers for stat sheet
+  const handleStatSheetChange = (statSheet: StatSheet) => {
+    onChange({
+      ...character,
+      statSheet
+    });
+  };
+
+  const handleExportStatSheet = () => {
+    if (!character.statSheet) {
+      alert('No stat sheet to export');
+      return;
+    }
+    
+    const json = exportStatSheet(character.statSheet);
+    const blob = new Blob([json], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${character.id}_stats.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
+  const handleImportStatSheet = () => {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.json';
+    input.onchange = async (e) => {
+      const file = (e.target as HTMLInputElement).files?.[0];
+      if (!file) return;
+      
+      const text = await file.text();
+      const imported = importStatSheet(text);
+      
+      if (imported) {
+        onChange({
+          ...character,
+          statSheet: imported
+        });
+        alert('Stat sheet imported successfully!');
+      } else {
+        alert('Failed to import stat sheet. Please check the file format.');
+      }
+    };
+    input.click();
+  };
+
+  const handleCreateDefaultStatSheet = () => {
+    if (character.statSheet && !confirm('This will replace your current stat sheet. Continue?')) {
+      return;
+    }
+    
+    const defaultSheet = createDefaultStatSheet();
+    onChange({
+      ...character,
+      statSheet: defaultSheet
+    });
   };
 
   const roles = getRoles();
@@ -359,7 +426,7 @@ export default function CharacterForm({ character, onChange }: CharacterFormProp
           </div>
         )}
 
-        {/* Tab 5: Level Stats */}
+        {/* Tab 5: Level Stats (Legacy) */}
         {activeTab === 4 && (
           <StatsTable
             character={character}
@@ -367,8 +434,81 @@ export default function CharacterForm({ character, onChange }: CharacterFormProp
           />
         )}
 
-        {/* Tab 6: Moves */}
+        {/* Tab 6: Stats Generator */}
         {activeTab === 5 && (
+          <div className="stats-generator-tab">
+            <div className="stats-generator-header">
+              <h3>Enhanced Stats Generator</h3>
+              <div className="stats-generator-actions">
+                {!character.statSheet ? (
+                  <button 
+                    className="button button-primary" 
+                    onClick={handleCreateDefaultStatSheet}
+                  >
+                    🎯 Initialize Stat Sheet
+                  </button>
+                ) : (
+                  <>
+                    <button 
+                      className="button button-secondary" 
+                      onClick={handleExportStatSheet}
+                    >
+                      📥 Export JSON
+                    </button>
+                    <button 
+                      className="button button-secondary" 
+                      onClick={handleImportStatSheet}
+                    >
+                      📤 Import JSON
+                    </button>
+                    <button 
+                      className="button button-secondary" 
+                      onClick={handleCreateDefaultStatSheet}
+                    >
+                      🔄 Reset to Default
+                    </button>
+                  </>
+                )}
+              </div>
+            </div>
+
+            {!character.statSheet ? (
+              <div className="empty-state">
+                <h3>No Stat Sheet Initialized</h3>
+                <p>Click "Initialize Stat Sheet" to create a new stat sheet with default values.</p>
+                <p>This will replace the legacy level stats system with the enhanced 9-level × 23-stat generator.</p>
+              </div>
+            ) : (
+              <>
+                {/* Enhanced Stats Table */}
+                <div className="stat-sheet-section">
+                  <EnhancedStatsTable
+                    statSheet={character.statSheet}
+                    onChange={handleStatSheetChange}
+                  />
+                </div>
+
+                {/* Tag System */}
+                <div className="stat-sheet-section">
+                  <TagSystem
+                    statSheet={character.statSheet}
+                    onChange={handleStatSheetChange}
+                  />
+                </div>
+
+                {/* Timeline */}
+                <div className="stat-sheet-section">
+                  <StatsTimeline
+                    statSheet={character.statSheet}
+                  />
+                </div>
+              </>
+            )}
+          </div>
+        )}
+
+        {/* Tab 7: Moves */}
+        {activeTab === 6 && (
           <div>
             <button className="button" onClick={handleAddMove} style={{ marginBottom: '1rem' }}>
               + Add Move
