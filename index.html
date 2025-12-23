@@ -795,8 +795,8 @@
                     <div class="info-item"><div class="label">Weapon</div><div class="value">${safeText(info.weapon_item || 'N/A')}</div></div>
                     <div class="info-item"><div class="label">Growth Curve</div><div class="value">${safeText(info.growth_curve || 'N/A')}</div></div>
                 </div>
-                ${info.brand_vibe ? `<div class="info-item" style="margin-top: 20px;"><div class="label">Brand & Vibe</div><div class="value">${info.brand_vibe}</div></div>` : ''}
-                ${info.specific_visuals ? `<div class="info-item" style="margin-top: 10px;"><div class="label">Visual Details</div><div class="value">${info.specific_visuals}</div></div>` : ''}
+                ${info.brand_vibe ? `<div class="info-item" style="margin-top: 20px;"><div class="label">Brand & Vibe</div><div class="value">${safeText(info.brand_vibe)}</div></div>` : ''}
+                ${info.specific_visuals ? `<div class="info-item" style="margin-top: 10px;"><div class="label">Visual Details</div><div class="value">${safeText(info.specific_visuals)}</div></div>` : ''}
                 ${info.mat_list && info.mat_list.length > 0 ? `
                 <div style="margin-top: 20px;">
                     <div class="label" style="margin-bottom: 10px; color: #00d4ff;">Multiplier Affecting Tags (MaT)</div>
@@ -1149,7 +1149,7 @@
             if (!currentWorkingData.info.mat_list.includes(tag)) {
                 currentWorkingData.info.mat_list.push(tag);
             }
-            document.getElementById('tag-list').innerHTML = currentWorkingData.info.mat_list.map(t => `<span class="chip">${t}</span>`).join('');
+            document.getElementById('tag-list').innerHTML = currentWorkingData.info.mat_list.map(t => `<span class="chip">${safeText(t)}</span>`).join('');
             event.target.reset();
         }
 
@@ -1158,7 +1158,7 @@
             const entries = Object.entries(currentWorkingData.stats);
             const sorted = entries.sort((a, b) => (b[1] || 0) - (a[1] || 0)).slice(0, 3).map(([k]) => k.toUpperCase());
             currentWorkingData.info.mat_list = Array.from(new Set([...(currentWorkingData.info.mat_list || []), ...sorted]));
-            document.getElementById('tag-list').innerHTML = currentWorkingData.info.mat_list.map(t => `<span class="chip">${t}</span>`).join('');
+            document.getElementById('tag-list').innerHTML = currentWorkingData.info.mat_list.map(t => `<span class="chip">${safeText(t)}</span>`).join('');
         }
 
         function equalizeStats() {
@@ -1168,8 +1168,8 @@
             Object.keys(currentWorkingData.stats).forEach(key => currentWorkingData.stats[key] = target);
             document.getElementById('tab-stats').innerHTML = renderStats(currentWorkingData.stats);
             const result = `Balanced to ${target} across ${values.length} stats`;
-            const buckets = document.querySelectorAll('#stat-equalizer-result, #stat-equalizer-result-secondary');
-            buckets.forEach(el => { if (el) el.textContent = result; });
+            const resultElements = document.querySelectorAll('#stat-equalizer-result, #stat-equalizer-result-secondary');
+            resultElements.forEach(el => { if (el) el.textContent = result; });
         }
 
         function handleMoveDraft(event) {
