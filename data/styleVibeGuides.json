@@ -1,0 +1,460 @@
+{
+  "collection": "styleVibeGuides",
+  "documents": [
+    {
+      "id": "green-grotto",
+      "name": "The Green Grotto",
+      "visualDescription": "Overgrown cave mouths and mossy limestone arches packed with travelling wagons, hanging vines, lantern pools, muddy grass, damp stone, and rough fairground clutter; everything feels rural, lucky, and gritty but still storybook-bright.",
+      "keyPalette": ["#2E7D32", "#6D4C41", "#C8A24A", "#2F3E2E"],
+      "activities": ["campfires", "wagon-tending", "bare-knuckle-sparring", "horse-trading", "luck-charms"]
+    },
+    {
+      "id": "misty-mountains",
+      "name": "The Misty Mountains",
+      "visualDescription": "Pearl-white marble paths and obsidian accents around a luxury lodge and quarry: crisp geometry, velvet ropes, espresso props, polished stone, and winter-clean shapes that read rich and intimidating from an isometric view.",
+      "keyPalette": ["#F2F2F2", "#1B1B1E", "#5A3E2B", "#7A1F2B"],
+      "activities": ["fine-dining", "stone-cutting", "formal-meetings", "showing-off", "guard-patrols"]
+    },
+    {
+      "id": "bubble-brook",
+      "name": "Bubble Brook",
+      "visualDescription": "Urban canal strip with all-white fashion, iridescent plastics, neon accents, glitter signage, and glossy paving; ring-lights, beauty-tech props, and party polish make it instantly readable and hyper-social.",
+      "keyPalette": ["#FFFFFF", "#7CF7E6", "#FF4FD8", "#2A2A2A"],
+      "activities": ["canal-hanging", "shopping", "selfie-spots", "dance-outs", "gossip"]
+    },
+    {
+      "id": "poison-pumpkin-territory",
+      "name": "Poison Pumpkin Posse Territory",
+      "visualDescription": "Stylised brutalist blocks and estate courtyards with high-contrast concrete patterns, black silhouettes, warning-orange accents, and UV graffiti; scooters, masks, and sharp stencils give a strong 2D read.",
+      "keyPalette": ["#121212", "#FF4A2D", "#7B3FF2", "#6B6B6B"],
+      "activities": ["territory-hanging", "courier-runs", "tagging", "night-meetups", "masking-up"]
+    },
+    {
+      "id": "cobble-cross",
+      "name": "Cobble Cross",
+      "visualDescription": "Central hub marketplace built around a spinning cobblestone plaza with candy-cane glass streetlamps and banners with simple moving illustrations; iconic figures include the Ticket Warden and the Map-Seller Twins.",
+      "keyPalette": ["#F3E7C6", "#E84B4B", "#6FE3C1", "#C8A24A"],
+      "activities": ["trade", "meetups", "map-buying", "people-watching", "street-snacks"]
+    },
+    {
+      "id": "whisper-kiosk",
+      "name": "The Whisper Kiosk",
+      "visualDescription": "Tiny octagonal booth with a brass bell, ear-shaped sign, stacked scrolls, red string, and dangling gossip charms; designed to pop clearly as a single landmark in a crowded square.",
+      "keyPalette": ["#F7D56B", "#2AA6A1", "#C8A24A", "#FFFFFF"],
+      "activities": ["rumour-buying", "message-dropping", "whisper-trading"]
+    },
+    {
+      "id": "lost-and-fable-found",
+      "name": "Lost & Fable Found",
+      "visualDescription": "Pawn shop of misplaced story-items: jewel-toned shelves, warm lamplight, mismatched frames, glass cases, odd single shoes, broken crowns, and jars labelled like 'found stories'.",
+      "keyPalette": ["#6A1B9A", "#1E88E5", "#FBC02D", "#4E342E"],
+      "activities": ["pawnbroking", "browsing", "bartering"]
+    },
+    {
+      "id": "the-seams",
+      "name": "The Seams",
+      "visualDescription": "A flat grid land where each square patch is a different climate/biome, boldly colour-coded; thick ropes stitch patch edges and oversized knots sit at intersections; odd creatures and travellers appear stranded in the 'wrong' squares.",
+      "keyPalette": ["#52C41A", "#FADB14", "#1890FF", "#F5222D"],
+      "activities": ["crossing", "wayfinding", "camping-on-borders", "watching-weirdos"]
+    },
+    {
+      "id": "woodless-woods",
+      "name": "The Woodless Woods",
+      "visualDescription": "A forest layout without trees: stump-like brass forms, hedge-rows of carved substitutes, gear-saplings, and pruning paths; the Orchard Keeper (one-armed automaton with pruning scythe) is the iconic silhouette.",
+      "keyPalette": ["#C8A24A", "#2E7D32", "#6D4C41", "#2F3E2E"],
+      "activities": ["harvesting", "pruning", "parts-trading", "quiet-walking"]
+    },
+    {
+      "id": "candyland-carnival",
+      "name": "Candyland Carnival",
+      "visualDescription": "Flat fairground made of sweets and carnival props: striped tents, lollipop signposts, caramel carts, gumdrop bollards, frosting bunting; reads like a travelling carnival parked permanently on bright ground.",
+      "keyPalette": ["#FF6FAE", "#7CF7E6", "#FFE066", "#A56CC1"],
+      "activities": ["games", "snacking", "parading", "spectating"]
+    },
+    {
+      "id": "witchs-wharf",
+      "name": "Witch's Wharf",
+      "visualDescription": "Colourful docks with witchy craft: brooms as oars, cauldrons as barrels, crooked lanterns, spell jars, driftwood runes; tar-black wood, sea-glass water, violet highlights.",
+      "keyPalette": ["#4FE0C1", "#1B1B1E", "#7B3FF2", "#F5C542"],
+      "activities": ["dock-trade", "boat-fixing", "spell-supplies", "net-mending"]
+    },
+    {
+      "id": "wishing-well-ward",
+      "name": "Wishing Well Ward",
+      "visualDescription": "Bright courtyard town built around wells and fountains: white stone, sky-blue tiles, bucket rigs, tiled channels, coin sparkle details, and round well silhouettes visible from above.",
+      "keyPalette": ["#F5F5F5", "#4FC3F7", "#FBC02D", "#4E342E"],
+      "activities": ["fetching-water", "coin-tossing", "courtyard-sitting", "market-strolling"]
+    },
+    {
+      "id": "painted-prairie",
+      "name": "Painted Prairie",
+      "visualDescription": "Wide flat prairie in bright painted colour bands; windmills, fence lines, and patterned hay bales create strong map silhouettes; sky gradients feel illustrated rather than realistic.",
+      "keyPalette": ["#00B8A9", "#F8D210", "#6C63FF", "#FF6F61"],
+      "activities": ["long-walks", "kite-flying", "wagon-travel", "picnics"]
+    },
+    {
+      "id": "thimblebrook-keep",
+      "name": "Thimblebrook Keep",
+      "visualDescription": "Miniature-logic keep with oversized household-object architecture: spool towers, needle gate, matchbox walls, enamel-bright trims and brass details; reads cute but fortified.",
+      "keyPalette": ["#E53935", "#1E88E5", "#FBC02D", "#C8A24A"],
+      "activities": ["guarding", "crafting", "courtyard-play", "tiny-feasts"]
+    },
+    {
+      "id": "ink-lane",
+      "name": "Ink Lane",
+      "visualDescription": "Printing lane of bright shopfronts: giant rollers, hanging broadsheets like laundry, binding frames, animated posters on walls; high-contrast inks on parchment tones.",
+      "keyPalette": ["#111111", "#F3E7C6", "#D32F2F", "#2AA6A1"],
+      "activities": ["printing", "poster-pasting", "reading-notices", "stamp-buying"]
+    },
+    {
+      "id": "mushroom-meadows",
+      "name": "Mushroom Meadows",
+      "visualDescription": "Flat land packed with many different bright mushrooms: oversized toadstools, ring clusters, patterned caps, spore-puff shrubs; nickname: Mushroom Madlands.",
+      "keyPalette": ["#FF1744", "#2979FF", "#FFD600", "#D500F9"],
+      "activities": ["foraging", "wandering", "picnicking", "mushroom-watching"]
+    },
+    {
+      "id": "clattermarket",
+      "name": "Clattermarket",
+      "visualDescription": "Static inter-faction bazaar: tents made from flags, anvils beside neon signs, spiced-metal smoke; three iconic vendors (smith, glam tailor, potion-brewer) share one cashbox.",
+      "keyPalette": ["#FFCA28", "#2E7D32", "#263238", "#E84B4B"],
+      "activities": ["shopping", "haggling", "snack-stalls", "crowd-hanging"]
+    },
+    {
+      "id": "receipt-tree",
+      "name": "The Receipt Tree",
+      "visualDescription": "A landmark tree whose leaves are receipts; pinned paper flutters like foliage with red string and brass pins; unmistakable from a distance as a paper-canopy silhouette.",
+      "keyPalette": ["#4E342E", "#FFFFFF", "#C62828", "#C8A24A"],
+      "activities": ["deal-making", "posting-notices", "queueing"]
+    },
+    {
+      "id": "yodel-yarns",
+      "name": "Yodel Yarns",
+      "visualDescription": "Stone steps carved into a hillside, each step marked with simple note symbols; the Resonance Gate is a round 'sound door' with carved wave lines; reads like a musical route landmark.",
+      "keyPalette": ["#B0BEC5", "#90A4AE", "#FBC02D", "#2E7D32"],
+      "activities": ["singing", "step-walking", "listening", "resting-on-steps"]
+    },
+    {
+      "id": "fairyglade",
+      "name": "Fairyglade",
+      "visualDescription": "Bright woodland glade with lantern-flowers, ribbon grasses, and tiny party lights; spring greens and peach blossoms create a friendly, magical clearing vibe.",
+      "keyPalette": ["#52C41A", "#FFB6C1", "#F5C542", "#2AA6A1"],
+      "activities": ["glade-feasts", "storytelling", "dancing", "resting"]
+    },
+    {
+      "id": "fairyglade-feasting-hall",
+      "name": "Fairyglade Feasting Hall",
+      "visualDescription": "Big timber hall in the glade; long tables visible from above; ivy trim and warm interior glow make it read as a cosy 'main hall' landmark.",
+      "keyPalette": ["#8D6E63", "#52C41A", "#F5C542", "#F3E7C6"],
+      "activities": ["feasting", "toasting", "singalongs", "banquets"]
+    },
+    {
+      "id": "pixie-parlor",
+      "name": "Pixie Parlor",
+      "visualDescription": "Cosy taproom annex with rounded door, glowing bottles, cheeky signage; jewel-bright bottles and warm amber lighting make it an instant 'bar' read.",
+      "keyPalette": ["#FFCA28", "#7B3FF2", "#00B8A9", "#4E342E"],
+      "activities": ["drinks", "cards", "chatting", "music"]
+    },
+    {
+      "id": "whispering-woods",
+      "name": "Whispering Woods",
+      "visualDescription": "Darker forest pocket with thick canopy, bold shadow pools, twisted trunks, oversized roots, and pale fungus lights; designed as a rare 'dark' aesthetic zone without going grey.",
+      "keyPalette": ["#0B3D2E", "#1C2331", "#C8A24A", "#A3E635"],
+      "activities": ["quiet-walking", "camping", "spooky-stories", "watching-fireflies"]
+    },
+    {
+      "id": "trollbridge-toll-bridge",
+      "name": "Trollbridge Toll Bridge",
+      "visualDescription": "Chunky mossy stone arch bridge with troll huts built into the sides, lantern posts, and a bold toll boom; classic fairy-tale crossing silhouette.",
+      "keyPalette": ["#607D3B", "#8D6E63", "#F5C542", "#37474F"],
+      "activities": ["crossing", "toll-paying", "arguing", "bridge-hanging"]
+    },
+    {
+      "id": "rainbow-riverbank",
+      "name": "Rainbow Riverbank",
+      "visualDescription": "Cheerful riverbank with painted stones, ribbon reeds, and bright posts; colour accents read 'rainbow' without needing reflective effects.",
+      "keyPalette": ["#52C41A", "#1890FF", "#F5222D", "#FADB14"],
+      "activities": ["fishing", "skipping-stones", "picnics", "splashing"]
+    },
+    {
+      "id": "muddybottom-marsh",
+      "name": "Muddybottom Marsh",
+      "visualDescription": "Comical marsh with big mud pools, bright reeds, and silly signposts; friendly-squelch vibes with bold shapes for 2D readability.",
+      "keyPalette": ["#4CAF50", "#8D6E63", "#FFD54F", "#2F3E2E"],
+      "activities": ["wading", "frog-watching", "boot-cleaning", "reed-picking"]
+    },
+    {
+      "id": "candlewax-palace",
+      "name": "Candlewax Palace",
+      "visualDescription": "Palace made of layered colourful wax with drip-tower silhouettes, giant candelabra motifs, ballroom banners; inhabited by a tacky feudal royal family who hosts elaborate balls.",
+      "keyPalette": ["#FF6FAE", "#7CF7E6", "#FFE066", "#C8A24A"],
+      "activities": ["balls", "parades", "court-gossip", "costume-posing"]
+    },
+    {
+      "id": "nymphs-nook",
+      "name": "Nymph's Nook",
+      "visualDescription": "Small lush water-meadow nook: reed-ring pool, shell benches, vine arches, and soft pastel waters; gentle and pretty without being generic.",
+      "keyPalette": ["#7CF7E6", "#A7F3D0", "#F3E7C6", "#4FC3F7"],
+      "activities": ["resting", "bathing-feet", "flower-picking", "daydreaming"]
+    },
+    {
+      "id": "faelight-fen",
+      "name": "Faelight Fen",
+      "visualDescription": "Bright fen with glowing reed clusters and floating light-orbs; boardwalk lines and glow-lilies create a strong top-down pattern.",
+      "keyPalette": ["#A3E635", "#00B8A9", "#1B1B1E", "#F5C542"],
+      "activities": ["boardwalk-strolling", "lantern-watching", "frog-calling", "herb-gathering"]
+    },
+    {
+      "id": "willowwisp-way",
+      "name": "Willowwisp Way",
+      "visualDescription": "A winding path lined with willow-like silhouettes and evenly spaced wisp-lantern posts; reads as a clear route feature between regions.",
+      "keyPalette": ["#52C41A", "#4FC3F7", "#F3E7C6", "#2F3E2E"],
+      "activities": ["walking", "night-strolling", "lantern-lighting", "meeting-by-posts"]
+    },
+    {
+      "id": "brimstone-bank",
+      "name": "Brimstone Bank",
+      "visualDescription": "Scorched-but-colourful riverbank: ember-red rocks, smoky reeds, sulfur-yellow highlights; a bold 'hot river edge' landmark without needing fire simulation.",
+      "keyPalette": ["#C62828", "#FF6F00", "#FADB14", "#263238"],
+      "activities": ["skipping-stones", "camping", "cooking", "watching-smoke"]
+    },
+    {
+      "id": "moonlit-market",
+      "name": "Moonlit Market",
+      "visualDescription": "Night market with lantern strings, dark-blue canopies, silver accents, and tight stall rows; reads instantly as 'after-dark trading'.",
+      "keyPalette": ["#0D1B2A", "#F5C542", "#B0BEC5", "#7A1F2B"],
+      "activities": ["night-shopping", "snacking", "browsing-stalls", "window-shopping"]
+    },
+    {
+      "id": "direwood",
+      "name": "Direwood",
+      "visualDescription": "Danger-coded woods with spiky branch silhouettes, clawed stumps, and sharp pale-bark highlights; clear 'don't linger' vibe in a storybook style.",
+      "keyPalette": ["#0B3D2E", "#EDE7F6", "#263238", "#7A1F2B"],
+      "activities": ["hunting", "tracking", "quiet-travel", "camping"]
+    },
+    {
+      "id": "nightshade-nook",
+      "name": "Nightshade Nook",
+      "visualDescription": "A tight, shadowy corner packed with purple-black hedges and dark flowers with poison-green stamens; small but very distinct floral silhouette zone.",
+      "keyPalette": ["#2B0A3D", "#6A1B9A", "#A3E635", "#111111"],
+      "activities": ["flower-picking", "sneaking", "hiding", "whispering"]
+    },
+    {
+      "id": "grimstone-gate",
+      "name": "Grimstone Gate",
+      "visualDescription": "Imposing stone gateway landmark with cold blue-grey stone and bright rune accents; big arch shape designed for strong map readability.",
+      "keyPalette": ["#90A4AE", "#607D8B", "#7B3FF2", "#F5C542"],
+      "activities": ["passing-through", "guard-watching", "meeting-at-the-gate"]
+    },
+    {
+      "id": "grimwood",
+      "name": "Grimwood",
+      "visualDescription": "Dense, heavier 'storybook scary' forest: thicker canopy and darker massing than Direwood, with strong root shapes and fewer open clearings.",
+      "keyPalette": ["#112A23", "#1C2331", "#607D3B", "#C8A24A"],
+      "activities": ["night-walking", "camping", "listening", "hushed-talk"]
+    },
+    {
+      "id": "sobby-sadlands",
+      "name": "Sobby Sadlands",
+      "visualDescription": "Comedic melancholy plains with droopy plants, sagging signposts, puddle-eyed stones, and 'downturned' shapes while staying colourful and readable.",
+      "keyPalette": ["#9FA8DA", "#B39DDB", "#81D4FA", "#F3E7C6"],
+      "activities": ["slow-walking", "moaning", "sitting-around", "rain-watching"]
+    },
+    {
+      "id": "treacherous-trees",
+      "name": "The Treacherous Trees",
+      "visualDescription": "Forest of obvious gotcha-shapes: hook branches, snagging roots, warning-red fungi, and trap-like silhouettes that read mischievous and risky.",
+      "keyPalette": ["#2E7D32", "#C62828", "#FBC02D", "#263238"],
+      "activities": ["careful-walking", "testing-paths", "arguing", "watching-branches"]
+    },
+    {
+      "id": "fangbang-fields",
+      "name": "Fangbang Fields",
+      "visualDescription": "Open fields with cheeky vampire/were-creature cues: fang-shaped fence posts, bite-mark hay bales, and bold red/cream contrasts for instant theme read.",
+      "keyPalette": ["#7A1F2B", "#F3E7C6", "#111111", "#FF6F61"],
+      "activities": ["field-meetups", "staking-out", "night-hangs", "howling-practice"]
+    },
+    {
+      "id": "broken-oath",
+      "name": "The Broken Oath",
+      "visualDescription": "Tavern landmark with a snapped oath-scroll or broken ring as the hanging sign; warm wood, cracked gold trim, and a big obvious doorway silhouette.",
+      "keyPalette": ["#5D4037", "#C8A24A", "#F3E7C6", "#263238"],
+      "activities": ["drinking", "arguing", "singing", "handshakes"]
+    },
+    {
+      "id": "ogre-fart-falls",
+      "name": "Ogre Fart Falls",
+      "visualDescription": "Waterfall landmark with comic ogre signage, oversized footprint rocks, and harmless green 'stink mist' puffs drifting across the spray.",
+      "keyPalette": ["#4FC3F7", "#52C41A", "#8D6E63", "#F3E7C6"],
+      "activities": ["sightseeing", "laughing", "splashing", "photo-posing"]
+    },
+    {
+      "id": "blue-beanstalk",
+      "name": "The Blue Beanstalk",
+      "visualDescription": "Huge cobalt-blue beanstalk landmark: thick spiral base and large mint leaves forming clear platforms; designed to read iconic even in a flat 2D map.",
+      "keyPalette": ["#2979FF", "#A7F3D0", "#F3E7C6", "#2E7D32"],
+      "activities": ["gazing-up", "gathering", "picnics", "storytelling"]
+    },
+    {
+      "id": "spite-spittle",
+      "name": "Spite Spittle",
+      "visualDescription": "Small nasty little spot with spit-slick stones, rude graffiti, sour colours, and spiky clutter; compact and instantly 'mean' in tone.",
+      "keyPalette": ["#A3E635", "#FBC02D", "#6A1B9A", "#111111"],
+      "activities": ["taunting", "spitting", "loitering", "backchat"]
+    },
+    {
+      "id": "little-cock-o-loch",
+      "name": "Little Cock o' Loch",
+      "visualDescription": "Small loch with a tiny island, tartan bunting, and a cheeky rooster motif on signs; cosy water-edge landmark with clear ring shoreline.",
+      "keyPalette": ["#1E88E5", "#C62828", "#2E7D32", "#F3E7C6"],
+      "activities": ["boating", "fishing", "shore-hanging", "bird-watching"]
+    },
+    {
+      "id": "mikes-mucky-mansion",
+      "name": "Mike's Mucky Mansion",
+      "visualDescription": "Filthy showpiece mansion with muddy driveway, gaudy décor visible through big windows, gold trim gone grimy, and heaps of junk arranged like trophies.",
+      "keyPalette": ["#C8A24A", "#8D6E63", "#FF6F61", "#263238"],
+      "activities": ["boasting", "partying", "snooping", "mess-making"]
+    },
+    {
+      "id": "dummy-slummy-dumblands",
+      "name": "Dummy Slummy Dumblands",
+      "visualDescription": "Intentionally tacky fairytale 'estate' vibe: scuffed bright murals, patched textures, mismatched fencing, and blocky low-rise silhouettes that read like projects but still storybook-colourful.",
+      "keyPalette": ["#FF6F61", "#4FC3F7", "#FBC02D", "#263238"],
+      "activities": ["hanging-out", "street-games", "balcony-chat", "graffiti"]
+    },
+    {
+      "id": "radgey-road",
+      "name": "Radgey Road",
+      "visualDescription": "A named road with attitude: potholes, bold painted signposts, graffiti arrows, and loud lane markings—designed as a 'route landmark' not a biome.",
+      "keyPalette": ["#263238", "#FBC02D", "#E84B4B", "#FFFFFF"],
+      "activities": ["walking", "scootering", "roadside-chat", "shortcutting"]
+    },
+    {
+      "id": "sleepy-slaglands",
+      "name": "Sleepy Slaglands",
+      "visualDescription": "Drowsy industrial-ish flats: rounded slag mounds, slow smoke curls, puddled ground, and soft 'tired' shapes—kept colourful rather than grim.",
+      "keyPalette": ["#B06C49", "#9FA8DA", "#4FC3F7", "#4E342E"],
+      "activities": ["idling", "scrap-picking", "smoke-watching", "slow-walking"]
+    },
+    {
+      "id": "peepy-tomlands",
+      "name": "Peepy Tomlands",
+      "visualDescription": "Voyeur-comedy moorlands with peephole fences, spyglass flowers, watchtower stumps, and peeking windows cut into hedges; playful and obvious from above.",
+      "keyPalette": ["#2AA6A1", "#C8A24A", "#FFB6C1", "#263238"],
+      "activities": ["peeking", "eavesdropping", "hiding", "sneaking"]
+    },
+    {
+      "id": "olafs-opening",
+      "name": "Olaf's Opening",
+      "visualDescription": "A bright, named clearing 'opening' marked by a big cheerful wooden sign and a clean circular grass shape; reads as a simple iconic waypoint between regions.",
+      "keyPalette": ["#81C784", "#4FC3F7", "#F3E7C6", "#8D6E63"],
+      "activities": ["resting", "meeting", "picnics", "sign-reading"]
+    },
+    {
+      "id": "dead-divas-disco",
+      "name": "Dead Divas Disco",
+      "visualDescription": "Undead glamour club: sparkle floor tiles, coffin booth seating, neon stage curtains, and a skull mirrorball; instantly 'spooky nightclub' in 2D.",
+      "keyPalette": ["#FF4FD8", "#111111", "#B0BEC5", "#7B3FF2"],
+      "activities": ["dancing", "posing", "drinking", "stage-shows"]
+    },
+    {
+      "id": "fat-friend-falls",
+      "name": "Fat Friend Falls",
+      "visualDescription": "Friendly comedy waterfall with rounded smiling rock faces and puffy cloud-spray shapes; soft, welcoming landmark that still reads big and iconic.",
+      "keyPalette": ["#4FC3F7", "#FFCCBC", "#FFE066", "#81C784"],
+      "activities": ["sightseeing", "chilling", "snacking", "splashing"]
+    },
+    {
+      "id": "ponsey-palace",
+      "name": "Ponsey Palace",
+      "visualDescription": "Obvious scam-palace: too many banners, fake gold everywhere, 'VIP' ropes, over-promising signs, and tacky pomp that reads instantly as fraudulence.",
+      "keyPalette": ["#FBC02D", "#7A1F2B", "#FFFFFF", "#263238"],
+      "activities": ["posing", "touring", "schmoozing", "finger-pointing"]
+    },
+    {
+      "id": "blue-ball-butchers",
+      "name": "Blue Ball Butchers",
+      "visualDescription": "Butcher shop landmark with bold cobalt signage and cheeky spherical motifs; red/white shop stripes, tiled counter, hanging sausage shapes—very readable storefront.",
+      "keyPalette": ["#1565C0", "#FFFFFF", "#D32F2F", "#263238"],
+      "activities": ["shopping", "chopping", "haggling", "snacking"]
+    },
+    {
+      "id": "muggy-mines",
+      "name": "Muggy Mines",
+      "visualDescription": "Open-cut mine pits (no underground): colourful ore terraces, steam vents, damp haze, puddled mineral flats, and big crane silhouettes on the rim.",
+      "keyPalette": ["#B87333", "#4FC3F7", "#FADB14", "#263238"],
+      "activities": ["digging", "hauling", "ore-sorting", "steam-watching"]
+    },
+    {
+      "id": "log-lake",
+      "name": "Log Lake",
+      "visualDescription": "Lake ringed with log cabins and floating log rafts; clear circular shoreline, timber docks, and obvious raft clusters for strong 2D readability.",
+      "keyPalette": ["#1E88E5", "#8D6E63", "#2E7D32", "#F3E7C6"],
+      "activities": ["rafting", "fishing", "bonfires", "cabin-hanging"]
+    },
+    {
+      "id": "fat-fae-fields",
+      "name": "Fat Fae Fields",
+      "visualDescription": "Plump fae-themed fields with round fairy-ring stones, chubby-wing motifs on signposts, oversized flowers, and soft bouncy shapes across the landscape.",
+      "keyPalette": ["#FFB6C1", "#A7F3D0", "#F5C542", "#6C63FF"],
+      "activities": ["frolicking", "flower-picking", "ring-dancing", "napping"]
+    },
+    {
+      "id": "magic-madhousd",
+      "name": "Magic Madhousd",
+      "visualDescription": "Chaotic magical oddhouse complex: crooked doors, mismatched windows, floating furniture silhouettes, and bright clashing trims; designed to read 'mad' but playful.",
+      "keyPalette": ["#00B8A9", "#FF6FAE", "#FFE066", "#263238"],
+      "activities": ["milling-about", "laughing", "odd-performances", "wandering"]
+    },
+    {
+      "id": "little-thing-lodges",
+      "name": "Little Thing Lodges",
+      "visualDescription": "Cluster of tiny lodges like dollhouses: miniature smoke puffs, bright painted doors, neat porch circles, and small-scale charm in a tight layout.",
+      "keyPalette": ["#8D6E63", "#FF6F61", "#4FC3F7", "#F3E7C6"],
+      "activities": ["resting", "cooking", "chatting", "porch-sitting"]
+    },
+    {
+      "id": "robbers-road",
+      "name": "Robbers Road",
+      "visualDescription": "Notorious road lined with masked signposts, robbed-looking mile markers, bandit-chic bunting, and obvious 'ambush layby' silhouettes along the edges.",
+      "keyPalette": ["#C8A24A", "#263238", "#E84B4B", "#F3E7C6"],
+      "activities": ["travelling", "lurking", "roadside-deals", "shortcutting"]
+    },
+    {
+      "id": "angerlands",
+      "name": "The Angerlands",
+      "visualDescription": "Hot-tempered landscape: cracked red earth, spiky shrubs, jagged rock faces with angry expressions carved/formed into them, and sharp hazard-like shapes.",
+      "keyPalette": ["#D32F2F", "#FF6F00", "#263238", "#FADB14"],
+      "activities": ["shouting", "stomping", "sparring", "storm-watching"]
+    },
+    {
+      "id": "mjngerlands",
+      "name": "The Mjngerlands",
+      "visualDescription": "Gritty-comic grime land: mould-green stains, slumped fences, stained walls, and drippy textures—kept stylised and colourful rather than realistic or grey.",
+      "keyPalette": ["#7CB342", "#F48FB1", "#F3E7C6", "#263238"],
+      "activities": ["loitering", "complaining", "dump-diving", "scheming"]
+    },
+    {
+      "id": "stuck-uplands",
+      "name": "The Stuck Uplands",
+      "visualDescription": "Everything looks snagged and jammed: tangled ropes, stuck carts, jammed gates, gluey-looking stones, and knot clusters that make the whole area feel 'caught'.",
+      "keyPalette": ["#FBC02D", "#D84315", "#8D6E63", "#263238"],
+      "activities": ["tugging", "unsticking", "arguing", "waiting"]
+    },
+    {
+      "id": "wonkywood-welcome-world",
+      "name": "WonkyWood Welcome World",
+      "visualDescription": "Storybook ghetto/projects/council-estate analogue: wonky low-rise blocks, bright murals, crooked fences, patched roofs, scuffed paint, and a big 'WELCOME' sign that feels ironic.",
+      "keyPalette": ["#FF6F61", "#4FC3F7", "#FBC02D", "#263238"],
+      "activities": ["street-hanging", "balcony-chat", "music-blasting", "graffiti"]
+    },
+    {
+      "id": "ya-mas-wetlands",
+      "name": "Ya Mas Wetlands",
+      "visualDescription": "Cheeky wetlands with loud signage, bright boardwalk planks, splashy reeds, and exaggerated puddle shapes; designed to read playful and rude rather than spooky.",
+      "keyPalette": ["#4CAF50", "#FF6F61", "#4FC3F7", "#FBC02D"],
+      "activities": ["splashing", "boardwalk-walking", "mud-larking", "shouting"]
+    }
+  ]
+}
