@@ -293,7 +293,7 @@ export const generateAvatar = functions.https.onCall(async (request) => {
   const email = requireEmail(request.auth?.token?.email);
   await assertIsAdmin(email);
 
-  const { characterId } = request.data as { characterId?: string };
+  const { characterId } = request.data as { characterId?: string; visualDescription?: string };
 
   if (!characterId) {
     throw new functions.https.HttpsError('invalid-argument', 'characterId is required');
@@ -326,6 +326,8 @@ export const generateDraftSpriteSheet = functions.https.onCall(async (request) =
   const { characterId, templateType } = request.data as {
     characterId?: string;
     templateType?: string;
+    visualDescription?: string;
+    feedback?: string;
   };
 
   if (!characterId || !templateType) {
@@ -431,7 +433,7 @@ export const generateAreaTileAtlas = functions.https.onCall(async (request) => {
 
   const { areaId } = request.data as { areaId?: string };
   if (!areaId || !SUPPORTED_AREAS.includes(areaId)) {
-    throw new functions.https.HttpsError('invalid-argument', 'Invalid areaId. Only area segment "06.05" is currently supported.');
+    throw new functions.https.HttpsError('invalid-argument', `Invalid areaId. Only area ${HUB_AREA.id} (${HUB_AREA.name}) is currently supported.`);
   }
 
   const bucket = admin.storage().bucket();
