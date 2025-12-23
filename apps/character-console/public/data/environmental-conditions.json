@@ -1,0 +1,82 @@
+{
+  "environmental_conditions": {
+    "description": "MaEC (Multiplier Affecting Environmental Conditions) - Global or local variables defining the battlefield context",
+    "values": [
+      {
+        "id": "sunlight",
+        "name": "Sunlight",
+        "description": "Direct exposure to day star"
+      },
+      {
+        "id": "moonlight",
+        "name": "Moonlight",
+        "description": "Direct exposure to night satellite"
+      },
+      {
+        "id": "rain",
+        "name": "Rain",
+        "description": "Falling liquid precipitation"
+      },
+      {
+        "id": "heavy_rain",
+        "name": "Heavy Rain",
+        "description": "Torrential liquid precipitation"
+      },
+      {
+        "id": "wind",
+        "name": "Wind",
+        "description": "Strong air currents"
+      },
+      {
+        "id": "fog",
+        "name": "Fog",
+        "description": "Low visibility atmospheric suspension"
+      },
+      {
+        "id": "urban",
+        "name": "Urban",
+        "description": "Paved, concrete, man-made structure environment"
+      },
+      {
+        "id": "nature",
+        "name": "Nature",
+        "description": "Organic, soil, forest, or bog environment"
+      },
+      {
+        "id": "water_terrain",
+        "name": "Water (Terrain)",
+        "description": "Deep water or submerged environment"
+      },
+      {
+        "id": "sacred_ground",
+        "name": "Sacred Ground",
+        "description": "Consecrated or holy area"
+      },
+      {
+        "id": "heatwave",
+        "name": "Heatwave",
+        "description": "Extreme high temperature"
+      },
+      {
+        "id": "blizzard",
+        "name": "Blizzard",
+        "description": "Extreme low temperature with snow"
+      },
+      {
+        "id": "sandstorm",
+        "name": "Sandstorm",
+        "description": "Abrasive particulate wind"
+      },
+      {
+        "id": "indoors",
+        "name": "Indoors",
+        "description": "Enclosed space protected from weather"
+      },
+      {
+        "id": "underground",
+        "name": "Underground",
+        "description": "Subterranean environment"
+      }
+    ]
+  }
+}

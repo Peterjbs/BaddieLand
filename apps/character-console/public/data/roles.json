@@ -1,0 +1,67 @@
+{
+  "roles": {
+    "description": "Primary archetypes determining function and utility",
+    "values": [
+      {
+        "id": "tank",
+        "name": "Tank",
+        "description": "Absorbs heavy damage and obstructs enemy movement"
+      },
+      {
+        "id": "bruiser",
+        "name": "Bruiser",
+        "description": "Durable fighter capable of sustaining and dealing moderate melee damage"
+      },
+      {
+        "id": "big_hitter",
+        "name": "Big Hitter",
+        "description": "Delivers massive burst damage, typically with slow execution or recovery"
+      },
+      {
+        "id": "assassin",
+        "name": "Assassin",
+        "description": "High speed and precision unit focused on eliminating single targets rapidly"
+      },
+      {
+        "id": "fat_trimmer",
+        "name": "Fat Trimmer",
+        "description": "Area of Effect (AoE) specialist focused on damaging multiple grouped enemies"
+      },
+      {
+        "id": "healer",
+        "name": "Healer",
+        "description": "Restores Health Points (HP) to allies or self"
+      },
+      {
+        "id": "ally",
+        "name": "Ally",
+        "description": "Provides statistical buffs and enhancements to teammates"
+      },
+      {
+        "id": "debuffer",
+        "name": "Debuffer",
+        "description": "Applies negative status effects or statistical penalties to enemies"
+      },
+      {
+        "id": "controller",
+        "name": "Controller",
+        "description": "Manipulates battlefield positioning, terrain, or enemy action economy (stuns/freezes)"
+      },
+      {
+        "id": "survivor",
+        "name": "Survivor",
+        "description": "Focuses on evasion, mitigation, and stalling to remain active in battle"
+      },
+      {
+        "id": "sniper",
+        "name": "Sniper",
+        "description": "Engages targets from extreme range with high accuracy and low physical defense"
+      },
+      {
+        "id": "looter",
+        "name": "Looter",
+        "description": "Steals items or currency, generates resources, or disrupts enemy economy"
+      }
+    ]
+  }
+}
