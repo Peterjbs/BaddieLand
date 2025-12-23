@@ -1,37 +1,16 @@
 'use client';
 
 import { Character, LevelStat } from '@/lib/firestore-helpers';
+import { DEFAULT_LEVEL_STAT, GROWTH_CURVE_FORMULAS } from '@/lib/constants';
 
 interface StatsTableProps {
   character: Character;
   onChange: (character: Character) => void;
 }
 
-const DEFAULT_STAT: LevelStat = {
-  level: 1,
-  hp: 50,
-  bbs: 50,
-  spd: 50,
-  eva: 50,
-  acc: 50,
-  mla: 50,
-  rga: 50,
-  maa: 50,
-  spa: 50,
-  mld: 50,
-  rgd: 50,
-  mad: 50,
-  spd_def: 50,
-  int: 50,
-  agg: 50,
-  crg: 50,
-  xpa: 0,
-  xpt: 100,
-};
-
 export default function StatsTable({ character, onChange }: StatsTableProps) {
   const stats = character.levelStats || Array.from({ length: 10 }, (_, i) => ({
-    ...DEFAULT_STAT,
+    ...DEFAULT_LEVEL_STAT,
     level: i + 1,
     xpt: 100 * (i + 1) * (i + 1),
   }));
@@ -46,17 +25,7 @@ export default function StatsTable({ character, onChange }: StatsTableProps) {
   };
 
   const generateStats = () => {
-    // Basic stat generation based on growth curve
-    const curves: Record<string, (level: number) => number> = {
-      steady: (level) => 40 + level * 6,
-      strong_starter: (level) => 60 + level * 4,
-      quick_learner: (level) => 35 + level * 7,
-      late_bloomer: (level) => 30 + level * 8,
-      slow: (level) => 45 + level * 5,
-      key_levels: (level) => [2, 5, 8].includes(level) ? 50 + level * 8 : 40 + level * 5,
-    };
-
-    const curve = curves[character.growthCurve] || curves.steady;
+    const curve = GROWTH_CURVE_FORMULAS[character.growthCurve] || GROWTH_CURVE_FORMULAS.steady;
     const newStats: LevelStat[] = Array.from({ length: 10 }, (_, i) => {
       const level = i + 1;
       const base = curve(level);

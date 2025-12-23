@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Character, getAllCharacters, getCharactersByGang, saveCharacter, deleteCharacter } from '@/lib/firestore-helpers';
+import { DEFAULT_CHARACTER } from '@/lib/constants';
 import CharacterForm from '@/components/CharacterForm';
 import AssetManager from '@/components/AssetManager';
 import '../character-editor-styles.css';
@@ -91,16 +92,7 @@ export default function CharacterEditor() {
   const handleCreateNewCharacter = () => {
     const newCharacter: Character = {
       id: `NEW_${Date.now()}`,
-      name: 'New Character',
-      age: 0,
-      species: 'human',
-      gang: 'GGG',
-      roles: {
-        primary: 'bruiser',
-      },
-      growthCurve: 'steady',
-      matTags: ['living', 'sentient'],
-      move_list: [],
+      ...DEFAULT_CHARACTER,
     };
     setSelectedCharacter(newCharacter);
     setShowCreateModal(false);

@@ -1,5 +1,7 @@
 import { Character, Move } from './firestore-helpers';
 
+import { LevelStat } from './firestore-helpers';
+
 export interface ValidationError {
   field: string;
   message: string;
@@ -65,9 +67,9 @@ export function validateMove(move: Partial<Move>): ValidationError[] {
   return errors;
 }
 
-export function validateLevelStats(stats: any): ValidationError[] {
+export function validateLevelStats(stats: Partial<LevelStat>): ValidationError[] {
   const errors: ValidationError[] = [];
-  const requiredFields = [
+  const requiredFields: (keyof LevelStat)[] = [
     'level', 'hp', 'bbs', 'spd', 'eva', 'acc',
     'mla', 'rga', 'maa', 'spa',
     'mld', 'rgd', 'mad', 'spd_def',
@@ -81,14 +83,15 @@ export function validateLevelStats(stats: any): ValidationError[] {
   });
 
   // Validate level is between 1-10
-  if (stats.level < 1 || stats.level > 10) {
+  if (stats.level && (stats.level < 1 || stats.level > 10)) {
     errors.push({ field: 'level', message: 'Level must be between 1 and 10' });
   }
 
   // Validate combat stats are between 1-100
-  const combatStats = ['hp', 'bbs', 'spd', 'eva', 'acc', 'mla', 'rga', 'maa', 'spa', 'mld', 'rgd', 'mad', 'spd_def', 'int', 'agg', 'crg'];
+  const combatStats: (keyof LevelStat)[] = ['hp', 'bbs', 'spd', 'eva', 'acc', 'mla', 'rga', 'maa', 'spa', 'mld', 'rgd', 'mad', 'spd_def', 'int', 'agg', 'crg'];
   combatStats.forEach(stat => {
-    if (stats[stat] < 1 || stats[stat] > 100) {
+    const value = stats[stat];
+    if (value !== undefined && (value < 1 || value > 100)) {
       errors.push({ field: stat, message: `${stat} must be between 1 and 100` });
     }
   });
