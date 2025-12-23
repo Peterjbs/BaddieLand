@@ -7,7 +7,13 @@ try {
   // dotenv not installed, will check for env vars later
 }
 
+let cachedDb;
+
 function getFirestore() {
+  if (cachedDb) {
+    return cachedDb;
+  }
+
   console.log('🔥 Initializing Firebase Admin...');
 
   let admin;
@@ -48,7 +54,8 @@ function getFirestore() {
     process.exit(1);
   }
 
-  return admin.firestore();
+  cachedDb = admin.firestore();
+  return cachedDb;
 }
 
 module.exports = {
