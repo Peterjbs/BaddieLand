@@ -1,0 +1,117 @@
+{
+  "states": {
+    "description": "Temporary conditions applied to entities",
+    "values": [
+      {
+        "id": "poisoned",
+        "name": "Poisoned",
+        "description": "Recurring damage over time based on biological susceptibility"
+      },
+      {
+        "id": "bleeding",
+        "name": "Bleeding",
+        "description": "Damage triggered by movement or physical exertion"
+      },
+      {
+        "id": "burning",
+        "name": "Burning",
+        "description": "Recurring fire damage"
+      },
+      {
+        "id": "regenerating",
+        "name": "Regenerating",
+        "description": "Passive HP recovery over time"
+      },
+      {
+        "id": "rooted",
+        "name": "Rooted",
+        "description": "Inability to change grid position"
+      },
+      {
+        "id": "stunned",
+        "name": "Stunned",
+        "description": "Complete inability to take actions or move"
+      },
+      {
+        "id": "slowed",
+        "name": "Slowed",
+        "description": "Reduction in turn speed or movement range"
+      },
+      {
+        "id": "hasted",
+        "name": "Hasted",
+        "description": "Increase in turn speed or movement range"
+      },
+      {
+        "id": "feared",
+        "name": "Feared",
+        "description": "Forced movement away from a source or inability to advance"
+      },
+      {
+        "id": "charmed",
+        "name": "Charmed",
+        "description": "Forced action to assist the source or inability to attack the source"
+      },
+      {
+        "id": "blinded",
+        "name": "Blinded",
+        "description": "Significant reduction in accuracy or vision range"
+      },
+      {
+        "id": "silenced",
+        "name": "Silenced",
+        "description": "Inability to use Magic-type abilities"
+      },
+      {
+        "id": "invisible",
+        "name": "Invisible",
+        "description": "Untargetable by direct locking attacks; visible only to specific detection"
+      },
+      {
+        "id": "invulnerable",
+        "name": "Invulnerable",
+        "description": "Immunity to all forms of damage"
+      },
+      {
+        "id": "taunted",
+        "name": "Taunted",
+        "description": "Forced targeting of a specific entity"
+      },
+      {
+        "id": "wet",
+        "name": "Wet",
+        "description": "Covered in liquid; interacts with temperature or electrical effects"
+      },
+      {
+        "id": "frozen",
+        "name": "Frozen",
+        "description": "Encased in ice; immobile and often brittle"
+      },
+      {
+        "id": "oil_covered",
+        "name": "Oil-Covered",
+        "description": "Covered in flammable substance"
+      },
+      {
+        "id": "confused",
+        "name": "Confused",
+        "description": "Actions have random targets or outcomes"
+      },
+      {
+        "id": "asleep",
+        "name": "Asleep",
+        "description": "Inability to act until damaged or duration expires"
+      },
+      {
+        "id": "cursed",
+        "name": "Cursed",
+        "description": "Susceptibility to misfortunate RNG outcomes (crit fails)"
+      },
+      {
+        "id": "marked",
+        "name": "Marked",
+        "description": "Targeted entity takes increased damage from all sources"
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "growth_curves": {
+    "description": "Trajectories defining statistical progression and experience requirements",
+    "values": [
+      {
+        "id": "steady",
+        "name": "Steady",
+        "description": "Linear, consistent stat gain and experience thresholds across all levels"
+      },
+      {
+        "id": "strong_starter",
+        "name": "Strong Starter",
+        "description": "High initial base stats with minimal gain per level"
+      },
+      {
+        "id": "quick_learner",
+        "name": "Quick Learner",
+        "description": "Lower experience thresholds required to reach subsequent levels"
+      },
+      {
+        "id": "late_bloomer",
+        "name": "Late Bloomer",
+        "description": "Low initial stats with significant multiplier spikes at high levels (7-10)"
+      },
+      {
+        "id": "slow",
+        "name": "Slow",
+        "description": "Higher experience thresholds requiring more accumulation per level"
+      },
+      {
+        "id": "key_levels",
+        "name": "Key Levels",
+        "description": "Moderate growth with specific large stat jumps at pre-defined milestones (e.g., Lvl 5, Lvl 10)"
+      }
+    ]
+  }
+}
