@@ -532,6 +532,14 @@
             exports: {}
         };
 
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        const safeText = (value) => escapeHtml(String(value ?? ''));
+
         // Initialize on page load
         window.addEventListener('DOMContentLoaded', loadRoster);
 
@@ -556,7 +564,7 @@
         function populateTribeFilter() {
             const tribeSelect = document.getElementById('tribe-filter');
             const tribes = [...new Set(roster.map(c => c.tribe))].sort();
-            tribeSelect.innerHTML = `<option value="all">All Tribes</option>` + tribes.map(t => `<option value="${t}">${t}</option>`).join('');
+            tribeSelect.innerHTML = `<option value="all">All Tribes</option>` + tribes.map(t => `<option value="${safeText(t)}">${safeText(t)}</option>`).join('');
         }
 
         function updateStats() {
@@ -592,10 +600,10 @@
             const container = document.getElementById('character-list-content');
             const filtered = getFilteredRoster();
             const html = filtered.map(char => `
-                <div class="character-item" onclick="selectCharacter('${char.id}')" data-id="${char.id}">
-                    <div class="id">${char.id} - #${char.global_id}</div>
-                    <div class="name">${char.name}</div>
-                    <div class="tribe">${char.tribe}</div>
+                <div class="character-item" onclick="selectCharacter('${safeText(char.id)}')" data-id="${safeText(char.id)}">
+                    <div class="id">${safeText(char.id)} - #${safeText(char.global_id)}</div>
+                    <div class="name">${safeText(char.name)}</div>
+                    <div class="tribe">${safeText(char.tribe)}</div>
                 </div>
             `).join('');
             container.innerHTML = html || '<div class="empty-message">No characters match the filters</div>';
@@ -704,7 +712,7 @@
         function renderCharacterDetail(char, data, activeTab = 'info') {
             const detailDiv = document.getElementById('character-detail');
             detailDiv.innerHTML = `
-                <h2 style="color: #00d4ff; margin-bottom: 20px;">${char.name} (${char.id})</h2>
+                <h2 style="color: #00d4ff; margin-bottom: 20px;">${safeText(char.name)} (${safeText(char.id)})</h2>
                 <div class="tabs">
                     ${TAB_ORDER.map(tab => `
                         <button class="tab ${activeTab === tab ? 'active' : ''}" data-tab="${tab}" onclick="switchTab('${tab}', this)">${tabLabel(tab)}</button>
@@ -775,29 +783,29 @@
             if (!info) return '<div class="empty-message">No info data available</div>';
             return `
                 <div class="info-grid">
-                    <div class="info-item"><div class="label">Name</div><div class="value">${info.name || 'N/A'}</div></div>
-                    <div class="info-item"><div class="label">Global ID</div><div class="value">#${info.global_id || 'N/A'}</div></div>
-                    <div class="info-item"><div class="label">Tribe</div><div class="value">${info.tribe || 'N/A'}</div></div>
-                    <div class="info-item"><div class="label">Species</div><div class="value">${info.species || 'N/A'}</div></div>
-                    ${info.subspecies ? `<div class="info-item"><div class="label">Subspecies</div><div class="value">${info.subspecies}</div></div>` : ''}
-                    <div class="info-item"><div class="label">Age</div><div class="value">${info.age || 'N/A'}</div></div>
-                    <div class="info-item"><div class="label">Primary Role</div><div class="value">${info.roles?.primary || 'N/A'}</div></div>
-                    ${info.roles?.secondary ? `<div class="info-item"><div class="label">Secondary Role</div><div class="value">${info.roles.secondary}</div></div>` : ''}
-                    ${info.roles?.tertiary ? `<div class="info-item"><div class="label">Tertiary Role</div><div class="value">${info.roles.tertiary}</div></div>` : ''}
-                    <div class="info-item"><div class="label">Weapon</div><div class="value">${info.weapon_item || 'N/A'}</div></div>
-                    <div class="info-item"><div class="label">Growth Curve</div><div class="value">${info.growth_curve || 'N/A'}</div></div>
+                    <div class="info-item"><div class="label">Name</div><div class="value">${safeText(info.name || 'N/A')}</div></div>
+                    <div class="info-item"><div class="label">Global ID</div><div class="value">#${safeText(info.global_id || 'N/A')}</div></div>
+                    <div class="info-item"><div class="label">Tribe</div><div class="value">${safeText(info.tribe || 'N/A')}</div></div>
+                    <div class="info-item"><div class="label">Species</div><div class="value">${safeText(info.species || 'N/A')}</div></div>
+                    ${info.subspecies ? `<div class="info-item"><div class="label">Subspecies</div><div class="value">${safeText(info.subspecies)}</div></div>` : ''}
+                    <div class="info-item"><div class="label">Age</div><div class="value">${safeText(info.age || 'N/A')}</div></div>
+                    <div class="info-item"><div class="label">Primary Role</div><div class="value">${safeText(info.roles?.primary || 'N/A')}</div></div>
+                    ${info.roles?.secondary ? `<div class="info-item"><div class="label">Secondary Role</div><div class="value">${safeText(info.roles.secondary)}</div></div>` : ''}
+                    ${info.roles?.tertiary ? `<div class="info-item"><div class="label">Tertiary Role</div><div class="value">${safeText(info.roles.tertiary)}</div></div>` : ''}
+                    <div class="info-item"><div class="label">Weapon</div><div class="value">${safeText(info.weapon_item || 'N/A')}</div></div>
+                    <div class="info-item"><div class="label">Growth Curve</div><div class="value">${safeText(info.growth_curve || 'N/A')}</div></div>
                 </div>
                 ${info.brand_vibe ? `<div class="info-item" style="margin-top: 20px;"><div class="label">Brand & Vibe</div><div class="value">${info.brand_vibe}</div></div>` : ''}
                 ${info.specific_visuals ? `<div class="info-item" style="margin-top: 10px;"><div class="label">Visual Details</div><div class="value">${info.specific_visuals}</div></div>` : ''}
                 ${info.mat_list && info.mat_list.length > 0 ? `
                 <div style="margin-top: 20px;">
                     <div class="label" style="margin-bottom: 10px; color: #00d4ff;">Multiplier Affecting Tags (MaT)</div>
-                    <div class="mat-list">${info.mat_list.map(tag => `<span class="tag">${tag}</span>`).join('')}</div>
+                    <div class="mat-list">${info.mat_list.map(tag => `<span class="tag">${safeText(tag)}</span>`).join('')}</div>
                 </div>` : ''}
                 ${info.move_list && info.move_list.length > 0 ? `
                 <div style="margin-top: 20px;">
                     <div class="label" style="margin-bottom: 10px; color: #00d4ff;">Move List IDs</div>
-                    <div class="move-list">${info.move_list.map(move => `<span class="tag" style="background: rgba(255, 107, 107, 0.2); color: #ff6b6b;">${move}</span>`).join('')}</div>
+                    <div class="move-list">${info.move_list.map(move => `<span class="tag" style="background: rgba(255, 107, 107, 0.2); color: #ff6b6b;">${safeText(move)}</span>`).join('')}</div>
                 </div>` : ''}
             `;
         }
@@ -806,12 +814,12 @@
             if (!moves || moves.length === 0) return '<div class="empty-message">No moves defined yet</div>';
             return moves.map(move => `
                 <div class="move-item">
-                    <h3 style="color: #ff6b6b; margin-bottom: 10px;">${move.name || 'Unnamed Move'}</h3>
-                    <p style="margin-bottom: 10px;">${move.description || 'No description'}</p>
+                    <h3 style="color: #ff6b6b; margin-bottom: 10px;">${safeText(move.name || 'Unnamed Move')}</h3>
+                    <p style="margin-bottom: 10px;">${safeText(move.description || 'No description')}</p>
                     <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-                        ${move.type ? `<div><strong>Type:</strong> ${move.type}</div>` : ''}
-                        ${move.learned_at_level ? `<div><strong>Learned at:</strong> Level ${move.learned_at_level}</div>` : ''}
-                        ${move.target?.type ? `<div><strong>Target:</strong> ${move.target.type}</div>` : ''}
+                        ${move.type ? `<div><strong>Type:</strong> ${safeText(move.type)}</div>` : ''}
+                        ${move.learned_at_level ? `<div><strong>Learned at:</strong> Level ${safeText(move.learned_at_level)}</div>` : ''}
+                        ${move.target?.type ? `<div><strong>Target:</strong> ${safeText(move.target.type)}</div>` : ''}
                     </div>
                 </div>
             `).join('');
@@ -848,12 +856,12 @@
                     <div class="section-title">Info updater <span class="pill">edit</span></div>
                     <form id="info-updater" onsubmit="handleInfoUpdate(event)">
                         <div class="grid-two">
-                            <input name="name" placeholder="Name" value="${data.info?.name || ''}">
-                            <input name="tribe" placeholder="Tribe" value="${data.info?.tribe || ''}">
-                            <input name="weapon_item" placeholder="Weapon" value="${data.info?.weapon_item || ''}">
-                            <input name="brand_vibe" placeholder="Brand / Vibe" value="${data.info?.brand_vibe || ''}">
+                            <input name="name" placeholder="Name" value="${safeText(data.info?.name || '')}">
+                            <input name="tribe" placeholder="Tribe" value="${safeText(data.info?.tribe || '')}">
+                            <input name="weapon_item" placeholder="Weapon" value="${safeText(data.info?.weapon_item || '')}">
+                            <input name="brand_vibe" placeholder="Brand / Vibe" value="${safeText(data.info?.brand_vibe || '')}">
                         </div>
-                        <textarea name="specific_visuals" rows="3" placeholder="Visual details / API response">${data.info?.specific_visuals || ''}</textarea>
+                        <textarea name="specific_visuals" rows="3" placeholder="Visual details / API response">${safeText(data.info?.specific_visuals || '')}</textarea>
                         <div class="button-row">
                             <button class="btn" type="submit">Apply updates</button>
                             <span id="info-update-status" class="pill" style="display:none;"></span>
@@ -870,7 +878,7 @@
                                 <button class="btn secondary" type="button" onclick="generateTagsFromStats()">Generate from stats</button>
                             </div>
                         </form>
-                        <div class="chips" id="tag-list">${(data.info?.mat_list || []).map(tag => `<span class="chip">${tag}</span>`).join('')}</div>
+                        <div class="chips" id="tag-list">${(data.info?.mat_list || []).map(tag => `<span class="chip">${safeText(tag)}</span>`).join('')}</div>
                     </div>
                     <div class="section-card">
                         <div class="section-title">Stat generator / equaliser</div>
@@ -924,7 +932,7 @@
                     <div class="section-title">Character search + quick info updater</div>
                     <div class="grid-two">
                         <input type="search" placeholder="Search roster again" oninput="handleSearchInput(this.value)">
-                        <select onchange="handleTribeFilter(this.value)"><option value="all">All Tribes</option>${[...new Set(roster.map(r => r.tribe))].map(t => `<option value="${t}">${t}</option>`).join('')}</select>
+                        <select onchange="handleTribeFilter(this.value)"><option value="all">All Tribes</option>${[...new Set(roster.map(r => r.tribe))].map(t => `<option value="${safeText(t)}">${safeText(t)}</option>`).join('')}</select>
                     </div>
                     <div class="chips">
                         <span class="chip">Live filters re-use roster panel</span>
@@ -1038,20 +1046,20 @@
         }
 
         function renderGangConsole() {
-            const grouped = roster.reduce((acc, cur) => {
-                acc[cur.tribe] = acc[cur.tribe] || [];
-                acc[cur.tribe].push(cur);
-                return acc;
-            }, {});
-            return `
+                    const grouped = roster.reduce((acc, cur) => {
+                        acc[cur.tribe] = acc[cur.tribe] || [];
+                        acc[cur.tribe].push(cur);
+                        return acc;
+                    }, {});
+                    return `
                 <div class="section-card">
                     <div class="section-title">Gang / Tribe viewer</div>
                     <table class="mini-table">
                         ${Object.entries(grouped).map(([tribe, chars]) => `
                             <tr>
-                                <td style="color:#00d4ff;">${tribe}</td>
+                                <td style="color:#00d4ff;">${safeText(tribe)}</td>
                                 <td>${chars.length} members</td>
-                                <td>${chars.slice(0,4).map(c => `<span class="chip">${c.name}</span>`).join('')}</td>
+                                <td>${chars.slice(0,4).map(c => `<span class="chip">${safeText(c.name)}</span>`).join('')}</td>
                             </tr>
                         `).join('')}
                     </table>
@@ -1110,7 +1118,7 @@
                 acc[cur.tribe] = (acc[cur.tribe] || 0) + 1;
                 return acc;
             }, {});
-            target.innerHTML = Object.entries(grouped).map(([tribe, count]) => `<span class="chip">${tribe}: ${count}</span>`).join('') || '<span class="chip">No tribes</span>';
+            target.innerHTML = Object.entries(grouped).map(([tribe, count]) => `<span class="chip">${safeText(tribe)}: ${count}</span>`).join('') || '<span class="chip">No tribes</span>';
             const countEl = document.getElementById('mini-roster-count');
             if (countEl) countEl.textContent = filtered.length;
         }
@@ -1311,12 +1319,6 @@
             consoleState.generatedDescriptions[currentCharacter?.id] = description;
             document.getElementById('visual-description-output').value = description;
             document.getElementById('tab-info').innerHTML = renderInfo(currentWorkingData.info);
-        }
-
-        function escapeHtml(text) {
-            const div = document.createElement('div');
-            div.textContent = text;
-            return div.innerHTML;
         }
     </script>
 </body>
