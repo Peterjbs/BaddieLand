@@ -9,7 +9,12 @@
  *   node scripts/verifyStyleVibeGuides.js
  */
 
-require('dotenv').config();
+// Try to load dotenv if available, but don't fail if it's not
+try {
+  require('dotenv').config();
+} catch (error) {
+  // dotenv not installed, will check for env vars later
+}
 
 console.log('\n=================================');
 console.log('Style & Vibe Guides Verifier');
