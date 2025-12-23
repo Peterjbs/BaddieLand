@@ -11,7 +11,15 @@ const TILE_HEIGHT = 32;
 const ATLAS_SIZE = 1000;
 const RIVER_WOBBLE_FREQUENCY = 30;
 const RIVER_CURVE_FACTOR = 0.2;
-const SUPPORTED_AREAS = ['06.05'];
+const VERTICAL_PIXELS_PER_METER = 32;
+const DRAFT_STATUS = 'draft';
+const HUB_AREA = {
+  id: '06.05',
+  name: 'The Hub',
+  baseTerrain: 'Fairyglade border with Rainbow Riverbank',
+  locations: ['Cobble Cross', 'The Whisper Kiosk'],
+};
+const SUPPORTED_AREAS = [HUB_AREA.id];
 
 // Simple deterministic PRNG (mulberry32)
 function createPrng(seed: number) {
@@ -103,11 +111,18 @@ function lerpColor(a: Rgba, b: Rgba, t: number): Rgba {
   };
 }
 
+function clampChannel(value: number) {
+  return Math.max(0, Math.min(255, value));
+}
+
 function fillVerticalGradient(png: PNG, top: Rgba, bottom: Rgba) {
   const denom = png.height > 1 ? png.height - 1 : 1;
+  const rowColors = Array.from({ length: png.height }, (_, y) =>
+    lerpColor(top, bottom, png.height > 1 ? y / denom : 0)
+  );
+
   for (let y = 0; y < png.height; y++) {
-    const t = png.height > 1 ? y / denom : 0;
-    const color = lerpColor(top, bottom, t);
+    const color = rowColors[y];
     for (let x = 0; x < png.width; x++) {
       setPixel(png, x, y, color);
     }
@@ -121,9 +136,9 @@ function scatterTexture(png: PNG, density: number, color: Rgba, jitter = 0, prng
     const y = Math.floor(prng() * png.height);
     const c = jitter
       ? {
-          r: Math.max(0, Math.min(255, color.r + Math.floor((prng() - 0.5) * jitter))),
-          g: Math.max(0, Math.min(255, color.g + Math.floor((prng() - 0.5) * jitter))),
-          b: Math.max(0, Math.min(255, color.b + Math.floor((prng() - 0.5) * jitter))),
+          r: clampChannel(color.r + Math.floor((prng() - 0.5) * jitter)),
+          g: clampChannel(color.g + Math.floor((prng() - 0.5) * jitter)),
+          b: clampChannel(color.b + Math.floor((prng() - 0.5) * jitter)),
           a: color.a,
         }
       : color;
@@ -229,13 +244,13 @@ async function renderSegment0605(): Promise<{ atlas: Buffer; metadata: Record<st
   const buffer = PNG.sync.write(png);
 
   const metadata = {
-    areaId: '06.05',
-    name: 'The Hub',
-    baseTerrain: 'Fairyglade border with Rainbow Riverbank',
-    locations: ['Cobble Cross', 'The Whisper Kiosk'],
+    areaId: HUB_AREA.id,
+    name: HUB_AREA.name,
+    baseTerrain: HUB_AREA.baseTerrain,
+    locations: HUB_AREA.locations,
     image: { width: ATLAS_SIZE, height: ATLAS_SIZE, grid: { tileWidth: TILE_WIDTH, tileHeight: TILE_HEIGHT } },
     perspective: 'isometric',
-    tileScale: { horizontal: TILE_WIDTH, vertical: TILE_HEIGHT / 2, metersPerVerticalPixel: 1 / 32 },
+    tileScale: { horizontal: TILE_WIDTH, vertical: TILE_HEIGHT / 2, metersPerVerticalPixel: 1 / VERTICAL_PIXELS_PER_METER },
   };
 
   return { atlas: buffer, metadata };
@@ -429,7 +444,7 @@ export const generateAreaTileAtlas = functions.https.onCall(async (request) => {
     const metadataWithDraft = {
       ...metadata,
       draftId,
-      status: 'draft',
+      status: DRAFT_STATUS,
       generatedAt: new Date(now).toISOString(),
       storage: { atlasPath, metadataPath },
     };
@@ -441,13 +456,10 @@ export const generateAreaTileAtlas = functions.https.onCall(async (request) => {
     const areaRef = firestore.collection('areas').doc(areaId);
     await areaRef.set(
       {
-        id: areaId,
-        name: 'The Hub',
-        baseTerrain: 'Fairyglade border with Rainbow Riverbank',
-        locations: ['Cobble Cross', 'The Whisper Kiosk'],
+        ...HUB_AREA,
         latestAtlasPath: atlasPath,
         latestMetadataPath: metadataPath,
-        status: 'draft',
+        status: DRAFT_STATUS,
         updatedAt: admin.firestore.FieldValue.serverTimestamp(),
       },
       { merge: true }
@@ -458,7 +470,7 @@ export const generateAreaTileAtlas = functions.https.onCall(async (request) => {
       atlasPath,
       metadataPath,
       createdAt: admin.firestore.FieldValue.serverTimestamp(),
-      status: 'draft',
+      status: DRAFT_STATUS,
       notes: 'Auto-generated segment 06.05 tile atlas draft',
     });
 
