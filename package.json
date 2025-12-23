@@ -1,0 +1,25 @@
+{
+  "name": "baddieland-rpg",
+  "version": "1.0.0",
+  "description": "A battle-based RPG game with Firebase Firestore backend",
+  "main": "index.js",
+  "scripts": {
+    "seed:style-vibes": "node scripts/seedStyleVibeGuides.js",
+    "seed:style-vibes:dry": "DRY_RUN=true node scripts/seedStyleVibeGuides.js",
+    "verify:style-vibes": "node scripts/verifyStyleVibeGuides.js",
+    "validate:json": "node scripts/validateJson.js"
+  },
+  "keywords": [
+    "rpg",
+    "game",
+    "firebase",
+    "firestore"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "firebase-admin": "^12.0.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {}
+}
