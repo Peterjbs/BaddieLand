@@ -11,6 +11,7 @@ import {
   QueryConstraint
 } from 'firebase/firestore';
 import { db } from './firebase';
+import { StatSheet } from './stat-utils';
 
 export interface Character {
   id: string;
@@ -36,6 +37,7 @@ export interface Character {
     specific_visuals?: string;
   };
   levelStats?: LevelStat[];
+  statSheet?: StatSheet;  // New enhanced stat system
   move_list: string[];
   activeAvatar?: string;
   latestSpritesheet?: string;
@@ -91,7 +93,15 @@ export async function getCharacter(characterId: string): Promise<Character | nul
     const docRef = doc(db, 'characters', characterId);
     const docSnap = await getDoc(docRef);
     if (docSnap.exists()) {
-      return { id: docSnap.id, ...docSnap.data() } as Character;
+      const character = { id: docSnap.id, ...docSnap.data() } as Character;
+      
+      // Migrate old levelStats to new statSheet if needed
+      if (!character.statSheet && character.levelStats) {
+        const { convertOldToNew } = await import('./stat-utils');
+        character.statSheet = convertOldToNew(character.levelStats);
+      }
+      
+      return character;
     }
     return null;
   } catch (error) {
@@ -103,11 +113,21 @@ export async function getCharacter(characterId: string): Promise<Character | nul
 export async function getAllCharacters(): Promise<Character[]> {
   if (!db) return [];
   try {
+    const { convertOldToNew } = await import('./stat-utils');
     const querySnapshot = await getDocs(collection(db, 'characters'));
-    return querySnapshot.docs.map(doc => ({ 
-      id: doc.id, 
-      ...doc.data() 
-    } as Character));
+    return querySnapshot.docs.map(doc => {
+      const character = { 
+        id: doc.id, 
+        ...doc.data() 
+      } as Character;
+      
+      // Migrate old levelStats to new statSheet if needed
+      if (!character.statSheet && character.levelStats) {
+        character.statSheet = convertOldToNew(character.levelStats);
+      }
+      
+      return character;
+    });
   } catch (error) {
     console.error('Error getting characters:', error);
     throw error;
@@ -117,12 +137,22 @@ export async function getAllCharacters(): Promise<Character[]> {
 export async function getCharactersByGang(gang: string): Promise<Character[]> {
   if (!db) return [];
   try {
+    const { convertOldToNew } = await import('./stat-utils');
     const q = query(collection(db, 'characters'), where('gang', '==', gang));
     const querySnapshot = await getDocs(q);
-    return querySnapshot.docs.map(doc => ({ 
-      id: doc.id, 
-      ...doc.data() 
-    } as Character));
+    return querySnapshot.docs.map(doc => {
+      const character = { 
+        id: doc.id, 
+        ...doc.data()
+      } as Character;
+      
+      // Migrate old levelStats to new statSheet if needed
+      if (!character.statSheet && character.levelStats) {
+        character.statSheet = convertOldToNew(character.levelStats);
+      }
+      
+      return character;
+    });
   } catch (error) {
     console.error('Error getting characters by gang:', error);
     throw error;
