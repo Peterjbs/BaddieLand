@@ -1,0 +1,33 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Helper function to check if user is admin
+    function isAdmin() {
+      return request.auth != null && 
+             request.auth.token.email != null;
+    }
+
+    // Avatars - public read, admin write
+    match /avatars/{characterId}/{fileName} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Sprite sheets - public read, admin write
+    match /spritesheets/{characterId}/{fileName} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Atlases - public read, admin write
+    match /atlases/{characterId}/{fileName} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Drafts - admin only
+    match /drafts/{allPaths=**} {
+      allow read, write: if isAdmin();
+    }
+  }
+}
