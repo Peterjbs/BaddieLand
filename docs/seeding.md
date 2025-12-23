@@ -48,7 +48,7 @@ This command:
 1. Reads the data from `data/styleVibeGuides.json`
 2. Connects to your Firebase project
 3. Creates/updates the `styleVibeGuides` collection
-4. Imports all 72 area documents
+4. Imports all 65 area documents
 
 **Dry Run** (validate without writing):
 ```bash
@@ -107,9 +107,9 @@ Each document in the collection represents one area/location in the game world.
 }
 ```
 
-### Total Documents: 72
+### Total Documents: 65
 
-The seed file contains 72 unique area documents covering:
+The seed file contains 65 unique area documents covering:
 - Major locations (Green Grotto, Misty Mountains, Bubble Brook, etc.)
 - Landmarks (Whisper Kiosk, Receipt Tree, Blue Beanstalk, etc.)
 - Routes and paths (Radgey Road, Robbers Road, Willowwisp Way, etc.)
@@ -123,7 +123,7 @@ After seeding, verify the data:
 1. Open your Firebase Console
 2. Go to Firestore Database
 3. Check the `styleVibeGuides` collection
-4. Verify you have 72 documents
+4. Verify you have 65 documents
 5. Spot-check a few documents for correct structure
 
 ### Using the Verify Script

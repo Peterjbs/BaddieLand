@@ -80,7 +80,7 @@ async function verifyData() {
     }
     
     // Expected count
-    const expectedCount = 72;
+    const expectedCount = 65;
     if (documentCount !== expectedCount) {
       console.warn(`⚠️  Expected ${expectedCount} documents, but found ${documentCount}`);
     } else {
