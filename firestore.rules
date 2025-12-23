@@ -24,6 +24,17 @@ service cloud.firestore {
       allow read: if isAdmin();
       allow write: if false; // Only manageable through Firebase Console
     }
+    
+    // World areas and atlas drafts
+    match /areas/{areaId} {
+      allow read: if true;
+      allow write: if isAdmin();
+      
+      match /drafts/{draftId} {
+        allow read: if isAdmin();
+        allow write: if isAdmin();
+      }
+    }
     // Style & Vibe Guides Collection
     match /styleVibeGuides/{document=**} {
       // Allow read access to all authenticated users
