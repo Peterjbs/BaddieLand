@@ -499,6 +499,20 @@
             display: inline-block;
             margin-right: 4px;
         }
+
+        .map-section {
+            margin-top: 8px;
+            padding: 8px;
+            border-radius: 6px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .map-list {
+            margin: 6px 0 0 16px;
+            display: grid;
+            gap: 4px;
+        }
     </style>
 </head>
 <body>
@@ -1134,6 +1148,25 @@
                 { title: 'Progress & Export', steps: ['Set completion', 'Append log', 'Export JSON / MD / YAML-like'] },
                 { title: 'Gang / Tribe', steps: ['Counts by tribe', 'Roster chips', 'Filter handoff'] }
             ];
+            const tabDefinitions = [
+                { title: 'Info', fields: ['name, id, global_id, tribe, species/subspecies, roles (primary/secondary/tertiary), weapon_item, growth_curve, brand_vibe, specific_visuals'], actions: ['read-only render', 'updated via Console → Info updater form'], visibility: 'default tab; shows derived tags from stats/mat_list' },
+                { title: 'Moves', fields: ['name, description, type, learned_at_level, target.type'], actions: ['render list', 'add/update via Move editor form'], visibility: 'visible when moves array exists; shows empty state otherwise' },
+                { title: 'Stats', fields: ['all stats key/value entries'], actions: ['equalise updates values in-place', 're-render table'], visibility: 'table layout' },
+                { title: 'Images', fields: ['images[] (future manifest)'], actions: ['render grid; hides broken images'], visibility: 'empty state until manifest provided' },
+                { title: 'Log', fields: ['log.md text'], actions: ['read-only render'], visibility: 'empty state if no log' },
+                { title: 'Console', fields: ['info updater inputs', 'tag list (derived + manual)', 'stat equaliser result', 'move editor', 'CRUD drafts list'], actions: ['submit info form updates info', 'add tag, generate tags from stats', 'equalise stats', 'add moves', 'create/duplicate/archive drafts'], visibility: 'always available' },
+                { title: 'Generation', fields: ['visual description prompt/output', 'quick search controls', 'secondary stat equaliser output'], actions: ['generate visual description populates info.specific_visuals', 'filters roster', 'equalise stats'], visibility: 'always available' },
+                { title: 'Assets', fields: ['avatar drafts (label, stage, notes, status)', 'sprite sheet drafts (name, frames, notes, status)', 'animation preview placeholder'], actions: ['add avatar draft', 'approve/set active avatar', 'add sprite sheet', 'approve/set active sheet', 'preview animation'], visibility: 'always available' },
+                { title: 'Progress', fields: ['completion %', 'progress log entries'], actions: ['set completion bar', 'append log entries'], visibility: 'always available' },
+                { title: 'Export', fields: ['export format selector', 'section selector', 'export output'], actions: ['generate export JSON/Markdown/YAML-like'], visibility: 'always available' },
+                { title: 'Gang / Tribe', fields: ['table of tribes with counts and sample chips'], actions: ['filter input hooks roster filters'], visibility: 'always available' },
+                { title: 'UI Map', fields: ['flow cards', 'space plan badges'], actions: ['read-only guidance'], visibility: 'always available' }
+            ];
+            const clickMap = [
+                { title: 'Primary interactions', steps: ['Roster item click → selectCharacter → loadCharacterData', 'Tabs click → switchTab updates active panel', 'Buttons inside panels mutate local working state (no backend write)'] },
+                { title: 'Visibility rules', steps: ['Empty datasets show empty-message blocks', 'Active tab toggles .active class on tab-content'] },
+                { title: 'Spatial hierarchy', steps: ['Header stats bar', 'Left column: search/filter, gang snapshot, roster list', 'Right: tabbed content with per-panel sections'] }
+            ];
             return `
                 <div class="wireframe-grid">
                     ${flows.map(flow => `
@@ -1144,6 +1177,30 @@
                             </div>
                         </div>
                     `).join('')}
+                    <div class="wireframe-card">
+                        <h4>Tab definitions</h4>
+                        ${tabDefinitions.map(tab => `
+                            <div class="map-section">
+                                <strong>${safeText(tab.title)}</strong>
+                                <div class="map-list">
+                                    <span>Fields: ${safeText(tab.fields)}</span>
+                                    <span>Actions: ${safeText(tab.actions)}</span>
+                                    <span>Visibility: ${safeText(tab.visibility)}</span>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="wireframe-card">
+                        <h4>Click & visibility map</h4>
+                        ${clickMap.map(group => `
+                            <div class="map-section">
+                                <strong>${safeText(group.title)}</strong>
+                                <div class="map-list">
+                                    ${group.steps.map(step => `<span>${safeText(step)}</span>`).join('')}
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
                 </div>
                 <div class="wireframe-card" style="margin-top:10px;">
                     <h4>Space plan</h4>
