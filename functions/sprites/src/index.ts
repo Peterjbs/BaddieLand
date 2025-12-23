@@ -75,7 +75,11 @@ function drawLineWithThickness(
   const half = Math.floor(width / 2);
   const dx = x1 - x0;
   const dy = y1 - y0;
-  const length = Math.hypot(dx, dy) || 1;
+  const length = Math.hypot(dx, dy);
+  if (length === 0) {
+    setPixel(png, Math.round(x0), Math.round(y0), color);
+    return;
+  }
   const offsetX = (-dy / length);
   const offsetY = (dx / length);
 
@@ -116,9 +120,10 @@ function clampChannel(value: number) {
 }
 
 function fillVerticalGradient(png: PNG, top: Rgba, bottom: Rgba) {
-  const denom = png.height > 1 ? png.height - 1 : 1;
+  const isMultiRow = png.height > 1;
+  const denom = isMultiRow ? png.height - 1 : 1;
   const rowColors = Array.from({ length: png.height }, (_, y) =>
-    lerpColor(top, bottom, png.height > 1 ? y / denom : 0)
+    lerpColor(top, bottom, isMultiRow ? y / denom : 0)
   );
 
   for (let y = 0; y < png.height; y++) {
@@ -426,7 +431,7 @@ export const generateAreaTileAtlas = functions.https.onCall(async (request) => {
 
   const { areaId } = request.data as { areaId?: string };
   if (!areaId || !SUPPORTED_AREAS.includes(areaId)) {
-    throw new functions.https.HttpsError('invalid-argument', 'Only area segment 06.05 is supported in this draft generator');
+    throw new functions.https.HttpsError('invalid-argument', 'Invalid areaId. Only area segment "06.05" is currently supported.');
   }
 
   const bucket = admin.storage().bucket();
